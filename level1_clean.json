@@ -1,0 +1,837 @@
+[
+  {
+    "id":1,
+    "title":"What is Python?",
+    "content":"Python is a programming language used to write code that computers can understand. It is popular for being simple, readable, and powerful.",
+    "examples":[
+      "print('Python is fun!')"
+    ],
+    "text":"Lesson 1: What is Python? Python is a programming language used to write code that computers can understand. It is popular for being simple, readable, and powerful. Examples: print('Python is fun!')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":2,
+    "title":"Printing Text",
+    "content":"The print() function displays text or numbers on the screen. Text must be inside quotes.",
+    "examples":[
+      "print('Hello, world!')",
+      "print('Welcome to Python!')"
+    ],
+    "text":"Lesson 2: Printing Text The print() function displays text or numbers on the screen. Text must be inside quotes. Examples: print('Hello, world!') print('Welcome to Python!')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":3,
+    "title":"Comments",
+    "content":"Comments are notes in your code that Python ignores. They start with the # symbol.",
+    "examples":[
+      "# This is a comment",
+      "print('Python ignores comments!')"
+    ],
+    "text":"Lesson 3: Comments Comments are notes in your code that Python ignores. They start with the # symbol. Examples: # This is a comment print('Python ignores comments!')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":4,
+    "title":"Running Python Code",
+    "content":"You can run Python code in an editor, a terminal, or an online environment. Code runs line by line, from top to bottom.",
+    "examples":[
+      "print('This line runs first!')",
+      "print('Then this one!')"
+    ],
+    "text":"Lesson 4: Running Python Code You can run Python code in an editor, a terminal, or an online environment. Code runs line by line, from top to bottom. Examples: print('This line runs first!') print('Then this one!')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":5,
+    "title":"Variables",
+    "content":"Variables are used to store information. You can give a name to a value using the = sign.",
+    "examples":[
+      "name = 'John'",
+      "age = 21",
+      "print(name, age)"
+    ],
+    "text":"Lesson 5: Variables Variables are used to store information. You can give a name to a value using the = sign. Examples: name = 'John' age = 21 print(name, age)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":6,
+    "title":"Rules for Variable Names",
+    "content":"Variable names must start with a letter or underscore, cannot have spaces, and are case-sensitive.",
+    "examples":[
+      "my_name = 'John'",
+      "_count = 5",
+      "# my name = 'John'  \u274c (invalid)"
+    ],
+    "text":"Lesson 6: Rules for Variable Names Variable names must start with a letter or underscore, cannot have spaces, and are case-sensitive. Examples: my_name = 'John' _count = 5 # my name = 'John' \u274c (invalid)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":7,
+    "title":"Data Types",
+    "content":"Common data types in Python are int (numbers), float (decimals), str (text), and bool (True\/False).",
+    "examples":[
+      "age = 18",
+      "height = 5.9",
+      "name = 'Alex'",
+      "is_student = True"
+    ],
+    "text":"Lesson 7: Data Types Common data types in Python are int (numbers), float (decimals), str (text), and bool (True\/False). Examples: age = 18 height = 5.9 name = 'Alex' is_student = True",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":8,
+    "title":"Printing Variables",
+    "content":"You can print variables by including them in print().",
+    "examples":[
+      "name = 'John'",
+      "print('Hello', name)"
+    ],
+    "text":"Lesson 8: Printing Variables You can print variables by including them in print(). Examples: name = 'John' print('Hello', name)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":9,
+    "title":"Type Checking",
+    "content":"Use the type() function to check what data type a variable has.",
+    "examples":[
+      "x = 10",
+      "print(type(x))"
+    ],
+    "text":"Lesson 9: Type Checking Use the type() function to check what data type a variable has. Examples: x = 10 print(type(x))",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":10,
+    "title":"Numbers",
+    "content":"Python can handle whole numbers (int) and decimals (float). You can perform arithmetic operations easily.",
+    "examples":[
+      "a = 10 + 5",
+      "b = 3.2 * 2"
+    ],
+    "text":"Lesson 10: Numbers Python can handle whole numbers (int) and decimals (float). You can perform arithmetic operations easily. Examples: a = 10 + 5 b = 3.2 * 2",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":11,
+    "title":"Addition and Subtraction",
+    "content":"Use + for addition and - for subtraction.",
+    "examples":[
+      "x = 5 + 3",
+      "y = 10 - 2"
+    ],
+    "text":"Lesson 11: Addition and Subtraction Use + for addition and - for subtraction. Examples: x = 5 + 3 y = 10 - 2",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":12,
+    "title":"Multiplication and Division",
+    "content":"Use * for multiplication and \/ for division. Division always produces a float.",
+    "examples":[
+      "x = 4 * 2",
+      "y = 9 \/ 3"
+    ],
+    "text":"Lesson 12: Multiplication and Division Use * for multiplication and \/ for division. Division always produces a float. Examples: x = 4 * 2 y = 9 \/ 3",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":13,
+    "title":"Exponentiation",
+    "content":"Use ** to raise a number to a power.",
+    "examples":[
+      "x = 2 ** 3  # 2 to the power of 3"
+    ],
+    "text":"Lesson 13: Exponentiation Use ** to raise a number to a power. Examples: x = 2 ** 3 # 2 to the power of 3",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":14,
+    "title":"Floor Division and Modulus",
+    "content":"\/\/ divides and rounds down, % gives the remainder.",
+    "examples":[
+      "print(7 \/\/ 2)",
+      "print(7 % 2)"
+    ],
+    "text":"Lesson 14: Floor Division and Modulus \/\/ divides and rounds down, % gives the remainder. Examples: print(7 \/\/ 2) print(7 % 2)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":15,
+    "title":"Strings",
+    "content":"Strings are text in quotes. You can use single or double quotes.",
+    "examples":[
+      "name = 'John'",
+      "greeting = \"Hi there!\""
+    ],
+    "text":"Lesson 15: Strings Strings are text in quotes. You can use single or double quotes. Examples: name = 'John' greeting = \"Hi there!\"",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":16,
+    "title":"Combining Strings",
+    "content":"You can combine (concatenate) strings using +.",
+    "examples":[
+      "first = 'Hello'",
+      "second = 'World'",
+      "print(first + ' ' + second)"
+    ],
+    "text":"Lesson 16: Combining Strings You can combine (concatenate) strings using +. Examples: first = 'Hello' second = 'World' print(first + ' ' + second)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":17,
+    "title":"String Repetition",
+    "content":"Use * to repeat a string multiple times.",
+    "examples":[
+      "print('Hi!' * 3)"
+    ],
+    "text":"Lesson 17: String Repetition Use * to repeat a string multiple times. Examples: print('Hi!' * 3)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":18,
+    "title":"String Indexing",
+    "content":"You can access characters in a string using square brackets []. Indexing starts at 0.",
+    "examples":[
+      "word = 'Python'",
+      "print(word[0])",
+      "print(word[-1])"
+    ],
+    "text":"Lesson 18: String Indexing You can access characters in a string using square brackets []. Indexing starts at 0. Examples: word = 'Python' print(word[0]) print(word[-1])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":19,
+    "title":"String Slicing",
+    "content":"You can get parts of a string using slicing: string[start:end].",
+    "examples":[
+      "word = 'Python'",
+      "print(word[0:3])"
+    ],
+    "text":"Lesson 19: String Slicing You can get parts of a string using slicing: string[start:end]. Examples: word = 'Python' print(word[0:3])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":20,
+    "title":"String Methods",
+    "content":"Strings have built-in methods to modify text like upper(), lower(), and replace().",
+    "examples":[
+      "text = 'Hello'",
+      "print(text.upper())",
+      "print(text.replace('H', 'J'))"
+    ],
+    "text":"Lesson 20: String Methods Strings have built-in methods to modify text like upper(), lower(), and replace(). Examples: text = 'Hello' print(text.upper()) print(text.replace('H', 'J'))",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":21,
+    "title":"Getting User Input",
+    "content":"Use input() to get data from the user. It always returns a string.",
+    "examples":[
+      "name = input('Enter your name: ')",
+      "print('Hello', name)"
+    ],
+    "text":"Lesson 21: Getting User Input Use input() to get data from the user. It always returns a string. Examples: name = input('Enter your name: ') print('Hello', name)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":22,
+    "title":"Type Conversion",
+    "content":"Convert data types using int(), float(), or str().",
+    "examples":[
+      "age = int(input('Enter your age: '))",
+      "print(age + 1)"
+    ],
+    "text":"Lesson 22: Type Conversion Convert data types using int(), float(), or str(). Examples: age = int(input('Enter your age: ')) print(age + 1)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":23,
+    "title":"Booleans",
+    "content":"Booleans represent True or False values.",
+    "examples":[
+      "is_sunny = True",
+      "is_raining = False"
+    ],
+    "text":"Lesson 23: Booleans Booleans represent True or False values. Examples: is_sunny = True is_raining = False",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":24,
+    "title":"Comparison Operators",
+    "content":"You can compare values with ==, !=, >, <, >=, and <=.",
+    "examples":[
+      "print(5 > 3)",
+      "print(5 == 3)"
+    ],
+    "text":"Lesson 24: Comparison Operators You can compare values with ==, !=, >, <, >=, and <=. Examples: print(5 > 3) print(5 == 3)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":25,
+    "title":"Logical Operators",
+    "content":"and, or, and not combine or invert boolean values.",
+    "examples":[
+      "x = 5",
+      "print(x > 0 and x < 10)",
+      "print(not False)"
+    ],
+    "text":"Lesson 25: Logical Operators and, or, and not combine or invert boolean values. Examples: x = 5 print(x > 0 and x < 10) print(not False)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":26,
+    "title":"If Statements",
+    "content":"If statements let you run code only when a condition is true.",
+    "examples":[
+      "age = 18",
+      "if age >= 18:",
+      "    print('Adult')"
+    ],
+    "text":"Lesson 26: If Statements If statements let you run code only when a condition is true. Examples: age = 18 if age >= 18: print('Adult')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":27,
+    "title":"Else Statements",
+    "content":"Else runs when the if condition is false.",
+    "examples":[
+      "age = 15",
+      "if age >= 18:",
+      "    print('Adult')",
+      "else:",
+      "    print('Minor')"
+    ],
+    "text":"Lesson 27: Else Statements Else runs when the if condition is false. Examples: age = 15 if age >= 18: print('Adult') else: print('Minor')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":28,
+    "title":"Elif Statements",
+    "content":"Elif checks additional conditions when the first if is false.",
+    "examples":[
+      "grade = 85",
+      "if grade >= 90:",
+      "    print('A')",
+      "elif grade >= 80:",
+      "    print('B')",
+      "else:",
+      "    print('C or lower')"
+    ],
+    "text":"Lesson 28: Elif Statements Elif checks additional conditions when the first if is false. Examples: grade = 85 if grade >= 90: print('A') elif grade >= 80: print('B') else: print('C or lower')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":29,
+    "title":"Indentation",
+    "content":"Python uses indentation (spaces) to mark code blocks instead of braces {}.",
+    "examples":[
+      "if True:",
+      "    print('This line is indented')"
+    ],
+    "text":"Lesson 29: Indentation Python uses indentation (spaces) to mark code blocks instead of braces {}. Examples: if True: print('This line is indented')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":30,
+    "title":"Nested If Statements",
+    "content":"You can put if statements inside other if statements.",
+    "examples":[
+      "x = 10",
+      "if x > 5:",
+      "    if x < 15:",
+      "        print('x is between 5 and 15')"
+    ],
+    "text":"Lesson 30: Nested If Statements You can put if statements inside other if statements. Examples: x = 10 if x > 5: if x < 15: print('x is between 5 and 15')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":31,
+    "title":"While Loops",
+    "content":"A while loop repeats code as long as a condition is true.",
+    "examples":[
+      "count = 0",
+      "while count < 3:",
+      "    print('Count is', count)",
+      "    count += 1"
+    ],
+    "text":"Lesson 31: While Loops A while loop repeats code as long as a condition is true. Examples: count = 0 while count < 3: print('Count is', count) count += 1",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":32,
+    "title":"For Loops",
+    "content":"A for loop is used to loop through a sequence like a list, string, or range of numbers.",
+    "examples":[
+      "for i in range(5):",
+      "    print(i)"
+    ],
+    "text":"Lesson 32: For Loops A for loop is used to loop through a sequence like a list, string, or range of numbers. Examples: for i in range(5): print(i)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":33,
+    "title":"Range Function",
+    "content":"The range() function creates a sequence of numbers, usually used in loops.",
+    "examples":[
+      "for num in range(3):",
+      "    print(num)",
+      "for num in range(2, 6):",
+      "    print(num)"
+    ],
+    "text":"Lesson 33: Range Function The range() function creates a sequence of numbers, usually used in loops. Examples: for num in range(3): print(num) for num in range(2, 6): print(num)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":34,
+    "title":"Breaking Out of Loops",
+    "content":"Use break to stop a loop early when a condition is met.",
+    "examples":[
+      "for i in range(5):",
+      "    if i == 3:",
+      "        break",
+      "    print(i)"
+    ],
+    "text":"Lesson 34: Breaking Out of Loops Use break to stop a loop early when a condition is met. Examples: for i in range(5): if i == 3: break print(i)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":35,
+    "title":"Skipping with Continue",
+    "content":"Use continue to skip to the next iteration of a loop.",
+    "examples":[
+      "for i in range(5):",
+      "    if i == 2:",
+      "        continue",
+      "    print(i)"
+    ],
+    "text":"Lesson 35: Skipping with Continue Use continue to skip to the next iteration of a loop. Examples: for i in range(5): if i == 2: continue print(i)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":36,
+    "title":"Nested Loops",
+    "content":"You can put one loop inside another loop. This is useful for working with grids or pairs of items.",
+    "examples":[
+      "for i in range(2):",
+      "    for j in range(3):",
+      "        print(i, j)"
+    ],
+    "text":"Lesson 36: Nested Loops You can put one loop inside another loop. This is useful for working with grids or pairs of items. Examples: for i in range(2): for j in range(3): print(i, j)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":37,
+    "title":"Lists",
+    "content":"Lists store multiple values in a single variable. Lists are ordered and can be changed.",
+    "examples":[
+      "fruits = ['apple', 'banana', 'cherry']",
+      "print(fruits[0])",
+      "fruits.append('mango')"
+    ],
+    "text":"Lesson 37: Lists Lists store multiple values in a single variable. Lists are ordered and can be changed. Examples: fruits = ['apple', 'banana', 'cherry'] print(fruits[0]) fruits.append('mango')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":38,
+    "title":"Accessing List Elements",
+    "content":"Access list elements using their index. Indexing starts at 0.",
+    "examples":[
+      "numbers = [10, 20, 30]",
+      "print(numbers[1])"
+    ],
+    "text":"Lesson 38: Accessing List Elements Access list elements using their index. Indexing starts at 0. Examples: numbers = [10, 20, 30] print(numbers[1])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":39,
+    "title":"Changing List Elements",
+    "content":"You can change an item in a list by assigning a new value to its index.",
+    "examples":[
+      "colors = ['red', 'blue', 'green']",
+      "colors[1] = 'yellow'",
+      "print(colors)"
+    ],
+    "text":"Lesson 39: Changing List Elements You can change an item in a list by assigning a new value to its index. Examples: colors = ['red', 'blue', 'green'] colors[1] = 'yellow' print(colors)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":40,
+    "title":"Looping Through Lists",
+    "content":"Use a for loop to go through all items in a list.",
+    "examples":[
+      "animals = ['cat', 'dog', 'bird']",
+      "for a in animals:",
+      "    print(a)"
+    ],
+    "text":"Lesson 40: Looping Through Lists Use a for loop to go through all items in a list. Examples: animals = ['cat', 'dog', 'bird'] for a in animals: print(a)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":41,
+    "title":"List Methods",
+    "content":"Lists have useful methods like append(), remove(), and sort().",
+    "examples":[
+      "numbers = [3, 1, 4, 2]",
+      "numbers.sort()",
+      "print(numbers)"
+    ],
+    "text":"Lesson 41: List Methods Lists have useful methods like append(), remove(), and sort(). Examples: numbers = [3, 1, 4, 2] numbers.sort() print(numbers)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":42,
+    "title":"List Slicing",
+    "content":"You can get a part of a list using slicing: list[start:end].",
+    "examples":[
+      "numbers = [0, 1, 2, 3, 4, 5]",
+      "print(numbers[2:5])"
+    ],
+    "text":"Lesson 42: List Slicing You can get a part of a list using slicing: list[start:end]. Examples: numbers = [0, 1, 2, 3, 4, 5] print(numbers[2:5])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":43,
+    "title":"Tuples",
+    "content":"Tuples are like lists, but they cannot be changed (immutable). They use parentheses ().",
+    "examples":[
+      "colors = ('red', 'blue', 'green')",
+      "print(colors[0])"
+    ],
+    "text":"Lesson 43: Tuples Tuples are like lists, but they cannot be changed (immutable). They use parentheses (). Examples: colors = ('red', 'blue', 'green') print(colors[0])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":44,
+    "title":"Dictionaries",
+    "content":"Dictionaries store key-value pairs. You can use keys to look up values.",
+    "examples":[
+      "person = {'name': 'John', 'age': 21}",
+      "print(person['name'])"
+    ],
+    "text":"Lesson 44: Dictionaries Dictionaries store key-value pairs. You can use keys to look up values. Examples: person = {'name': 'John', 'age': 21} print(person['name'])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":45,
+    "title":"Adding and Changing Dictionary Items",
+    "content":"You can add or modify dictionary values using their keys.",
+    "examples":[
+      "person = {'name': 'John', 'age': 21}",
+      "person['city'] = 'San Diego'",
+      "person['age'] = 22"
+    ],
+    "text":"Lesson 45: Adding and Changing Dictionary Items You can add or modify dictionary values using their keys. Examples: person = {'name': 'John', 'age': 21} person['city'] = 'San Diego' person['age'] = 22",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":46,
+    "title":"Looping Through Dictionaries",
+    "content":"You can loop through keys, values, or both in a dictionary.",
+    "examples":[
+      "person = {'name': 'John', 'age': 21}",
+      "for key, value in person.items():",
+      "    print(key, value)"
+    ],
+    "text":"Lesson 46: Looping Through Dictionaries You can loop through keys, values, or both in a dictionary. Examples: person = {'name': 'John', 'age': 21} for key, value in person.items(): print(key, value)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":47,
+    "title":"Sets",
+    "content":"Sets store unique items and are unordered. They are useful when you don\u2019t want duplicates.",
+    "examples":[
+      "fruits = {'apple', 'banana', 'apple'}",
+      "print(fruits)"
+    ],
+    "text":"Lesson 47: Sets Sets store unique items and are unordered. They are useful when you don\u2019t want duplicates. Examples: fruits = {'apple', 'banana', 'apple'} print(fruits)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":48,
+    "title":"Adding and Removing from Sets",
+    "content":"Use add() to add items and remove() to remove items from a set.",
+    "examples":[
+      "colors = {'red', 'green'}",
+      "colors.add('blue')",
+      "colors.remove('red')"
+    ],
+    "text":"Lesson 48: Adding and Removing from Sets Use add() to add items and remove() to remove items from a set. Examples: colors = {'red', 'green'} colors.add('blue') colors.remove('red')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":49,
+    "title":"Functions",
+    "content":"Functions are reusable blocks of code that perform specific tasks. Define them with def.",
+    "examples":[
+      "def greet():",
+      "    print('Hello!')",
+      "",
+      "greet()"
+    ],
+    "text":"Lesson 49: Functions Functions are reusable blocks of code that perform specific tasks. Define them with def. Examples: def greet(): print('Hello!') greet()",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":50,
+    "title":"Function Parameters",
+    "content":"Functions can take parameters, which are values you pass in.",
+    "examples":[
+      "def greet(name):",
+      "    print('Hello,', name)",
+      "",
+      "greet('John')"
+    ],
+    "text":"Lesson 50: Function Parameters Functions can take parameters, which are values you pass in. Examples: def greet(name): print('Hello,', name) greet('John')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":51,
+    "title":"Return Values",
+    "content":"Functions can return values using the return keyword.",
+    "examples":[
+      "def add(a, b):",
+      "    return a + b",
+      "",
+      "result = add(3, 4)",
+      "print(result)"
+    ],
+    "text":"Lesson 51: Return Values Functions can return values using the return keyword. Examples: def add(a, b): return a + b result = add(3, 4) print(result)",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":52,
+    "title":"Default Parameters",
+    "content":"You can give function parameters default values.",
+    "examples":[
+      "def greet(name='friend'):",
+      "    print('Hello,', name)",
+      "",
+      "greet()",
+      "greet('John')"
+    ],
+    "text":"Lesson 52: Default Parameters You can give function parameters default values. Examples: def greet(name='friend'): print('Hello,', name) greet() greet('John')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":53,
+    "title":"Scope of Variables",
+    "content":"Variables created inside functions exist only inside them (local scope).",
+    "examples":[
+      "def example():",
+      "    x = 5",
+      "    print(x)",
+      "",
+      "example()",
+      "# print(x) \u274c This would cause an error"
+    ],
+    "text":"Lesson 53: Scope of Variables Variables created inside functions exist only inside them (local scope). Examples: def example(): x = 5 print(x) example() # print(x) \u274c This would cause an error",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":54,
+    "title":"Importing Modules",
+    "content":"Modules are files that contain Python code you can reuse. Use import to include them.",
+    "examples":[
+      "import math",
+      "print(math.sqrt(16))"
+    ],
+    "text":"Lesson 54: Importing Modules Modules are files that contain Python code you can reuse. Use import to include them. Examples: import math print(math.sqrt(16))",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":55,
+    "title":"Random Numbers",
+    "content":"The random module can generate random numbers or choices.",
+    "examples":[
+      "import random",
+      "print(random.randint(1, 10))",
+      "print(random.choice(['apple', 'banana', 'cherry']))"
+    ],
+    "text":"Lesson 55: Random Numbers The random module can generate random numbers or choices. Examples: import random print(random.randint(1, 10)) print(random.choice(['apple', 'banana', 'cherry']))",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":56,
+    "title":"Working with Strings and Numbers Together",
+    "content":"You can\u2019t add strings and numbers directly, but you can use commas in print() or convert using str().",
+    "examples":[
+      "age = 21",
+      "print('I am', age, 'years old.')",
+      "print('I am ' + str(age) + ' years old.')"
+    ],
+    "text":"Lesson 56: Working with Strings and Numbers Together You can\u2019t add strings and numbers directly, but you can use commas in print() or convert using str(). Examples: age = 21 print('I am', age, 'years old.') print('I am ' + str(age) + ' years old.')",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":57,
+    "title":"File Reading",
+    "content":"Use open() and read() to read text from a file.",
+    "examples":[
+      "file = open('example.txt', 'r')",
+      "content = file.read()",
+      "print(content)",
+      "file.close()"
+    ],
+    "text":"Lesson 57: File Reading Use open() and read() to read text from a file. Examples: file = open('example.txt', 'r') content = file.read() print(content) file.close()",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":58,
+    "title":"File Writing",
+    "content":"You can write to files using the 'w' mode with open(). Be careful\u2014it replaces the file\u2019s contents.",
+    "examples":[
+      "file = open('example.txt', 'w')",
+      "file.write('Hello file!')",
+      "file.close()"
+    ],
+    "text":"Lesson 58: File Writing You can write to files using the 'w' mode with open(). Be careful\u2014it replaces the file\u2019s contents. Examples: file = open('example.txt', 'w') file.write('Hello file!') file.close()",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":59,
+    "title":"With Statement for Files",
+    "content":"Using with automatically closes the file when done.",
+    "examples":[
+      "with open('example.txt', 'r') as file:",
+      "    print(file.read())"
+    ],
+    "text":"Lesson 59: With Statement for Files Using with automatically closes the file when done. Examples: with open('example.txt', 'r') as file: print(file.read())",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  },
+  {
+    "id":60,
+    "title":"Putting It All Together",
+    "content":"You can combine variables, loops, conditionals, and functions to make small programs.",
+    "examples":[
+      "def greet_users(users):",
+      "    for name in users:",
+      "        if len(name) > 3:",
+      "            print('Hello,', name)",
+      "",
+      "greet_users(['Ali', 'John', 'Bo'])"
+    ],
+    "text":"Lesson 60: Putting It All Together You can combine variables, loops, conditionals, and functions to make small programs. Examples: def greet_users(users): for name in users: if len(name) > 3: print('Hello,', name) greet_users(['Ali', 'John', 'Bo'])",
+    "topic":"Python Basics",
+    "difficulty":"Beginner",
+    "level":1
+  }
+]
