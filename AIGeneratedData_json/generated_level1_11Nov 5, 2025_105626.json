@@ -1,0 +1,162 @@
+[
+    {
+        "question": "What is Python used for in programming?",
+        "answer": "Python is used to write instructions (code) that computers execute."
+    },
+    {
+        "question": "How do you display text or variables on the screen in Python?",
+        "answer": "By using the `print()` function."
+    },
+    {
+        "question": "What must you put around text inside the `print()` function?",
+        "answer": "Text must be inside quotes."
+    },
+    {
+        "question": "How do you assign a value to a variable in Python?",
+        "answer": "Using the `=` operator."
+    },
+    {
+        "question": "What characters are allowed when naming variables in Python?",
+        "answer": "Letters and underscores, but no spaces."
+    },
+    {
+        "question": "How can you find out the data type of a variable?",
+        "answer": "By using the `type()` function."
+    },
+    {
+        "question": "What symbol starts a comment line in Python?",
+        "answer": "The `#` symbol."
+    },
+    {
+        "question": "How does Python execute your code?",
+        "answer": "It runs code line-by-line from top to bottom."
+    },
+    {
+        "question": "Name four common data types in Python.",
+        "answer": "Integers (`int`), floats (`float`), strings (`str`), and Booleans (`bool`)."
+    },
+    {
+        "question": "What is the result type when dividing two numbers with `/` in Python?",
+        "answer": "The result is a `float`."
+    },
+    {
+        "question": "Which operator in Python gives the remainder of a division?",
+        "answer": "The modulus operator `%`."
+    },
+    {
+        "question": "How can you combine two strings in Python?",
+        "answer": "By using the `+` operator."
+    },
+    {
+        "question": "What does the `*` operator do when used with a string and a number?",
+        "answer": "It repeats the string that many times."
+    },
+    {
+        "question": "What function do you use to get user input in Python?",
+        "answer": "The `input()` function."
+    },
+    {
+        "question": "How do you convert a string input into an integer?",
+        "answer": "Using the `int()` function."
+    },
+    {
+        "question": "What values can a Boolean variable hold?",
+        "answer": "`True` or `False`."
+    },
+    {
+        "question": "Which operator checks if two values are equal?",
+        "answer": "The `==` operator."
+    },
+    {
+        "question": "What keywords do you use for multiple conditional checks in Python?",
+        "answer": "`if`, `elif`, and `else`."
+    },
+    {
+        "question": "How does Python recognize a block of code belonging to an `if` statement?",
+        "answer": "By indentation (spaces at the line start)."
+    },
+    {
+        "question": "What type of loop repeats code while a condition is true?",
+        "answer": "A `while` loop."
+    },
+    {
+        "question": "Which loop type is used to iterate over items in a list or string?",
+        "answer": "A `for` loop."
+    },
+    {
+        "question": "What does the `break` statement do inside a loop?",
+        "answer": "It exits the loop early."
+    },
+    {
+        "question": "How do lists differ from tuples?",
+        "answer": "Lists are changeable; tuples are immutable."
+    },
+    {
+        "question": "How do you access a value in a dictionary?",
+        "answer": "By using its key."
+    },
+    {
+        "question": "What kind of collection stores unique items without order?",
+        "answer": "A set."
+    },
+    {
+        "question": "How do you define a function in Python?",
+        "answer": "Using the `def` keyword followed by the function name and parentheses."
+    },
+    {
+        "question": "What keyword is used to send a value back from a function?",
+        "answer": "`return`."
+    },
+    {
+        "question": "What happens to variables created inside a function?",
+        "answer": "They have local scope and can't be used outside the function."
+    },
+    {
+        "question": "How do you use functions from external modules like `math`?",
+        "answer": "By importing the module with `import math`."
+    },
+    {
+        "question": "Which statement is best for opening files because it automatically closes them?",
+        "answer": "The `with` statement."
+    },
+    {
+        "question": "Name one method to read from a file in Python.",
+        "answer": "The `.read()` method."
+    },
+    {
+        "question": "How do you add an item to a list?",
+        "answer": "Using the `.append()` method."
+    },
+    {
+        "question": "What built-in function can create a sequence of numbers for loops?",
+        "answer": "The `range()` function."
+    },
+    {
+        "question": "What operator do you use to check if two values are not equal?",
+        "answer": "The `!=` operator."
+    },
+    {
+        "question": "How can you change all letters in a string to uppercase?",
+        "answer": "By using the `.upper()` string method."
+    },
+    {
+        "question": "What does indexing start at when accessing characters in a string?",
+        "answer": "Indexing starts at 0."
+    },
+    {
+        "question": "How can you skip the rest of the current loop iteration and continue to the next?",
+        "answer": "By using the `continue` statement."
+    },
+    {
+        "question": "Can `if` statements be placed inside other `if` statements?",
+        "answer": "Yes, this is called nesting."
+    },
+    {
+        "question": "What method removes an item from a list?",
+        "answer": "The `.remove()` method."
+    },
+    {
+        "question": "How do you combine variables, loops, and conditionals in Python?",
+        "answer": "By writing code that uses them together to build small programs."
+    }
+]
