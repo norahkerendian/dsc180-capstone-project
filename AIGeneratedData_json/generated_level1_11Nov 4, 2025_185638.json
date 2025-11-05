@@ -1,0 +1,14 @@
+[
+    {
+        "question": "What does it mean if the lesson content is empty or consists only of commas?",
+        "answer": "It means the lesson provides no information to explain or summarize."
+    },
+    {
+        "question": "Can any key concepts or definitions be learned from lesson content that is empty or just commas?",
+        "answer": "No, there are no key concepts or definitions in such content."
+    },
+    {
+        "question": "Why is there no reasoning or explanation available in the given lesson content?",
+        "answer": "Because the lesson content is empty or only contains commas, so there is nothing to explain."
+    }
+]
