@@ -2,9 +2,9 @@
 
 import json
 
-file_name = 'generated_level1_a'
+file_name = 'generated_level1_11Nov 4, 2025_161930'
 # Step 1: Read the contents of your file
-with open(f"AIGeneratedData/{file_name}.txt", "r", encoding="utf-8") as f:
+with open(f"AIGeneratedData_n8n/{file_name}.txt", "r", encoding="utf-8") as f:
     text = f.read()
 
 # Step 2: Split into lines and remove empty ones
@@ -28,7 +28,7 @@ for i in range(0, len(lines), 2):
     })
 
 # Step 5: Save to JSON file
-with open(f"AIGeneratedData/{file_name}.json", "w", encoding="utf-8") as f:
+with open(f"AIGeneratedData_json/{file_name}.json", "w", encoding="utf-8") as f:
     json.dump(qa_list, f, indent=4, ensure_ascii=False)
 
 print("✅ Saved to questions.json!")

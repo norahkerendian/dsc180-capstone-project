@@ -1,0 +1,82 @@
+[
+    {
+        "question": "What does the `print()` function do in Python, and how should text be formatted inside it?",
+        "answer": "The `print()` function displays text or numbers on the screen, and text must be enclosed in quotes."
+    },
+    {
+        "question": "How can you write a comment in Python, and what is its purpose?",
+        "answer": "Comments start with `#` and are ignored by Python; they help explain code."
+    },
+    {
+        "question": "What are the rules for naming variables in Python?",
+        "answer": "Variable names must begin with a letter or underscore, have no spaces, and are case-sensitive."
+    },
+    {
+        "question": "Name four common data types in Python and give an example of each.",
+        "answer": "Integers (`int`, e.g., 5), decimals (`float`, e.g., 3.14), text strings (`str`, e.g., \"Hello\"), and Booleans (`bool`, e.g., True)."
+    },
+    {
+        "question": "Which arithmetic operation in Python always returns a float, and which one returns the quotient rounded down?",
+        "answer": "Division (`/`) always returns a float, and floor division (`//`) returns the quotient rounded down."
+    },
+    {
+        "question": "How do you access the first character of a string in Python?",
+        "answer": "By using indexing with `[0]`, since indexing starts at 0."
+    },
+    {
+        "question": "What function do you use to get user input, and what type of data does it return?",
+        "answer": "Use `input()`, and it returns data as a string."
+    },
+    {
+        "question": "How do you convert a string to an integer or a float in Python?",
+        "answer": "Use `int()` to convert to integer and `float()` to convert to float."
+    },
+    {
+        "question": "What are the Boolean values in Python, and what operators can compare values?",
+        "answer": "Boolean values are `True` and `False`; comparison operators include `==`, `!=`, `>`, `<`, `>=`, and `<=`."
+    },
+    {
+        "question": "What keywords do you use in Python to run different code based on multiple conditions?",
+        "answer": "Use `if`, `elif`, and `else`."
+    },
+    {
+        "question": "How does a `while` loop differ from a `for` loop in Python?",
+        "answer": "A `while` loop repeats code while a condition is true; a `for` loop iterates over items in a sequence."
+    },
+    {
+        "question": "Name three common list methods in Python.",
+        "answer": "`.append()`, `.remove()`, and `.sort()`."
+    },
+    {
+        "question": "What is the key difference between a list and a tuple?",
+        "answer": "Lists are changeable (mutable), while tuples are immutable (cannot be changed)."
+    },
+    {
+        "question": "How do you define a function in Python that can return a value?",
+        "answer": "Use `def` to define the function and `return` to send back a value."
+    },
+    {
+        "question": "Which Python statement is used to include code from external modules?",
+        "answer": "Use `import`."
+    },
+    {
+        "question": "How can you display a string and a number together using `print()` without causing an error?",
+        "answer": "Use commas to separate them in `print()`, or convert the number to a string with `str()`."
+    },
+    {
+        "question": "What mode should you use with `open()` to write to a file, and how can you ensure the file is properly closed?",
+        "answer": "Use mode `'w'` to write, and use a `with` statement to automatically close the file."
+    },
+    {
+        "question": "What is the purpose of indentation in Python code?",
+        "answer": "Indentation defines code blocks, showing which statements belong together."
+    },
+    {
+        "question": "How do you get both the keys and values when looping through a dictionary?",
+        "answer": "Use the `.items()` method."
+    },
+    {
+        "question": "What command stops a loop early, and what command skips to the next iteration?",
+        "answer": "`break` stops a loop; `continue` skips to the next iteration."
+    }
+]
