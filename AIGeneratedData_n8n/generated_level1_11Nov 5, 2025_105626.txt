@@ -1,0 +1,119 @@
+Q1: What is Python used for in programming?  
+A1: Python is used to write instructions (code) that computers execute.
+
+Q2: How do you display text or variables on the screen in Python?  
+A2: By using the `print()` function.
+
+Q3: What must you put around text inside the `print()` function?  
+A3: Text must be inside quotes.
+
+Q4: How do you assign a value to a variable in Python?  
+A4: Using the `=` operator.
+
+Q5: What characters are allowed when naming variables in Python?  
+A5: Letters and underscores, but no spaces.
+
+Q6: How can you find out the data type of a variable?  
+A6: By using the `type()` function.
+
+Q7: What symbol starts a comment line in Python?  
+A7: The `#` symbol.
+
+Q8: How does Python execute your code?  
+A8: It runs code line-by-line from top to bottom.
+
+Q9: Name four common data types in Python.  
+A9: Integers (`int`), floats (`float`), strings (`str`), and Booleans (`bool`).
+
+Q10: What is the result type when dividing two numbers with `/` in Python?  
+A10: The result is a `float`.
+
+Q11: Which operator in Python gives the remainder of a division?  
+A11: The modulus operator `%`.
+
+Q12: How can you combine two strings in Python?  
+A12: By using the `+` operator.
+
+Q13: What does the `*` operator do when used with a string and a number?  
+A13: It repeats the string that many times.
+
+Q14: What function do you use to get user input in Python?  
+A14: The `input()` function.
+
+Q15: How do you convert a string input into an integer?  
+A15: Using the `int()` function.
+
+Q16: What values can a Boolean variable hold?  
+A16: `True` or `False`.
+
+Q17: Which operator checks if two values are equal?  
+A17: The `==` operator.
+
+Q18: What keywords do you use for multiple conditional checks in Python?  
+A18: `if`, `elif`, and `else`.
+
+Q19: How does Python recognize a block of code belonging to an `if` statement?  
+A19: By indentation (spaces at the line start).
+
+Q20: What type of loop repeats code while a condition is true?  
+A20: A `while` loop.
+
+Q21: Which loop type is used to iterate over items in a list or string?  
+A21: A `for` loop.
+
+Q22: What does the `break` statement do inside a loop?  
+A22: It exits the loop early.
+
+Q23: How do lists differ from tuples?  
+A23: Lists are changeable; tuples are immutable.
+
+Q24: How do you access a value in a dictionary?  
+A24: By using its key.
+
+Q25: What kind of collection stores unique items without order?  
+A25: A set.
+
+Q26: How do you define a function in Python?  
+A26: Using the `def` keyword followed by the function name and parentheses.
+
+Q27: What keyword is used to send a value back from a function?  
+A27: `return`.
+
+Q28: What happens to variables created inside a function?  
+A28: They have local scope and can't be used outside the function.
+
+Q29: How do you use functions from external modules like `math`?  
+A29: By importing the module with `import math`.
+
+Q30: Which statement is best for opening files because it automatically closes them?  
+A30: The `with` statement.
+
+Q31: Name one method to read from a file in Python.  
+A31: The `.read()` method.
+
+Q32: How do you add an item to a list?  
+A32: Using the `.append()` method.
+
+Q33: What built-in function can create a sequence of numbers for loops?  
+A33: The `range()` function.
+
+Q34: What operator do you use to check if two values are not equal?  
+A34: The `!=` operator.
+
+Q35: How can you change all letters in a string to uppercase?  
+A35: By using the `.upper()` string method.
+
+Q36: What does indexing start at when accessing characters in a string?  
+A36: Indexing starts at 0.
+
+Q37: How can you skip the rest of the current loop iteration and continue to the next?  
+A37: By using the `continue` statement.
+
+Q38: Can `if` statements be placed inside other `if` statements?  
+A38: Yes, this is called nesting.
+
+Q39: What method removes an item from a list?  
+A39: The `.remove()` method.
+
+Q40: How do you combine variables, loops, and conditionals in Python?  
+A40: By writing code that uses them together to build small programs.
