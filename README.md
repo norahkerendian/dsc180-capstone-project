@@ -96,5 +96,53 @@ This project uses n8n for workflows and some AI nodes. The instructions below as
 4. If the last node should push to GitHub, confirm the Git node is configured with a repo access token and correct branch.
 
 ## Frontend Work
+So far, the current build introduces users to the platform through a clean landing interface with clear branding and a primary call-to-action, providing a simple and intuitive entry point into the learning journey. Alongside this, we configured our project architecture and global styling framework. This foundation allows us to iterate quickly and begin layering in lesson modules, progress tracking features, and AI-assisted learning capabilities in upcoming development cycles.
 
-THIS IS THE SECTION FOR FRONTEND
+
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Setup/How to Run the project locally:
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+So far, this is frontend's proposed project structure:
+```
+app/
+  layout.tsx
+  page.tsx
+  lessons/
+    page.tsx           
+    [id]/
+      page.tsx         
+components/
+  ui/                    
+  lesson/
+    LessonShell.tsx
+    StepBlock.tsx
+lib/
+  api/
+    lessons.ts         
+  client/
+    progress.ts         
+  config/
+    features.ts         
+  types/
+    lesson.ts
+public/
+  data/lessons/   
+```
