@@ -39,14 +39,14 @@ This project uses n8n for workflows and some AI nodes. The instructions below as
 
 2. Download the notebook file from this repo
 
-   - Go to this repository and download `data_organization.ipynb` (you can use the green "Code" button or click the file and choose "Download").
+   - Go to this repository and download `dsc180a-q1-workflow.json` (you can use the green "Code" button or click the file and choose "Download").
    - We include the notebook so you can inspect and run the preprocessing locally if desired.
 
 3. Create a new workflow in n8n
 
    - In n8n, click "Create" or the "New Workflow" area on the left side to start a fresh workflow.
    - ![on_screen.png](./images/on_screen.png "main_screen")
-   - To add the `data_organization.ipynb` file to a node or attach it, you can drag/drop or upload as needed. (If you use n8n's file nodes, follow their UI prompts.)
+   - To add the `dsc180a-q1-workflow.json` file to a node or attach it, you can drag/drop or upload as needed. (If you use n8n's file nodes, follow their UI prompts.)
    - ![drop_down.png](./images/drop_down.png "dropdown")
    - At the very end you will see a workflow like this being displayed.
    - ![cool_workflow.png](./images/cool_workflow.png "cool_workflow")
