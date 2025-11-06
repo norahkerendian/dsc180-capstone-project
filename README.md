@@ -30,6 +30,8 @@ If you're not familiar with notebooks: open `data_organization.ipynb` in Jupyter
 
 ## Setup: how to run the n8n workflow (step-by-step)
 
+[🎥 Watch Walkthrough on Google Drive (if preferred)](https://drive.google.com/file/d/1amVpqxj1I_QIy7wngkudHENViCQR6Xqf/view?usp=sharing)
+
 This project uses n8n for workflows and some AI nodes. The instructions below assume you will use the hosted n8n at https://n8n.io/ and the AI nodes available there.
 
 1. Create an n8n account
