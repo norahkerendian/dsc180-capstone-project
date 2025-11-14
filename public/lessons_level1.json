@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "prompt": "In pandas, which method reads a CSV file",
+    "choices": ["pd.load()", "pd.read_csv()", "pd.read()", "pd.csv()"],
+    "answerIndex": 1,
+    "hint": "It literally says csv LMAO"
+  },
+  {
+    "id": 2,
+    "prompt": "What does DataFrame.head() do",
+    "choices": ["Saves file", "Shows first rows", "Plots chart", "Merges data"],
+    "answerIndex": 1
+  }
+]
