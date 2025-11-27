@@ -1,0 +1,15 @@
+{
+  "id": 228,
+  "slug": "ml_03_workflow",
+  "title": "ML Workflow",
+  "content_md": "# The ML Workflow\n\n1. Collect data  \n2. Clean & preprocess  \n3. Split data (train/test)  \n4. Train model  \n5. Evaluate model  \n6. Improve and repeat\n\nWithout discipline, results are meaningless.",
+  "topic": "Machine Learning",
+  "level": 26,
+  "metadata": { "estimated_minutes": 15 },
+  "questions": [
+    { "id": 1, "question": "What step comes before training the model?", "answer": "Data preprocessing and splitting.", "difficulty": 2 },
+    { "id": 2, "question": "What is the purpose of evaluation?", "answer": "To test model performance on unseen data.", "difficulty": 3 },
+    { "id": 3, "question": "Why must ML be iterative?", "answer": "Because improvement comes from testing and adjustment.", "difficulty": 3 },
+    { "id": 4, "question": "What is the final goal of the workflow?", "answer": "To achieve reliable predictions.", "difficulty": 2 }
+  ]
+}

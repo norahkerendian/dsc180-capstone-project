@@ -1,0 +1,15 @@
+{
+  "id": 215,
+  "slug": "data_02_numpy_operations",
+  "title": "NumPy Operations",
+  "content_md": "# NumPy Operations\n\nYou can perform math on arrays directly.\n\n```python\nimport numpy as np\narr = np.array([1, 2, 3])\narr * 2   # array([2, 4, 6])\n```\n\nUseful functions:\n```python\narr.mean()\narr.sum()\narr.std()\n```",
+  "topic": "Data Science",
+  "level": 13,
+  "metadata": { "estimated_minutes": 16 },
+  "questions": [
+    { "id": 1, "question": "What does arr.mean() return?", "answer": "The average of the array values.", "difficulty": 2 },
+    { "id": 2, "question": "Write code that multiplies all elements in a NumPy array by 3.", "answer": "arr * 3", "question_type": "code" },
+    { "id": 3, "question": "Why are NumPy operations fast?", "answer": "They are vectorized and optimized in C.", "difficulty": 3 },
+    { "id": 4, "question": "What function calculates the standard deviation of an array?", "answer": "arr.std()", "difficulty": 2 }
+  ]
+}

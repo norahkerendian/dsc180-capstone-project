@@ -1,0 +1,15 @@
+{
+  "id": 231,
+  "slug": "ml_06_linear_regression_code",
+  "title": "Linear Regression in Python",
+  "content_md": "# Code: Linear Regression\n\n```python\nfrom sklearn.linear_model import LinearRegression\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\npred = model.predict(X_test)\n```",
+  "topic": "Machine Learning",
+  "level": 29,
+  "metadata": { "estimated_minutes": 25 },
+  "questions": [
+    { "id": 1, "question": "Which library provides LinearRegression?", "answer": "sklearn.linear_model", "difficulty": 2 },
+    { "id": 2, "question": "What function trains the model?", "answer": "model.fit()", "difficulty": 2 },
+    { "id": 3, "question": "What does .predict() do?", "answer": "Makes predictions on new data.", "difficulty": 2 },
+    { "id": 4, "question": "Why must data be split before training?", "answer": "To avoid overfitting.", "difficulty": 3 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 230,
+  "slug": "ml_05_linear_regression_intro",
+  "title": "Linear Regression: Introduction",
+  "content_md": "# Linear Regression\n\nPredicts a numeric value using a line:\n\ny = m*x + b\n\nUsed for:\n- Predicting house prices\n- Estimating sales\n- Forecasting trends",
+  "topic": "Machine Learning",
+  "level": 28,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What does linear regression predict?", "answer": "A numeric value.", "difficulty": 2 },
+    { "id": 2, "question": "What is the basic formula?", "answer": "y = m*x + b", "difficulty": 1 },
+    { "id": 3, "question": "Is linear regression classification or regression?", "answer": "Regression.", "difficulty": 2 },
+    { "id": 4, "question": "Give one real example of linear regression.", "answer": "Predicting house prices.", "difficulty": 3 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 229,
+  "slug": "ml_04_bias_variance",
+  "title": "Bias, Variance & Overfitting",
+  "content_md": "# Bias & Variance\n\n| Term | Meaning |\n|------|---------|\n| Bias | Error from assumptions |\n| Variance | Error from sensitivity |\n| Overfitting | Model memorizes data |\n| Underfitting | Model learns too little |\n\nGoal: balance bias & variance.",
+  "topic": "Machine Learning",
+  "level": 27,
+  "metadata": { "estimated_minutes": 20 },
+  "questions": [
+    { "id": 1, "question": "What is overfitting?", "answer": "When a model memorizes the training data instead of learning patterns.", "difficulty": 3 },
+    { "id": 2, "question": "What causes high variance?", "answer": "The model reacts too strongly to small changes.", "difficulty": 3 },
+    { "id": 3, "question": "Which issue happens if a model is too simple?", "answer": "Underfitting.", "difficulty": 2 },
+    { "id": 4, "question": "Why do we split data?", "answer": "To detect overfitting and test performance.", "difficulty": 2 }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 219,
+  "slug": "data_06_descriptive_statistics",
+  "title": "Descriptive Statistics in Pandas",
+  "content_md": "# Descriptive Statistics\n\nThese help summarize data and detect trends:\n\n```python\ndf.describe()\ndf['age'].mean()\ndf['age'].median()\ndf['age'].mode()\n```\n\nUnderstanding these values helps determine if the data is useful for ML.",
+  "topic": "Data Science",
+  "level": 17,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What does df.describe() provide?", "answer": "A statistical summary of the dataset.", "difficulty": 2 },
+    { "id": 2, "question": "What is the mean used for?", "answer": "To find the average of values.", "difficulty": 2 },
+    { "id": 3, "question": "Why is the median sometimes better than the mean?", "answer": "It is less affected by outliers.", "difficulty": 3 },
+    { "id": 4, "question": "How do you find the mode of a column?", "answer": "df['column'].mode()", "question_type": "code", "difficulty": 2 }
+  ]
+}

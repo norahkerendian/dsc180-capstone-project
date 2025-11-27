@@ -1,0 +1,15 @@
+{
+  "id": 218,
+  "slug": "data_05_cleaning_missing",
+  "title": "Handling Missing Data",
+  "content_md": "# Missing Data in Pandas\n\nData is rarely perfect. Clean it before ML.\n\n```python\ndf.isnull().sum()\ndf.dropna()\ndf.fillna(0)\n```",
+  "topic": "Data Science",
+  "level": 16,
+  "metadata": { "estimated_minutes": 22 },
+  "questions": [
+    { "id": 1, "question": "Which function counts missing values?", "answer": "df.isnull().sum()", "difficulty": 2 },
+    { "id": 2, "question": "How do you drop rows with missing values?", "answer": "df.dropna()", "difficulty": 2 },
+    { "id": 3, "question": "Why must missing data be handled before ML?", "answer": "It affects model accuracy and training.", "difficulty": 3 },
+    { "id": 4, "question": "Write code to fill missing ages with 30.", "answer": "df['age'].fillna(30)", "question_type": "code" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": 204,
+  "slug": "python_basics_02_datatypes",
+  "title": "Python Basics: Data Types & Variables",
+  "content_md": "# Python Data Types & Variables\n\nVariables store information in Python. Each value has a specific type.\n\n## Common Data Types\n| Type | Example | Description |\n|------|---------|-------------|\n| `int` | `5` | Whole numbers |\n| `float` | `3.14` | Decimal numbers |\n| `str` | `'Hello'` | Text |\n| `bool` | `True` | Logical values |\n\n## Assigning Variables\n```python\nname = 'Alice'\nage = 25\nheight = 5.7\n```\n\n## Checking Types\n```python\ntype(5)       # int\ntype(3.14)    # float\ntype('Hi')    # str\n```",
+  "topic": "Python",
+  "level": 2,
+  "metadata": {
+    "source": "Python Docs",
+    "estimated_minutes": 14
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "What Python type represents decimal numbers?",
+      "answer": "The `float` type.",
+      "difficulty": 1,
+      "category": "datatype"
+    },
+    {
+      "id": 2,
+      "question": "Write code to create a variable called city and assign the value 'San Diego'.",
+      "answer": "city = 'San Diego'",
+      "difficulty": 1,
+      "category": "variables",
+      "question_type": "code"
+    },
+    {
+      "id": 3,
+      "question": "What function is used to check the type of a value?",
+      "answer": "The `type()` function.",
+      "difficulty": 1,
+      "category": "functions"
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between an `int` and a `float`?",
+      "answer": "An int is a whole number, a float has decimals.",
+      "difficulty": 2,
+      "category": "datatype"
+    }
+  ]
+}

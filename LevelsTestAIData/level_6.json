@@ -1,0 +1,15 @@
+{
+  "id": 208,
+  "slug": "python_basics_06_error_handling",
+  "title": "Python Basics: Error Handling",
+  "content_md": "# Error Handling\n\nPrograms crash without proper error handling.\n\n```python\ntry:\n    num = int('abc')\nexcept ValueError:\n    print('Invalid number')\n```\n\n## Common Exceptions\n| Exception | Meaning |\n|-----------|---------|\n| `ValueError` | Wrong value type |\n| `ZeroDivisionError` | Divide by zero |\n| `TypeError` | Wrong data type |\n\nML pipelines depend heavily on error handling.",
+  "topic": "Python",
+  "level": 6,
+  "metadata": { "estimated_minutes": 14 },
+  "questions": [
+    { "id": 1, "question": "What happens when code crashes?", "answer": "The program stops unless handled.", "difficulty": 1 },
+    { "id": 2, "question": "Write a try/except block catching ZeroDivisionError.", "answer": "try: x/0\nexcept ZeroDivisionError: print('Error')", "difficulty": 3, "question_type": "code" },
+    { "id": 3, "question": "Why use exceptions?", "answer": "To avoid crashes and handle issues gracefully.", "difficulty": 2 },
+    { "id": 4, "question": "Which exception happens when converting text to int incorrectly?", "answer": "ValueError.", "difficulty": 1 }
+  ]
+}

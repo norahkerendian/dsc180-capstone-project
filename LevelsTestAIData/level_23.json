@@ -1,0 +1,15 @@
+{
+  "id": 225,
+  "slug": "data_12_feature_selection",
+  "title": "Feature Selection",
+  "content_md": "# Feature Selection\n\nNot all variables are useful.\n\n```python\nfrom sklearn.feature_selection import SelectKBest\nimport numpy as np\nselector = SelectKBest(k=3)\nbest = selector.fit_transform(X, y)\n```\n\nGoal: keep only the useful features for prediction.",
+  "topic": "Data Science",
+  "level": 23,
+  "metadata": { "estimated_minutes": 25 },
+  "questions": [
+    { "id": 1, "question": "Why do we select features?", "answer": "To improve model performance and reduce noise.", "difficulty": 3 },
+    { "id": 2, "question": "What module provides SelectKBest?", "answer": "sklearn.feature_selection.", "difficulty": 2 },
+    { "id": 3, "question": "What does k represent in SelectKBest?", "answer": "The number of top features to keep.", "difficulty": 2 },
+    { "id": 4, "question": "What happens with too many features?", "answer": "Models overfit or become inefficient.", "difficulty": 4 }
+  ]
+}

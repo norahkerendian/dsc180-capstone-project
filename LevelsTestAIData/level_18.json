@@ -1,0 +1,15 @@
+{
+  "id": 220,
+  "slug": "data_07_matplotlib_intro",
+  "title": "Data Visualization with Matplotlib",
+  "content_md": "# Basic Plotting with Matplotlib\n\n```python\nimport matplotlib.pyplot as plt\nplt.plot([1, 2, 3], [3, 5, 2])\nplt.show()\n```\n\nCommon types:\n- Line plot\n- Bar graph\n- Scatter plot\n\nVisualizing data helps detect patterns and problems.",
+  "topic": "Data Science",
+  "level": 18,
+  "metadata": { "estimated_minutes": 22 },
+  "questions": [
+    { "id": 1, "question": "What library is commonly used for plotting in Python?", "answer": "Matplotlib.", "difficulty": 1 },
+    { "id": 2, "question": "Write code to create a basic line plot.", "answer": "plt.plot([1,2,3],[3,4,5])", "question_type": "code" },
+    { "id": 3, "question": "Why do we visualize data?", "answer": "To detect patterns, errors, and trends.", "difficulty": 3 },
+    { "id": 4, "question": "What command displays a plot on screen?", "answer": "plt.show()", "difficulty": 1 }
+  ]
+}

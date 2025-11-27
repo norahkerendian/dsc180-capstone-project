@@ -1,0 +1,15 @@
+{
+  "id": 211,
+  "slug": "python_basics_09_file_handling",
+  "title": "Working with Files",
+  "content_md": "# File Handling in Python\n\nFiles store data that programs can read and write.\n\n## Read a File\n```python\nwith open('data.txt', 'r') as f:\n    content = f.read()\n```\n\n## Write a File\n```python\nwith open('output.txt', 'w') as f:\n    f.write('Hello!')\n```",
+  "topic": "Python",
+  "level": 9,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What keyword safely opens files?", "answer": "The `with` statement.", "difficulty": 2 },
+    { "id": 2, "question": "What mode writes to a file?", "answer": "Mode `w` writes to a file.", "difficulty": 1 },
+    { "id": 3, "question": "Why use file handling?", "answer": "To store and access external data.", "difficulty": 2 },
+    { "id": 4, "question": "What happens if a file doesn’t exist when writing?", "answer": "Python creates it.", "difficulty": 3 }
+  ]
+}

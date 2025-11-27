@@ -1,0 +1,15 @@
+{
+  "id": 212,
+  "slug": "python_basics_10_imports",
+  "title": "Importing Python Libraries",
+  "content_md": "# Importing Libraries in Python\n\nLibraries add extra features to Python. They are imported using `import`.\n\n## Examples\n```python\nimport math\nimport random as rnd\nfrom datetime import datetime\n```\n\n- Use `import X` to bring in a full module\n- Use `from X import Y` to import one function\n- Use `as` to rename a module",
+  "topic": "Python",
+  "level": 10,
+  "metadata": { "estimated_minutes": 12 },
+  "questions": [
+    { "id": 1, "question": "What keyword is used to import libraries?", "answer": "`import`", "difficulty": 1 },
+    { "id": 2, "question": "What does `as` do when importing?", "answer": "It gives the library a shorter alias.", "difficulty": 2 },
+    { "id": 3, "question": "Write code to import only sqrt from math.", "answer": "from math import sqrt", "difficulty": 2, "question_type": "code" },
+    { "id": 4, "question": "What is the benefit of libraries?", "answer": "They provide pre-written tools and functions.", "difficulty": 1 }
+  ]
+}

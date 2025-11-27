@@ -1,0 +1,15 @@
+{
+  "id": 213,
+  "slug": "python_basics_11_virtualenv",
+  "title": "Virtual Environments",
+  "content_md": "# Virtual Environments\n\nA virtual environment isolates dependencies for a project.\n\n## Creating One\n```bash\npython -m venv venv\n```\n\n## Activating\n- Windows: `venv\\Scripts\\activate`\n- Mac/Linux: `source venv/bin/activate`\n\nUse `pip install X` **after activation** to keep packages isolated.",
+  "topic": "Python",
+  "level": 11,
+  "metadata": { "estimated_minutes": 15 },
+  "questions": [
+    { "id": 1, "question": "Why use virtual environments?", "answer": "To isolate package versions for each project.", "difficulty": 2 },
+    { "id": 2, "question": "What command creates a virtual environment?", "answer": "python -m venv venv", "difficulty": 2 },
+    { "id": 3, "question": "Where do you install libraries after activation?", "answer": "Inside the virtual environment using pip.", "difficulty": 2 },
+    { "id": 4, "question": "What problem do virtual environments solve?", "answer": "Package conflicts between projects.", "difficulty": 3 }
+  ]
+}

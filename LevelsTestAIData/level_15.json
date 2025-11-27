@@ -1,0 +1,15 @@
+{
+  "id": 217,
+  "slug": "data_04_pandas_selection",
+  "title": "Filtering & Selecting Data",
+  "content_md": "# Selecting Data\n\n```python\ndf['age']         # column\n\ndf[df['age'] > 30]  # filter\n```",
+  "topic": "Data Science",
+  "level": 15,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "Write code to select the age column.", "answer": "df['age']", "question_type": "code" },
+    { "id": 2, "question": "How do you apply a condition filter?", "answer": "df[df[column] > value]", "difficulty": 2 },
+    { "id": 3, "question": "Why is filtering important in ML?", "answer": "It isolates the data needed for training.", "difficulty": 3 },
+    { "id": 4, "question": "What does df.head() do?", "answer": "Shows the first rows of the DataFrame.", "difficulty": 2 }
+  ]
+}

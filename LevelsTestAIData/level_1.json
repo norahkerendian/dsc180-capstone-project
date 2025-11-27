@@ -1,0 +1,52 @@
+{
+  "id": 201,
+  "slug": "python_basics_01",
+  "title": "Python Basics: Introduction",
+  "content_md": "# Python Introduction\n\nPython is a high-level programming language known for readability and versatility.\n\n## Why Python?\n- Easy to read and write\n- Used in data science, AI, backend development, automation\n- Large community & official docs\n\n## Running Python\nYou can run Python code using:\n- Terminal: `python file.py`\n- Interactive shell: `python`\n- Jupyter notebooks\n\n## Example\n```python\nprint('Hello, Python!')\n```\n\n## Official Docs\nRefer to the Python documentation:\nhttps://docs.python.org/3/",
+  "topic": "Python",
+  "level": 1,
+  "created_at": "2025-11-14T01:11:19.340Z",
+  "updated_at": "2025-11-27T21:00:00.000Z",
+  "metadata": {
+    "source": "Official Python Docs",
+    "estimated_minutes": 12
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "What makes Python easier to learn compared to other languages?",
+      "answer": "Python has clean and readable syntax.",
+      "difficulty": 1,
+      "category": "basics",
+      "question_type": "short_answer",
+      "tags": ["syntax", "intro"]
+    },
+    {
+      "id": 2,
+      "question": "Write a Python command to display the text: Hello Python.",
+      "answer": "print('Hello Python')",
+      "difficulty": 1,
+      "category": "io",
+      "question_type": "short_answer",
+      "tags": ["print"]
+    },
+    {
+      "id": 3,
+      "question": "Where can you find the official Python documentation?",
+      "answer": "https://docs.python.org/3/",
+      "difficulty": 1,
+      "category": "reference",
+      "question_type": "short_answer",
+      "tags": ["docs"]
+    },
+    {
+      "id": 4,
+      "question": "Name one way to run Python code.",
+      "answer": "Using the terminal with python file.py.",
+      "difficulty": 1,
+      "category": "execution",
+      "question_type": "short_answer",
+      "tags": ["terminal", "execution"]
+    }
+  ]
+}

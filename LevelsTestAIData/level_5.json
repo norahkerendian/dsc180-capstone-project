@@ -1,0 +1,15 @@
+{
+  "id": 207,
+  "slug": "python_basics_05_functions",
+  "title": "Python Basics: Functions",
+  "content_md": "# Functions in Python\n\nFunctions let you reuse code efficiently.\n\n## Basic Syntax\n```python\ndef greet(name):\n    return f\"Hello, {name}!\"\n```\n\n## Why Use Functions?\n- Avoid repetition\n- Organize code\n- Enable testing\n\nFunctions are the core of all automation and reusable logic.",
+  "topic": "Python",
+  "level": 5,
+  "metadata": { "source": "Python Docs", "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What keyword defines a function?", "answer": "`def`.", "difficulty": 1 },
+    { "id": 2, "question": "What does `return` do?", "answer": "It sends a value back from the function.", "difficulty": 2 },
+    { "id": 3, "question": "Write a function called add that returns a+b.", "answer": "def add(a, b): return a + b", "difficulty": 2, "question_type": "code" },
+    { "id": 4, "question": "Why are functions useful?", "answer": "They let us reuse and organize code.", "difficulty": 1 }
+  ]
+}

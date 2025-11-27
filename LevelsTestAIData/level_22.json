@@ -1,0 +1,15 @@
+{
+  "id": 224,
+  "slug": "data_11_encoding",
+  "title": "Encoding Categorical Data",
+  "content_md": "# Encoding Categories\n\n```python\nfrom sklearn.preprocessing import OneHotEncoder\nencoder = OneHotEncoder()\nencoded = encoder.fit_transform(df[['gender']])\n```",
+  "topic": "Data Science",
+  "level": 22,
+  "metadata": { "estimated_minutes": 23 },
+  "questions": [
+    { "id": 1, "question": "Why must categories be encoded?", "answer": "ML models only understand numbers.", "difficulty": 3 },
+    { "id": 2, "question": "What method turns categories into binary columns?", "answer": "One-hot encoding.", "difficulty": 2 },
+    { "id": 3, "question": "What sklearn class performs one-hot encoding?", "answer": "OneHotEncoder.", "difficulty": 2 },
+    { "id": 4, "question": "What happens if encoding is skipped?", "answer": "Models may crash or produce wrong patterns.", "difficulty": 4 }
+  ]
+}

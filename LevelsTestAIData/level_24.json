@@ -1,0 +1,15 @@
+{
+  "id": 226,
+  "slug": "ml_01_what_is_ml",
+  "title": "Introduction to Machine Learning",
+  "content_md": "# What Is Machine Learning?\n\nMachine Learning allows computers to learn patterns from data and make predictions.\n\n## Categories of ML\n| Type | Purpose | Example |\n|------|---------|---------|\n| Supervised | Predict known outcome | Predict house prices |\n| Unsupervised | Find hidden patterns | Customer segmentation |\n| Reinforcement | Trial and error learning | Game AI |\n\nML is not magic. It is statistics, logic, and careful data work.",
+  "topic": "Machine Learning",
+  "level": 24,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What is the goal of Machine Learning?", "answer": "To learn patterns from data and make predictions.", "difficulty": 2 },
+    { "id": 2, "question": "Name two categories of ML.", "answer": "Supervised and unsupervised learning.", "difficulty": 2 },
+    { "id": 3, "question": "What type of learning is trial-and-error based?", "answer": "Reinforcement learning.", "difficulty": 3 },
+    { "id": 4, "question": "Is ML pure magic?", "answer": "No, it is careful math and statistics.", "difficulty": 1 }
+  ]
+}

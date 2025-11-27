@@ -1,0 +1,15 @@
+{
+  "id": 223,
+  "slug": "data_10_train_test_split",
+  "title": "Train-Test Split",
+  "content_md": "# Train-Test Split\n\nSplits data into training and evaluation sets.\n\n```python\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n```",
+  "topic": "Data Science",
+  "level": 21,
+  "metadata": { "estimated_minutes": 22 },
+  "questions": [
+    { "id": 1, "question": "Why do we split data?", "answer": "To test model performance on unseen data.", "difficulty": 3 },
+    { "id": 2, "question": "What does test_size=0.2 mean?", "answer": "20% of data goes to testing.", "difficulty": 2 },
+    { "id": 3, "question": "What function creates the split?", "answer": "train_test_split()", "difficulty": 2 },
+    { "id": 4, "question": "What is overfitting?", "answer": "When a model memorizes the training data instead of learning patterns.", "difficulty": 4 }
+  ]
+}

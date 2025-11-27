@@ -1,0 +1,15 @@
+{
+  "id": 227,
+  "slug": "ml_02_supervised_unsupervised",
+  "title": "Supervised vs Unsupervised Learning",
+  "content_md": "# Supervised vs Unsupervised Learning\n\n## Supervised\n- Data includes labels\n- Goal: predict known values\n- Example: spam detection\n\n## Unsupervised\n- No labels\n- Goal: find patterns\n- Example: customer segmentation\n\n```python\n# supervised requires y (labels)\n# unsupervised only uses X (features)\n```",
+  "topic": "Machine Learning",
+  "level": 25,
+  "metadata": { "estimated_minutes": 20 },
+  "questions": [
+    { "id": 1, "question": "What is a label?", "answer": "The correct output value in supervised learning.", "difficulty": 2 },
+    { "id": 2, "question": "Can unsupervised learning predict outcomes?", "answer": "No, it finds patterns without labels.", "difficulty": 3 },
+    { "id": 3, "question": "Which type is used for classification?", "answer": "Supervised learning.", "difficulty": 2 },
+    { "id": 4, "question": "Convert this to a question dataset: height → house price. Which type?", "answer": "Supervised, because the target price is included.", "difficulty": 4 }
+  ]
+}

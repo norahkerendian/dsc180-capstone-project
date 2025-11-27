@@ -1,0 +1,15 @@
+{
+  "id": 221,
+  "slug": "data_08_correlation",
+  "title": "Correlation in Data",
+  "content_md": "# Correlation Basics\n\n```python\ndf.corr()\n```\n\nCorrelation values range from -1 to 1:\n- 1 = strong positive relationship\n- -1 = strong negative relationship\n- 0 = no relationship\n\nStrong correlation is required for prediction.",
+  "topic": "Data Science",
+  "level": 19,
+  "metadata": { "estimated_minutes": 20 },
+  "questions": [
+    { "id": 1, "question": "What does df.corr() provide?", "answer": "Correlation values between variables.", "difficulty": 2 },
+    { "id": 2, "question": "What does a correlation of 0 mean?", "answer": "No linear relationship.", "difficulty": 2 },
+    { "id": 3, "question": "Why is correlation important for ML?", "answer": "It helps determine if variables are predictive.", "difficulty": 3 },
+    { "id": 4, "question": "What range can correlation values take?", "answer": "-1 to 1.", "difficulty": 2 }
+  ]
+}

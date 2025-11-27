@@ -1,0 +1,15 @@
+{
+  "id": 210,
+  "slug": "python_basics_08_oop",
+  "title": "Object-Oriented Programming Basics",
+  "content_md": "# Intro to OOP in Python\n\nOOP organizes code into classes and objects.\n\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def speak(self):\n        return 'Woof!'\n```\n\n## Why OOP?\n- Models real-world entities\n- Makes code scalable",
+  "topic": "Python",
+  "level": 8,
+  "metadata": { "estimated_minutes": 20 },
+  "questions": [
+    { "id": 1, "question": "What keyword is used to define a class?", "answer": "`class`.", "difficulty": 1 },
+    { "id": 2, "question": "What is `__init__` called?", "answer": "The constructor.", "difficulty": 2 },
+    { "id": 3, "question": "What does `self` represent?", "answer": "The instance of the class.", "difficulty": 3 },
+    { "id": 4, "question": "Why use OOP?", "answer": "It organizes code and models real-world entities.", "difficulty": 2 }
+  ]
+}

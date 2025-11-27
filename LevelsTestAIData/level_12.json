@@ -1,0 +1,15 @@
+{
+  "id": 214,
+  "slug": "data_01_numpy_arrays",
+  "title": "NumPy Arrays: Fundamentals",
+  "content_md": "# NumPy Arrays\n\nNumPy is used for fast numerical computations.\n\n```python\nimport numpy as np\narr = np.array([1, 2, 3])\n```\n\n## Why Use NumPy?\n- Faster than lists\n- Supports matrix operations\n- Backbone of machine learning libraries\n\nOfficial docs: https://numpy.org/doc/",
+  "topic": "Data Science",
+  "level": 12,
+  "metadata": { "estimated_minutes": 18 },
+  "questions": [
+    { "id": 1, "question": "What library is commonly used for numerical data?", "answer": "NumPy", "difficulty": 1 },
+    { "id": 2, "question": "Write code to create a NumPy array from 1 to 5.", "answer": "np.array([1, 2, 3, 4, 5])", "question_type": "code", "difficulty": 2 },
+    { "id": 3, "question": "Why is NumPy faster than Python lists?", "answer": "It is optimized for vectorized operations.", "difficulty": 3 },
+    { "id": 4, "question": "What function checks the shape of an array?", "answer": "array.shape", "difficulty": 2 }
+  ]
+}

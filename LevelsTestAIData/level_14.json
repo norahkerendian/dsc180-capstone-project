@@ -1,0 +1,15 @@
+{
+  "id": 216,
+  "slug": "data_03_pandas_intro",
+  "title": "Pandas DataFrames",
+  "content_md": "# Pandas DataFrames\n\nPandas handles tabular data using DataFrames.\n\n```python\nimport pandas as pd\n\ndata = {'name': ['Ana', 'Luis'], 'age': [25, 31]}\ndf = pd.DataFrame(data)\n```\n\nDataFrames are the backbone of all preprocessing and ML datasets.",
+  "topic": "Data Science",
+  "level": 14,
+  "metadata": { "estimated_minutes": 20 },
+  "questions": [
+    { "id": 1, "question": "What is a DataFrame?", "answer": "A table-like data structure.", "difficulty": 2 },
+    { "id": 2, "question": "Write code to create a DataFrame from a dictionary.", "answer": "df = pd.DataFrame(data)", "difficulty": 2, "question_type": "code" },
+    { "id": 3, "question": "What library provides DataFrames?", "answer": "Pandas.", "difficulty": 1 },
+    { "id": 4, "question": "Why are DataFrames important?", "answer": "They allow structured data analysis.", "difficulty": 3 }
+  ]
+}

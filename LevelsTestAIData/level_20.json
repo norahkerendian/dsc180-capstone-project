@@ -1,0 +1,15 @@
+{
+  "id": 222,
+  "slug": "data_09_normalization",
+  "title": "Feature Scaling & Normalization",
+  "content_md": "# Normalization\n\n```python\nfrom sklearn.preprocessing import StandardScaler\nscaler = StandardScaler()\ndf['height_scaled'] = scaler.fit_transform(df[['height']])\n```\n\nScaling ensures values are on similar ranges, helping models learn correctly.",
+  "topic": "Data Science",
+  "level": 20,
+  "metadata": { "estimated_minutes": 24 },
+  "questions": [
+    { "id": 1, "question": "Why do we scale features?", "answer": "To ensure equal influence in models.", "difficulty": 3 },
+    { "id": 2, "question": "What module provides StandardScaler?", "answer": "sklearn.preprocessing.", "difficulty": 2 },
+    { "id": 3, "question": "What happens if scaling is skipped?", "answer": "Models may perform poorly or fail.", "difficulty": 3 },
+    { "id": 4, "question": "Write code to scale an age column.", "answer": "scaler.fit_transform(df[['age']])", "question_type": "code" }
+  ]
+}
