@@ -1,0 +1,308 @@
+{
+  "name": "Runtime – Remedial Lesson & Questions (Wrong Answer)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "remediation/wrong-answer",
+        "responseMode": "onReceived",
+        "options": {
+          "responseMode": "onLastNode",
+          "responseData": "firstEntryJson"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [208, 0],
+      "id": "501927e8-548f-43c8-997a-bba539468127",
+      "name": "Webhook – Wrong Answer"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "lesson_slug",
+              "name": "lesson_slug",
+              "value": "={{ $json.question.lesson_slug }}",
+              "type": "string"
+            },
+            {
+              "id": "lesson_title",
+              "name": "lesson_title",
+              "value": "={{ 'Remediation for ' + $json.question.lesson_slug }}",
+              "type": "string"
+            },
+            {
+              "id": "topic",
+              "name": "topic",
+              "value": "={{ $json.context.topic }}",
+              "type": "string"
+            },
+            {
+              "id": "level",
+              "name": "level",
+              "value": "={{ $json.user.current_level }}",
+              "type": "number"
+            },
+            {
+              "id": "lesson_text",
+              "name": "lesson_text",
+              "value": "={{ $json.context.lesson_text }}",
+              "type": "string"
+            },
+            {
+              "id": "question_text",
+              "name": "question_text",
+              "value": "={{ $json.question.text }}",
+              "type": "string"
+            },
+            {
+              "id": "correct_answer",
+              "name": "correct_answer",
+              "value": "={{ $json.question.correct_answer }}",
+              "type": "string"
+            },
+            {
+              "id": "user_answer",
+              "name": "user_answer",
+              "value": "={{ $json.user_answer }}",
+              "type": "string"
+            },
+            {
+              "id": "user_id",
+              "name": "user_id",
+              "value": "={{ $json.user.id }}",
+              "type": "string"
+            },
+            {
+              "id": "question_id",
+              "name": "question_id",
+              "value": "={{ $json.question.id }}",
+              "type": "string"
+            },
+            {
+              "id": "attempt_id",
+              "name": "attempt_id",
+              "value": "={{ $json.attempt_id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [528, 0],
+      "id": "1aa3c826-6ac4-4b54-9a43-b035462b4a04",
+      "name": "Set – Lesson Metadata"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:11434/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"deepseek-r1:1.5b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You are an adaptive tutor for a data science learning app.\\n\\nYou are given:\\n- A LESSON_TEXT (or relevant snippet)\\n- The original QUESTION and its CORRECT_ANSWER\\n- The USER_ANSWER that was wrong\\n- Metadata such as lesson_slug, topic, and level\\n\\nYour job is:\\n1. Analyze the mistake: what concept(s) is the user missing?\\n2. Write a short MINI_LESSON that focuses only on those missing concepts.\\n3. Generate 2–5 REMEDIATION_QUESTIONS to help the user fix their misunderstanding.\\n4. Propose 3 FOLLOWUP_OPTIONS the UI can show as buttons.\\n\\nReturn ONLY valid JSON with this exact schema:\\n\\n{\\n  \\\"mini_lesson\\\": {\\n    \\\"title\\\": string,\\n    \\\"explanation\\\": string,\\n    \\\"bullet_points\\\": string[],\\n    \\\"suggested_code_example\\\": string\\n  },\\n  \\\"remediation_questions\\\": [\\n    {\\n      \\\"question\\\": string,\\n      \\\"answer\\\": string,\\n      \\\"difficulty\\\": number,\\n      \\\"category\\\": string,\\n      \\\"question_type\\\": \\\"short_answer\\\",\\n      \\\"source\\\": \\\"remediation\\\"\\n    }\\n  ],\\n  \\\"followup_options\\\": string[]\\n}\\n\\nDo not include any Markdown fences, commentary, or extra fields. Just the JSON.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Lesson metadata:\\n- slug: {{ $json.lesson_slug }}\\n- title: {{ $json.lesson_title }}\\n- topic: {{ $json.topic }}\\n- level: {{ $json.level }}\\n\\nORIGINAL_QUESTION:\\n{{ $json.question_text }}\\n\\nCORRECT_ANSWER:\\n{{ $json.correct_answer }}\\n\\nUSER_ANSWER:\\n{{ $json.user_answer }}\\n\\nLESSON_TEXT:\\n{{ $json.lesson_text }}\"\n    }\n  ],\n  \"temperature\": 0.2\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [768, 0],
+      "id": "9b475eca-2ebe-47ef-8266-7ca6cfedfa54",
+      "name": "LLM – Build Lesson Bundle (DeepSeek)"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Parse DeepSeek bundle and emit:\n// - one item per remediation question (for DB)\n// - one item with mini_lesson + followup_options (for frontend)\n\n// DeepSeek returns OpenAI-style response: JSON is inside choices[0].message.content.\nconst raw =\n  $json.choices &&\n  Array.isArray($json.choices) &&\n  $json.choices[0] &&\n  $json.choices[0].message &&\n  typeof $json.choices[0].message.content === 'string'\n    ? $json.choices[0].message.content.trim()\n    : '';\n\nif (!raw) {\n  throw new Error('LLM response is empty or missing choices[0].message.content');\n}\n\nlet bundle;\ntry {\n  bundle = JSON.parse(raw);\n} catch (err) {\n  throw new Error(\n    'Failed to parse LLM JSON: ' +\n      err.message +\n      '\\nRaw content (first 500 chars):\\n' +\n      raw.slice(0, 500)\n  );\n}\n\nconst miniLesson = bundle.mini_lesson || {};\nconst remediationQuestions = Array.isArray(bundle.remediation_questions)\n  ? bundle.remediation_questions\n  : [];\nconst followupOptions = Array.isArray(bundle.followup_options)\n  ? bundle.followup_options\n  : [];\n\n// Get normalized metadata from Set – Lesson Metadata\nconst meta = $node['Set – Lesson Metadata'].json;\n\n// 1) Items for remediation questions (to store in Supabase)\nconst items = remediationQuestions.map((q, index) => ({\n  json: {\n    type: 'remediation_question',\n    // lesson-level\n    lesson_slug: meta.lesson_slug,\n    topic: meta.topic,\n    level: meta.level,\n    // user/traceability\n    user_id: meta.user_id,\n    original_question_id: meta.question_id,\n    attempt_id: meta.attempt_id || null,\n    // question-level\n    question: q.question,\n    answer: q.answer,\n    difficulty: typeof q.difficulty === 'number' ? q.difficulty : 1,\n    category: q.category || 'unspecified',\n    question_type: q.question_type || 'short_answer',\n    source: q.source || 'remediation',\n    index\n  }\n}));\n\n// 2) One extra item with the mini lesson + followup options (for the frontend)\nitems.push({\n  json: {\n    type: 'mini_lesson_payload',\n    lesson_slug: meta.lesson_slug,\n    topic: meta.topic,\n    level: meta.level,\n    mini_lesson: miniLesson,\n    followup_options: followupOptions\n  }\n});\n\nreturn items;"
+      },
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1040, 0],
+      "id": "0f05f9d9-1926-4b42-99e1-0b2bae723907",
+      "name": "Function – Flatten Lesson Bundle"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{ $json.type }}",
+              "operation": "equals",
+              "value2": "remediation_question"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1200, 200],
+      "id": "if-remediation-question",
+      "name": "IF – Is Remediation Question?"
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "mode": "list",
+          "value": "questions"
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [1440, 80],
+      "id": "b8a2e1ac-3a5e-4f32-9f2e-6d6502f4e9a1",
+      "name": "Supabase – Insert Questions"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "mini_lesson",
+              "name": "mini_lesson",
+              "value": "={{ $json.mini_lesson }}",
+              "type": "object"
+            },
+            {
+              "id": "followup_options",
+              "name": "followup_options",
+              "value": "={{ $json.followup_options }}",
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1440, 320],
+      "id": "set-response-payload",
+      "name": "Set – Response Payload"
+    },
+    {
+      "parameters": {
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson"
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1640, 320],
+      "id": "respond-mini-lesson",
+      "name": "Respond – Mini Lesson"
+    },
+    {
+      "parameters": {
+        "content": "## Notes\n1. This workflow builds a question bank from a single LESSON_TEXT using DeepSeek.\n2. The Set – Lesson Metadata node is where you paste your synthetic lesson for now.\n3. Supabase – Insert Questions needs column mappings configured in the n8n UI.\n4. Later, we can swap the Set node to pull lessons from Supabase instead of hardcoding.",
+        "height": 240,
+        "width": 560
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [80, -320],
+      "id": "688f3b10-eed5-47dd-bc80-6bd452fbce48",
+      "name": "Sticky Note – Workflow 1 Overview"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook – Wrong Answer": {
+      "main": [
+        [
+          {
+            "node": "Set – Lesson Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set – Lesson Metadata": {
+      "main": [
+        [
+          {
+            "node": "LLM – Build Lesson Bundle (DeepSeek)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM – Build Lesson Bundle (DeepSeek)": {
+      "main": [
+        [
+          {
+            "node": "Function – Flatten Lesson Bundle",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Function – Flatten Lesson Bundle": {
+      "main": [
+        [
+          {
+            "node": "IF – Is Remediation Question?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF – Is Remediation Question?": {
+      "main": [
+        [
+          {
+            "node": "Supabase – Insert Questions",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set – Response Payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set – Response Payload": {
+      "main": [
+        [
+          {
+            "node": "Respond – Mini Lesson",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a1707cc1-f490-4697-96fd-ad875ac38c00",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1974dd6ca7423d3098b399538292493b1591b626bf174604d4a363247723d1d7"
+  },
+  "id": "Y1sQ0G73WlNEpWVh",
+  "tags": []
+}

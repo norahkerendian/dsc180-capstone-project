@@ -1,0 +1,203 @@
+{
+  "name": "Offline – Build Question Bank from Lesson (Lesson Bundle → Supabase)",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [208, 0],
+      "id": "501927e8-548f-43c8-997a-bba539468127",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/norahkerendian/dsc180a-q1/refs/heads/main/AIGeneratedData_json/test_questions.json?token=GHSAT0AAAAAADNZC4XN6QNDD3KJSGQD36WO2I7TWYA",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [368, 0],
+      "id": "d8138587-873c-48e6-bf54-9b19278db2e2",
+      "name": "HTTP Request (unused for now)"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "lesson_slug",
+              "name": "lesson_slug",
+              "value": "level_1_python_basics",
+              "type": "string"
+            },
+            {
+              "id": "lesson_title",
+              "name": "lesson_title",
+              "value": "Level 1 – Python Basics (Synthetic)",
+              "type": "string"
+            },
+            {
+              "id": "topic",
+              "name": "topic",
+              "value": "Python",
+              "type": "string"
+            },
+            {
+              "id": "level",
+              "name": "level",
+              "value": 1,
+              "type": "number"
+            },
+            {
+              "id": "lesson_text",
+              "name": "lesson_text",
+              "value": "PASTE YOUR LONG SYNTHETIC LESSON TEXT HERE. You can later swap this to pull from GitHub or Supabase instead of hardcoding.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [528, 0],
+      "id": "1aa3c826-6ac4-4b54-9a43-b035462b4a04",
+      "name": "Set – Lesson Metadata"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:11434/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"model\": \"deepseek-r1:1.5b\",\n  \"messages\": [\n    {\n      \"role\": \"system\",\n      \"content\": \"You generate structured lesson question banks for a data science learning app.\\n\\nYou are given the full LESSON_TEXT plus some metadata. Your task:\\n\\n1. Understand the lesson and keep its scope.\\n2. Create a small set of 8–20 short-answer questions whose answers are fully determined by the lesson.\\n3. For each question, also provide a concise answer.\\n4. Classify each question with a simple category and difficulty level (1=easy, 2=medium, 3=hard).\\n\\nReturn ONLY valid JSON with this exact schema:\\n\\n{\\n  \\\"lesson\\\": {\\n    \\\"slug\\\": string,\\n    \\\"title\\\": string,\\n    \\\"topic\\\": string,\\n    \\\"level\\\": number\\n  },\\n  \\\"questions\\\": [\\n    {\\n      \\\"question\\\": string,\\n      \\\"answer\\\": string,\\n      \\\"difficulty\\\": number,\\n      \\\"category\\\": string,\\n      \\\"question_type\\\": \\\"short_answer\\\"\\n    }\\n  ]\\n}\\n\\nDo not include any Markdown code fences, explanations, or extra text. Just the JSON.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": \"Lesson metadata:\\n- slug: {{ $json.lesson_slug }}\\n- title: {{ $json.lesson_title }}\\n- topic: {{ $json.topic }}\\n- level: {{ $json.level }}\\n\\nLESSON_TEXT:\\n{{ $json.lesson_text }}\"\n    }\n  ],\n  \"temperature\": 0.2\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [768, 0],
+      "id": "9b475eca-2ebe-47ef-8266-7ca6cfedfa54",
+      "name": "LLM – Build Lesson Bundle (DeepSeek)"
+    },
+    {
+      "parameters": {
+        "functionCode": "// Parse DeepSeek bundle and emit one item per question with lesson metadata.\n\n// DeepSeek returns an OpenAI-style response; JSON bundle is inside choices[0].message.content.\nconst raw =\n  $json.choices &&\n  Array.isArray($json.choices) &&\n  $json.choices[0] &&\n  $json.choices[0].message &&\n  typeof $json.choices[0].message.content === 'string'\n    ? $json.choices[0].message.content.trim()\n    : '';\n\nif (!raw) {\n  throw new Error('LLM response is empty or missing choices[0].message.content');\n}\n\nlet bundle;\ntry {\n  bundle = JSON.parse(raw);\n} catch (err) {\n  throw new Error(\n    'Failed to parse LLM JSON: ' +\n      err.message +\n      '\\nRaw content (first 500 chars):\\n' +\n      raw.slice(0, 500)\n  );\n}\n\nconst lesson = bundle.lesson || {};\nconst questions = Array.isArray(bundle.questions) ? bundle.questions : [];\n\n// Get original metadata from the Set node (first item)\nconst metaItems = $node['Set – Lesson Metadata'].json;\nconst metaNode = Array.isArray(metaItems) ? metaItems[0] : metaItems || {};\n\nreturn questions.map((q, index) => ({\n  json: {\n    // lesson-level data\n    lesson_slug: lesson.slug || metaNode.lesson_slug,\n    lesson_title: lesson.title || metaNode.lesson_title,\n    topic: lesson.topic || metaNode.topic,\n    level:\n      typeof lesson.level === 'number'\n        ? lesson.level\n        : metaNode.level,\n\n    // question-level data\n    question: q.question,\n    answer: q.answer,\n    difficulty:\n      typeof q.difficulty === 'number' ? q.difficulty : 1,\n    category: q.category || 'unspecified',\n    question_type: q.question_type || 'short_answer',\n    source: 'baseline',\n    index\n  }\n}));"
+      },
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1040, 0],
+      "id": "0f05f9d9-1926-4b42-99e1-0b2bae723907",
+      "name": "Function – Flatten Lesson Bundle"
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "mode": "list",
+          "value": "questions"
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [1312, 0],
+      "id": "b8a2e1ac-3a5e-4f32-9f2e-6d6502f4e9a1",
+      "name": "Supabase – Insert Questions"
+    },
+    {
+      "parameters": {
+        "content": "## Notes\n1. This workflow builds a question bank from a single LESSON_TEXT using DeepSeek.\n2. The Set – Lesson Metadata node is where you paste your synthetic lesson for now.\n3. Supabase – Insert Questions needs column mappings configured in the n8n UI.\n4. Later, we can swap the Set node to pull lessons from Supabase instead of hardcoding.",
+        "height": 240,
+        "width": 560
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [80, -320],
+      "id": "688f3b10-eed5-47dd-bc80-6bd452fbce48",
+      "name": "Sticky Note – Workflow 1 Overview"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (unused for now)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request (unused for now)": {
+      "main": [
+        [
+          {
+            "node": "Set – Lesson Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set – Lesson Metadata": {
+      "main": [
+        [
+          {
+            "node": "LLM – Build Lesson Bundle (DeepSeek)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "LLM – Build Lesson Bundle (DeepSeek)": {
+      "main": [
+        [
+          {
+            "node": "Function – Flatten Lesson Bundle",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Function – Flatten Lesson Bundle": {
+      "main": [
+        [
+          {
+            "node": "Supabase – Insert Questions",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "a1707cc1-f490-4697-96fd-ad875ac38c00",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1974dd6ca7423d3098b399538292493b1591b626bf174604d4a363247723d1d7"
+  },
+  "id": "Y1sQ0G73WlNEpWVh",
+  "tags": []
+}
