@@ -1,0 +1,54 @@
+[
+  {
+    "lesson_slug": "0111computational-toolsmd",
+    "lesson_title": "Computational-Tools",
+    "topic": "Python",
+    "level": 1,
+    "question": "What is supervised learning in data science?",
+    "answer": "Supervised learning involves training a model on labeled data, where each input comes with a correct output.",
+    "difficulty": 1,
+    "category": "definition",
+    "question_type": "short_answer",
+    "source": "baseline",
+    "index": 0
+  },
+  {
+    "lesson_slug": "0111computational-toolsmd",
+    "lesson_title": "Computational-Tools",
+    "topic": "Python",
+    "level": 1,
+    "question": "What is the goal of unsupervised learning?",
+    "answer": "Unsupervised learning seeks to identify hidden patterns or groupings in unlabeled data without predefined categories.",
+    "difficulty": 2,
+    "category": "concept_check",
+    "question_type": "short_answer",
+    "source": "baseline",
+    "index": 1
+  },
+  {
+    "lesson_slug": "0111computational-toolsmd",
+    "lesson_title": "Computational-Tools",
+    "topic": "Python",
+    "level": 1,
+    "question": "Can you name some common algorithms used in supervised learning?",
+    "answer": "Common algorithms include linear regression and decision trees.",
+    "difficulty": 2,
+    "category": "application",
+    "question_type": "short_answer",
+    "source": "baseline",
+    "index": 2
+  },
+  {
+    "lesson_slug": "0111computational-toolsmd",
+    "lesson_title": "Computational-Tools",
+    "topic": "Python",
+    "level": 1,
+    "question": "What types of techniques fall under unsupervised learning?",
+    "answer": "Techniques such as clustering and dimensionality reduction fall under unsupervised learning.",
+    "difficulty": 3,
+    "category": "concept_check",
+    "question_type": "short_answer",
+    "source": "baseline",
+    "index": 3
+  }
+]
