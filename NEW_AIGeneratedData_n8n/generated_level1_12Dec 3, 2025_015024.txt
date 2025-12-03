@@ -1,0 +1,10 @@
+[
+  {
+    "lesson_slug": "0111computational-toolsmd",
+    "lesson_title": "Computational-Tools",
+    "topic": "Python",
+    "level": 1,
+    "lesson_text": "Computational Tools  This text uses the Python 3 programming language, along with a standard set of numerical and data visualization tools that are used widely in commercial applications, scientific experiments, and opensource projects. Python has recruited enthusiasts from many professions that use data to draw conclusions. By learning the Python language, you will join a millionpersonstrong community of software developers and data scientists. Getting Started. The easiest and recommended way to start writing programs in Python is to log into the companion site for this text, . If you have a \\@berkeley.edu email address, you already have full access to the programming environment hosted on that site. You are not at all restricted to using this webbased programming environment. A Python program can be executed by any computer, regardless of its manufacturer or operating system, provided ",
+    "chunk_id": "0"
+  }
+]
