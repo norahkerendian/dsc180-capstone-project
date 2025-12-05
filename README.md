@@ -9,6 +9,8 @@ If you're reading this, you're either running the workflow locally, inspecting t
 - What this is: an automated workflow (built with n8n) that pulls source JSON, runs AI nodes to produce questions, and saves the generated items into the `AIGeneratedData_n8n` output folder.
 - Who it's for: data/ML engineers who want to run or modify the workflow, and frontend developers who want to read the produced JSON and render it.
 
+**NOTE:** We are still developing a more advanced version of our question-generation workflow. The updated workflows are in the `workflows` folder and the process to see them is the same as below. However, it does use a different dataset under `data_scraping/levels/level_1.json`. 
+
 ## Contract (what this repo expects and produces)
 
 - Inputs: source files in `ogData/` (CSV/JSON) and the `generated_level1_*.json` files in `AIGeneratedData_json/` used by the n8n workflow.
