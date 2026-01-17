@@ -773,8 +773,20 @@
         "hint": "He was an anesthesiologist famous for his work during a cholera outbreak in London.",
         "difficulty": 3,
         "category": "fun_fact"
+      }, 
+      {"id": 5,
+        "prompt": "What is a blind study in the context of research?",
+        "choices": [
+          "A blind study is one in which participants do not know which group (treatment or control) they are in, reducing bias in the results.",
+          "A blind study is one where both the researchers and participants know the group allocations.",
+          "A blind study refers to research conducted without any predefined hypothesis.",
+          "A blind study is one where the results are not analyzed until the study is completed."
+        ],
+        "answerIndex": 0,
+        "hint": "Consider how the bias is reduced in the participants' knowledge of their group assignment.",
+        "difficulty": 2,
+        "category": "concept_check"
       },
-      null,
       {
         "id": 6,
         "prompt": "What is the purpose of RCTs (Randomized Controlled Trials) in research?",
@@ -1072,7 +1084,21 @@
         "difficulty": 1,
         "category": "concept_check"
       },
-      null,
+      {
+        "lessonId": 663140214,
+        "id": 8,
+        "prompt": "Why is understanding how to use methods fundamental in Python?",
+        "choices": [
+          "Understanding how to use methods is fundamental because they apply to many different types of objects in Python, not just strings.",
+          "Understanding how to use methods is fundamental because they only apply to string objects in Python.",
+          "Understanding how to use methods is fundamental because they allow Python to automatically update.",
+          "Understanding how to use methods is fundamental because they make Python code run faster."
+        ],
+        "answerIndex": 0,
+        "hint": "Think about the versatility of methods in Python beyond just handling strings.",
+        "difficulty": 2,
+        "category": "application"
+      },
       {
         "id": 9,
         "prompt": "What does the lesson introduce about methods?",
