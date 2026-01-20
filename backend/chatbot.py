@@ -24,7 +24,7 @@ def get_openai_client() -> OpenAI:
 
 def get_model() -> str:
     """Get the configured model name."""
-    return os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+    return os.getenv("OPENAI_MODEL", "gpt-5-mini")
 
 
 # System prompt for the chatbot
