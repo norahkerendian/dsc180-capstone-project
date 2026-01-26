@@ -1028,87 +1028,6 @@
     ]
   },
   {
-    "id": 885316205,
-    "slug": "intromd",
-    "title": "Intro",
-    "topic": "Data Science",
-    "level": 1,
-    "metadata": {
-      "source": "Data 8 Textbook (local copy)",
-      "source_path": "intro.md",
-      "word_count": 119,
-      "estimated_minutes": 1
-    },
-    "questions": [
-      {
-        "id": 1,
-        "question": "What foundational concepts in data science help in understanding and processing data?",
-        "answer": "Computational and inferential thinking are foundational concepts in data science that help in understanding and processing data.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 2,
-        "question": "What allows data scientists to make predictions and conclusions about broader populations from sample data?",
-        "answer": "Inferential thinking allows data scientists to make predictions and conclusions about broader populations from sample data.",
-        "difficulty": 3,
-        "category": "concept_check"
-      },
-      {
-        "id": 3,
-        "question": "What does computational thinking involve?",
-        "answer": "Computational thinking involves utilizing algorithms, automating processes, and managing data to solve problems.",
-        "difficulty": 3,
-        "category": "definition"
-      }
-    ],
-    "content_md": "title: 'Computational and Inferential Thinking: The Foundations of Data Science' numbering: title: false  2nd Edition by , , . This text was originally developed for the UC Berkeley course .",
-    "mcq_questions": [
-      {
-        "id": 1,
-        "prompt": "What foundational concepts in data science help in understanding and processing data?",
-        "choices": [
-          "Data visualization and machine learning are fundamental to comprehending and processing data in science.",
-          "Linear regression and data mining are the main approaches used in data science for data processing.",
-          "Computational and inferential thinking are foundational concepts in data science that help in understanding and processing data.",
-          "Statistical and qualitative analysis are key concepts in data science that aid in data interpretation."
-        ],
-        "answerIndex": 2,
-        "hint": "Think about the types of thinking that are essential to analyzing and making sense of data.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 2,
-        "prompt": "What allows data scientists to make predictions and conclusions about broader populations from sample data?",
-        "choices": [
-          "Data visualization allows data scientists to make predictions and conclusions about broader populations from sample data.",
-          "Descriptive analysis allows data scientists to make predictions and conclusions about broader populations from sample data.",
-          "Inferential thinking allows data scientists to make predictions and conclusions about broader populations from sample data.",
-          "Exploratory data analysis allows data scientists to make predictions and conclusions about broader populations from sample data."
-        ],
-        "answerIndex": 2,
-        "hint": "Think about the type of analysis that focuses on making inferences beyond observed data.",
-        "difficulty": 3,
-        "category": "concept_check"
-      },
-      {
-        "id": 3,
-        "prompt": "What does computational thinking involve?",
-        "choices": [
-          "Computational thinking involves creating graphic designs and user interfaces.",
-          "Computational thinking involves writing computer code and debugging software applications.",
-          "Computational thinking involves designing hardware components and computer networks.",
-          "Computational thinking involves utilizing algorithms, automating processes, and managing data to solve problems."
-        ],
-        "answerIndex": 3,
-        "hint": "Think about problem-solving methods related to computers and data.",
-        "difficulty": 3,
-        "category": "definition"
-      }
-    ]
-  },
-  {
     "id": 1176507067,
     "slug": "032namesipynb",
     "title": "Names",
@@ -3529,6 +3448,27 @@
         "answer": "A nuanced analysis in data science involves looking beyond simple averages, considering a broader range of data to make more nuanced insights.",
         "difficulty": 1,
         "category": "definition"
+      },
+      {
+        "id": 11,
+        "question": "What foundational concepts in data science help in understanding and processing data?",
+        "answer": "Computational and inferential thinking are foundational concepts in data science that help in understanding and processing data.",
+        "difficulty": 1,
+        "category": "concept_check"
+      },
+      {
+        "id": 12,
+        "question": "What allows data scientists to make predictions and conclusions about broader populations from sample data?",
+        "answer": "Inferential thinking allows data scientists to make predictions and conclusions about broader populations from sample data.",
+        "difficulty": 3,
+        "category": "concept_check"
+      },
+      {
+        "id": 13,
+        "question": "What does computational thinking involve?",
+        "answer": "Computational thinking involves utilizing algorithms, automating processes, and managing data to solve problems.",
+        "difficulty": 3,
+        "category": "definition"
       }
     ],
     "content_md": "Introduction  Data are descriptions of the world around us, collected through observation and stored on computers. Computers enable us to infer properties of the world from these descriptions. Data science is the discipline of drawing conclusions from data using computation. There are three core aspects of effective data analysis: exploration, prediction, and inference. This text develops a consistent approach to all three, introducing statistical ideas and fundamental ideas in computer science concurrently. We focus on a minimal set of core techniques that can be applied to a vast range of realworld applications. A foundation in data science requires not only understanding statistical and computational techniques, but also recognizing how they apply to real scenarios. For whatever aspect of the world we wish to study—whether it's the Earth's weather, the world's markets, political polls\n\n, or the human mind—data we collect typically offer an incomplete description of the subject at hand. A central challenge of data science is to make reliable conclusions using this partial information. In this endeavor, we will combine two essential tools: computation and randomization. For example, we may want to understand climate change trends using temperature observations. Computers will allow us to use all available information to draw conclusions. Rather than focusing only on the average temperature of a region, we will consider the whole range of temperatures together to construct a more nuanced analysis. Randomness will allow us to consider the many different ways in which incomplete information might be completed. Rather than assuming that temperatures vary in a particular way, we will learn to use randomness as a way to imagine many possible scenarios that are all consistent w\n\nith the data we observe. Applying this approach requires learning to program a computer, and so this text interleaves a complete introduction to programming that assumes no prior knowledge. Readers with programming experience will find that we cover several topics in computation that do not appear in a typical introductory computer science curriculum. Data science also requires careful reasoning about numerical quantities, but this text does not assume any background in mathematics or statistics beyond basic algebra. You will find very few equations in this text. Instead, techniques are described to readers in the same language in which they are described to the computers that execute them—a programming language.",
@@ -3671,6 +3611,48 @@
         "answerIndex": 1,
         "hint": "Consider the importance of looking at all aspects of data rather than just central tendencies.",
         "difficulty": 1,
+        "category": "definition"
+      },
+      {
+        "id": 11,
+        "prompt": "What foundational concepts in data science help in understanding and processing data?",
+        "choices": [
+          "Data visualization and machine learning are fundamental to comprehending and processing data in science.",
+          "Linear regression and data mining are the main approaches used in data science for data processing.",
+          "Computational and inferential thinking are foundational concepts in data science that help in understanding and processing data.",
+          "Statistical and qualitative analysis are key concepts in data science that aid in data interpretation."
+        ],
+        "answerIndex": 2,
+        "hint": "Think about the types of thinking that are essential to analyzing and making sense of data.",
+        "difficulty": 1,
+        "category": "concept_check"
+      },
+      {
+        "id": 12,
+        "prompt": "What allows data scientists to make predictions and conclusions about broader populations from sample data?",
+        "choices": [
+          "Data visualization allows data scientists to make predictions and conclusions about broader populations from sample data.",
+          "Descriptive analysis allows data scientists to make predictions and conclusions about broader populations from sample data.",
+          "Inferential thinking allows data scientists to make predictions and conclusions about broader populations from sample data.",
+          "Exploratory data analysis allows data scientists to make predictions and conclusions about broader populations from sample data."
+        ],
+        "answerIndex": 2,
+        "hint": "Think about the type of analysis that focuses on making inferences beyond observed data.",
+        "difficulty": 3,
+        "category": "concept_check"
+      },
+      {
+        "id": 13,
+        "prompt": "What does computational thinking involve?",
+        "choices": [
+          "Computational thinking involves creating graphic designs and user interfaces.",
+          "Computational thinking involves writing computer code and debugging software applications.",
+          "Computational thinking involves designing hardware components and computer networks.",
+          "Computational thinking involves utilizing algorithms, automating processes, and managing data to solve problems."
+        ],
+        "answerIndex": 3,
+        "hint": "Think about problem-solving methods related to computers and data.",
+        "difficulty": 3,
         "category": "definition"
       }
     ]
