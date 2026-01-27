@@ -91,15 +91,18 @@ class ChatResponse(BaseModel):
     token_estimate: int
 
 
-class QuestionInfo(BaseModel):
-    """Question details response.
+class MCQInfo(BaseModel):
+    """MCQ question details response.
 
-    Note: questions are nested under lessons in the lessons JSON file.
-    This response "denormalizes" the lesson info for convenience.
+    MCQs are nested under lessons as `lesson['mcq_questions']`.
+    This response denormalizes the lesson info for convenience.
     """
+
     id: int
-    question: str
-    answer: str
+    prompt: str
+    choices: list[str]
+    hint: Optional[str] = None
+    answer_index: Optional[int] = None
     difficulty: Optional[int] = None
     category: Optional[str] = None
     lesson_id: int
@@ -127,7 +130,7 @@ async def list_lessons():
             "title": lesson.get("title"),
             "topic": lesson.get("topic"),
             "level": lesson.get("level"),
-            "question_count": len(lesson.get("questions", [])),
+            "question_count": len(lesson.get("mcq_questions", [])),
         }
         for lesson in LESSONS_DATA
     ]
@@ -142,7 +145,7 @@ async def get_lesson(lesson_id: int):
     return lesson
 
 
-@app.get("/questions/{question_id}", response_model=QuestionInfo)
+@app.get("/questions/{question_id}", response_model=MCQInfo)
 async def get_question(question_id: int):
     """Get a specific question by ID with its lesson info."""
     question = get_question_by_id(LESSONS_DATA, question_id)

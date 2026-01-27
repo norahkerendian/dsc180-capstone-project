@@ -18,10 +18,20 @@ Conversation history format:
 
 import os
 from typing import Optional
+from pathlib import Path
+
 from openai import OpenAI
 from dotenv import load_dotenv
 
+# Load environment variables.
+#
+# When running `python backend/main.py` from the repo root, the current working
+# directory is *not* `backend/`, so a `backend/.env` file would be missed by a
+# plain `load_dotenv()` call. We load both:
+# - default search (cwd + parents)
+# - explicit `backend/.env`
 load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).parent / ".env", override=False)
 
 
 def _extract_assistant_text(message) -> str:
