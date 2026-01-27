@@ -79,12 +79,14 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
     if lesson_id is not None:
         print(f"Lesson filter: {lesson_id}")
 
-    for qid in assigned:
+    total = len(assigned)
+    for idx_in_set, qid in enumerate(assigned, start=1):
         mcq = get_mcq_by_id(lessons, qid)
         if not mcq:
             continue
 
         conversation_history: list[dict] = []
+        print(f"\n(Question {idx_in_set}/{total})")
         _print_question(mcq)
 
         while True:
@@ -92,13 +94,19 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
             if not raw:
                 continue
 
-            if raw in {"quit", "exit", "q"}:
+            cmd = raw.lower()
+
+            if cmd in {"quit", "exit", "q"}:
                 return
 
-            if raw in {"next", "n"}:
+            if cmd in {"next", "n"}:
+                if idx_in_set < total:
+                    print("Moving to next question...")
+                else:
+                    print("No more assigned questions. Ending session.")
                 break
 
-            if raw == "hint":
+            if cmd == "hint":
                 hint = mcq.get("hint")
                 if isinstance(hint, str) and hint.strip():
                     print(f"Hint: {hint.strip()}")
@@ -106,7 +114,7 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
                     print("No hint available.")
                 continue
 
-            if raw == "reveal":
+            if cmd == "reveal":
                 correct_index = mcq.get("answer_index")
                 if correct_index is None:
                     print("No answer key available.")
@@ -116,7 +124,7 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
                     print(f"Answer: {correct_index} -> {correct_text}")
                 continue
 
-            if raw.startswith("answer "):
+            if cmd.startswith("answer "):
                 try:
                     idx = int(raw.split(maxsplit=1)[1])
                 except Exception:
@@ -125,7 +133,7 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
                 _check_answer(mcq, idx)
                 continue
 
-            if raw.startswith("ai "):
+            if cmd.startswith("ai "):
                 user_message = raw.split(" ", 1)[1].strip()
                 if not user_message:
                     print("Usage: ai <message>")
@@ -149,6 +157,8 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
                 continue
 
             print("Unknown command. Try: answer/hint/ai/reveal/next/quit")
+
+    print("\nSession complete.")
 
 
 def main() -> None:
