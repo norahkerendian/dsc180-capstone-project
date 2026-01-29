@@ -94,6 +94,44 @@
 // }
 ///////////////////////////////////////////// calude v1//////////////////////////////////////////
 
+// "use client";
+
+// import React, { useEffect, useState } from "react";
+// import { usePathname } from "next/navigation";
+// import TopBar from "./components/TopBar";
+
+// export default function ClientShell({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   const [ready, setReady] = useState(false);
+//   const pathname = usePathname();
+  
+//   // Don't show TopBar on landing page
+//   const isLandingPage = pathname === "/";
+
+//   useEffect(() => {
+//     setReady(true);
+//   }, []);
+
+//   if (!ready) return null;
+
+//   return (
+//     <>
+//       {!isLandingPage && <TopBar />}
+//       <main
+//         style={!isLandingPage ? { paddingTop: "80px" } : {}}
+//         className={!isLandingPage ? "px-4 sm:px-6 lg:px-8" : ""}
+//       >
+//         {children}
+//       </main>
+//     </>
+//   );
+// }
+
+
+//////////////////////// Hide TopBar ////////////////////////////
 "use client";
 
 import React, { useEffect, useState } from "react";
@@ -108,8 +146,8 @@ export default function ClientShell({
   const [ready, setReady] = useState(false);
   const pathname = usePathname();
   
-  // Don't show TopBar on landing page
-  const isLandingPage = pathname === "/";
+  // Don't show TopBar on landing page or login page
+  const hideTopBar = pathname === "/" || pathname === "/login";
 
   useEffect(() => {
     setReady(true);
@@ -117,17 +155,21 @@ export default function ClientShell({
 
   if (!ready) return null;
 
+  // If hiding TopBar, render children directly without wrapper
+  if (hideTopBar) {
+    return <>{children}</>;
+  }
+
+  // Otherwise, render with TopBar and padding
   return (
     <>
-      {!isLandingPage && <TopBar />}
+      <TopBar />
       <main
-        style={!isLandingPage ? { paddingTop: "80px" } : {}}
-        className={!isLandingPage ? "px-4 sm:px-6 lg:px-8" : ""}
+        style={{ paddingTop: "80px" }}
+        className="px-4 sm:px-6 lg:px-8"
       >
         {children}
       </main>
     </>
   );
 }
-
-
