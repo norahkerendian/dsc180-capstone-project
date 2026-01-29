@@ -118,11 +118,11 @@ export default function Home() {
             {/* Stats */}
             <div className="flex gap-8 pt-6">
               <div>
-                <div className="text-3xl font-bold text-green-600">500+</div>
+                <div className="text-3xl font-bold text-green-600">50+</div>
                 <div className="text-sm text-gray-600">Lessons</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600">1000+</div>
+                <div className="text-3xl font-bold text-blue-600">100+</div>
                 <div className="text-sm text-gray-600">Practice MCQs</div>
               </div>
               <div>
