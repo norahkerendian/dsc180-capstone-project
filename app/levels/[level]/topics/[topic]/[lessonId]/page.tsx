@@ -240,9 +240,9 @@ export default function LessonDetailPage() {
 
             <div className="rounded-2xl border p-6 prose max-w-none">
               <ReactMarkdown>
-                {lesson.content_md ||
-                  lesson.unmodified_content_md ||
-                  "No content found."}
+                {lesson.unmodified_content_md ||
+                lesson.content_md ||
+                "No content found."}
               </ReactMarkdown>
             </div>
 
