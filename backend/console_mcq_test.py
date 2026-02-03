@@ -32,7 +32,7 @@ def _print_question(mcq: dict) -> None:
 
     choices = mcq.get("choices") or []
     for i, choice in enumerate(choices):
-        print(f"  {i}: {choice}")
+        print(f"  {i+1}: {choice}") #changed from i to i+1 but the assistant is not applying the change
 
     hint = mcq.get("hint")
     if isinstance(hint, str) and hint.strip():
@@ -52,7 +52,7 @@ def _check_answer(mcq: dict, user_index: int) -> None:
     else:
         choices = mcq.get("choices") or []
         correct_text = choices[correct_index] if 0 <= correct_index < len(choices) else "(unknown)"
-        print(f"Not quite. Correct index is {correct_index}: {correct_text}")
+        print(f"Not quite. Correct index is {correct_index + 1}: {correct_text}") #added 1 to correct_index
 
 
 def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
@@ -121,7 +121,7 @@ def run_session(n: int, seed: Optional[int], lesson_id: Optional[int]) -> None:
                 else:
                     choices = mcq.get("choices") or []
                     correct_text = choices[correct_index] if 0 <= correct_index < len(choices) else "(unknown)"
-                    print(f"Answer: {correct_index} -> {correct_text}")
+                    print(f"Answer: {correct_index + 1} -> {correct_text}") #added 1
                 continue
 
             if cmd.startswith("answer "):

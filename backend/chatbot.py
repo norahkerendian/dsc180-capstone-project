@@ -168,7 +168,7 @@ def chat_with_context(
         model=model,
         messages=messages,
         temperature=1,
-        max_completion_tokens=500,
+        # max_completion_tokens=500,
     )
 
     # Defensive extraction: avoid IndexError/None content causing 500s.
