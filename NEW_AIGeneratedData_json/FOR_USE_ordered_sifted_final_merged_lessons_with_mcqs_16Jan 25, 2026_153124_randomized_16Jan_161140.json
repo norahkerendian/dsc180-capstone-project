@@ -3,7 +3,8 @@
     "id": 781822617,
     "slug": "01what-is-data-sciencemd",
     "title": "What-Is-Data-Science",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -235,7 +236,8 @@
     "id": 2727718540,
     "slug": "011intromd",
     "title": "Intro",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -527,7 +529,8 @@
     "id": 1295251401,
     "slug": "0111computational-toolsmd",
     "title": "Computational-Tools",
-    "topic": "Python",
+    "old_topic": "Python",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -652,7 +655,8 @@
     "id": 3685813449,
     "slug": "0112statistical-techniquesmd",
     "title": "Statistical-Techniques",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -881,7 +885,8 @@
     "id": 2888989471,
     "slug": "012why-data-sciencemd",
     "title": "Why-Data-Science",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -1112,7 +1117,8 @@
     "id": 1930966851,
     "slug": "013plotting_the_classicsipynb",
     "title": "Plotting the Classics",
-    "topic": "Visualization",
+    "old_topic": "Visualization",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -1320,7 +1326,8 @@
     "id": 2768641799,
     "slug": "0132another_kind_of_characteripynb",
     "title": "Another Kind Of Character",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Seeing the World Through Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -1529,7 +1536,8 @@
     "id": 2027312779,
     "slug": "02causality-and-experimentsmd",
     "title": "Causality-And-Experiments",
-    "topic": "Causality",
+    "old_topic": "Causality",
+    "topic": "From Correlation to Causation",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -1846,7 +1854,8 @@
     "id": 1251066844,
     "slug": "023establishing-causalitymd",
     "title": "Establishing-Causality",
-    "topic": "Causality",
+    "old_topic": "Causality",
+    "topic": "From Correlation to Causation",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -2054,7 +2063,8 @@
     "id": 157990508,
     "slug": "024randomizationmd",
     "title": "Randomization",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "From Correlation to Causation",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -2515,7 +2525,8 @@
     "id": 289240178,
     "slug": "025endnotemd",
     "title": "Endnote",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "From Correlation to Causation",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -2663,7 +2674,8 @@
     "id": 3891774532,
     "slug": "03programming-in-pythonmd",
     "title": "Programming-In-Python",
-    "topic": "Python",
+    "old_topic": "Python",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -2767,7 +2779,8 @@
     "id": 1739879824,
     "slug": "031expressionsipynb",
     "title": "Expressions",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -3082,7 +3095,8 @@
     "id": 1176507067,
     "slug": "032namesipynb",
     "title": "Names",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -3271,7 +3285,8 @@
     "id": 4008464310,
     "slug": "0321growthipynb",
     "title": "Example: Growth Rates",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -3544,7 +3559,8 @@
     "id": 4042898330,
     "slug": "033callsipynb",
     "title": "Call Expressions",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -3862,7 +3878,8 @@
     "id": 2427013110,
     "slug": "034introduction_to_tablesipynb",
     "title": "Introduction to Tables",
-    "topic": "Data",
+    "old_topic": "Data",
+    "topic": "Teaching the Computer to Work with Data",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -4344,7 +4361,8 @@
     "id": 1320813483,
     "slug": "04data_typesipynb",
     "title": "Data Types",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "How Data Behaves in Code",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -4427,7 +4445,8 @@
     "id": 3082398315,
     "slug": "041numbersipynb",
     "title": "Numbers",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "How Data Behaves in Code",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -4847,7 +4866,8 @@
     "id": 2697797242,
     "slug": "042stringsipynb",
     "title": "Strings",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "How Data Behaves in Code",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -5059,7 +5079,8 @@
     "id": 663140214,
     "slug": "0421string_methodsipynb",
     "title": "String Methods",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "How Data Behaves in Code",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
@@ -5250,7 +5271,8 @@
     "id": 2089344509,
     "slug": "043comparisonipynb",
     "title": "Comparisons",
-    "topic": "Data Science",
+    "old_topic": "Data Science",
+    "topic": "How Data Behaves in Code",
     "level": 1,
     "metadata": {
       "source": "Data 8 Textbook (local copy)",
