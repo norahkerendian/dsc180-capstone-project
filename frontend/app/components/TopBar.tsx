@@ -72,8 +72,8 @@ export default function TopBar({
       <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4">
         {/* Left: app / course name */}
         <Link
-          href="/curriculum"
-          className="text-sm font-semibold tracking-tight text-zinc-800"
+          href="/"
+          className="text-sm font-semibold tracking-tight text-zinc-800 hover:text-zinc-900 transition-colors"
         >
           {language.name}
         </Link>
