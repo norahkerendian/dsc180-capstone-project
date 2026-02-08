@@ -85,7 +85,25 @@ _MCQ_ANSWER_LEAK_RE = re.compile(
     r")\b"
 )
 
+# Multi-language (non-English) patterns we've observed causing answer leaks.
+_MCQ_ANSWER_LEAK_I18N_RE = re.compile(
+    r"(?is)("
+    # Spanish
+    r"respuesta\s+correcta\s*(es|:)\s*[A-D]|"
+    r"la\s+respuesta\s+correcta\s*(es|:)\s*[A-D]|"
+    r"la\s+opci[oó]n\s+correcta\s*(es|:)\s*[A-D]|"
+    r"opci[oó]n\s+correcta\s*(es|:)\s*[A-D]|"
+    # Chinese
+    r"正确答案\s*(是|：|:)\s*[A-D]|"
+    r"答案\s*(是|：|:)\s*[A-D]|"
+    r"正确选项\s*(是|：|:)\s*[A-D]"
+    r")"
+)
+
 _CHOICE_ENUM_RE = re.compile(r"(?m)^\s*[A-D]\s*[\).]\s+")
+_BARE_CHOICE_RE = re.compile(
+    r"(?is)^\s*(?:hi|hello|hey)?\s*(?:[-—:])?\s*([A-D])\s*[\).\s]*$"
+)
 
 
 def _extract_student_text(full_message: str) -> str:
@@ -125,7 +143,9 @@ def _sanitize_tutor_response(*, text: str, user_message: str, is_mcq: bool) -> s
     # Prevent leaking MCQ answers.
     if is_mcq and (
         _MCQ_ANSWER_LEAK_RE.search(text)
+        or _MCQ_ANSWER_LEAK_I18N_RE.search(text)
         or ("correct" in lowered and _CHOICE_ENUM_RE.search(text))
+        or _BARE_CHOICE_RE.match(text)
     ):
         return (
             "I can’t tell you which option is correct.\n\n"
