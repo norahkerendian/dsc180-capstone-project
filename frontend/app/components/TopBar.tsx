@@ -73,9 +73,10 @@ export default function TopBar({
         {/* Left: app / course name */}
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-zinc-800 hover:text-zinc-900 transition-colors"
+          className="flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
-          {language.name}
+          <span className="text-2xl">📊</span>
+          <span className="text-xl font-bold text-green-600">DataLingo</span>
         </Link>
 
         {/* Right: streak + gems + sign out */}

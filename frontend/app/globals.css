@@ -31,7 +31,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Quiz option styling — explicit so it cannot be ignored */
+
 .quiz-option {
   display: block;
   width: 100%;
@@ -50,24 +50,24 @@ body {
   background-color: #f4f4f5;
 }
 
-/* Chosen correct answer */
+/* correct answer */
 .quiz-option.correct {
-  background-color: #22c55e; /* green-500 */
-  border-color: #16a34a;     /* green-600 */
+  background-color: #22c55e; 
+  border-color: #16a34a;    
   color: #ffffff;
 }
 
-/* Chosen wrong answer */
+/* wrong answer */
 .quiz-option.wrong {
-  background-color: #ef4444; /* red-500 */
-  border-color: #dc2626;     /* red-600 */
+  background-color: #ef4444; 
+  border-color: #dc2626;    
   color: #ffffff;
 }
 
 /* Show the real correct answer after they pick wrong */
 .quiz-option.correct-hint {
-  background-color: #bbf7d0; /* green-100 */
-  border-color: #4ade80;     /* green-400 */
+  background-color: #bbf7d0; 
+  border-color: #4ade80;    
 }
 
 /* Page transition animations */
@@ -84,4 +84,30 @@ body {
 
 .fade-in-up {
   animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.prose > h1:first-child,
+.prose > h2:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #16a34a; 
+}
+
+
+.prose p:has(strong),
+.prose p:has(b) {
+  margin-top: 1.5rem;
+}
+
+.prose p:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.prose code {
+  background-color: #dcfce7;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
 }

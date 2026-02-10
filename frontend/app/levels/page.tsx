@@ -143,8 +143,8 @@ export default function LevelsPage() {
                     isLocked
                       ? "border-gray-300 bg-white cursor-not-allowed"
                       : status.completed
-                      ? "border-green-500 bg-white hover:bg-green-50 hover:shadow-lg"
-                      : "border-green-500 bg-white hover:bg-green-50 hover:shadow-lg cursor-pointer"
+                      ? "border-green-500 bg-white hover:bg-green-50 hover:shadow-lg hover:scale-105"
+                      : "border-green-500 bg-white hover:bg-green-50 hover:shadow-lg hover:scale-105 cursor-pointer"
                   }`}
                 >
                   <div className="flex items-center gap-4">
