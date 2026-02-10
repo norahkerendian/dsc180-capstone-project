@@ -129,7 +129,7 @@ The backend loads the generated JSON and exposes it through API endpoints. The f
 - [frontend/](frontend/) — Next.js UI, lesson views, tutor chat widget.
 - [workflows/](workflows/) — n8n workflow exports.
 - [data_scraping/](data_scraping/) — data collection and preprocessing tools.
-- [AIGeneratedData_json/](AIGeneratedData_json/) and [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/) — generated lesson/question datasets.
+- [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/) and [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/) — generated lesson/question datasets.
 - [db/](db/) — database helpers and ingestion scripts.
 
 ## Workflow or Backend System Explanation
