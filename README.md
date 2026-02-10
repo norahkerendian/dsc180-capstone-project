@@ -78,8 +78,8 @@ We store data primarily as JSON files in versioned folders. The backend loads th
 
 We draw inputs from:
 
-- Raw or curated datasets in [ogData/](ogData/)
-- Intermediate or generated datasets in [AIGeneratedData_json/](AIGeneratedData_json/) and [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/)
+- Raw or curated datasets in [data_scraping/](data_scraping/)
+- Intermediate or generated datasets in [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/) and [NEW_AIGeneratedData_json/](NEW_AIGeneratedData_json/)
 - Workflow definitions in [workflows/](workflows/)
 
 ### Processing steps
@@ -104,22 +104,23 @@ The backend loads the generated JSON and exposes it through API endpoints. The f
 
 ```
 .
+├── AI_Synthethic_data/
 ├── AIGeneratedData_json/
 ├── AIGeneratedData_n8n/
-├── AI_Synthethic_data/
-├── NEW_AIGeneratedData_json/
-├── NEW_AIGeneratedData_n8n/
 ├── backend/
 ├── data_scraping/
 ├── db/
 ├── frontend/
 ├── images/
+├── NEW_AIGeneratedData_json/
+├── NEW_AIGeneratedData_n8n/
+├── notebooks/
 ├── ogData/
 ├── scripts/
 ├── workflows/
-├── data_organization.ipynb
-├── working.ipynb
-└── README.md
+├── DSC 180 Capstone Flowchart.png
+├── README.md
+└── requirements.txt
 ```
 
 ### Major directories
