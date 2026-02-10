@@ -1,93 +1,119 @@
 # Backend (FastAPI)
 
-This folder contains the Python API server that powers the "Data Science Chatbot" experience.
+Python API server for the Data Science Chatbot. It loads a lesson dataset, exposes lesson/question endpoints, and provides a tutoring chat endpoint scoped to lesson or topic context.
 
-## What it does
-
-- Loads a lessons/questions JSON dataset into memory at startup
-- Exposes REST endpoints for listing lessons and retrieving questions
-- Provides a `POST /chat` endpoint that sends a user message to an LLM **with lesson-scoped context**
-
-## Topic-scoped context (token optimization)
-
-The backend now supports **topic-scoped** context sessions so you can pin _one_ topic’s content once and then chat without re-sending that full context every message.
-
-Key idea:
-
-- The model should only see context for the current topic (e.g. "Seeing the World Through Data") — never other topics.
-- The frontend should create a topic session once when the user enters a topic, then reuse the returned `session_id` for subsequent chat messages.
-
-## Key files
-
-- `main.py`
-  - FastAPI app entrypoint and all HTTP routes
-  - Builds lesson context based on `question_id` or `lesson_id`
-  - Calls the OpenAI wrapper and returns the assistant response
-
-- `lessons.py`
-  - Loads the lessons JSON file from disk
-  - Helper lookups (`get_lesson_by_id`, `get_question_by_id`, etc.)
-  - Produces a compact context string (`format_lesson_context`) for the LLM
-
-- `chatbot.py`
-  - Loads environment variables (`.env`) and builds the OpenAI client
-  - Creates chat completion requests and returns assistant text
-
-- `requirements.txt`
-  - Python dependencies for the backend server
-
-## Environment variables
-
-Create `backend/.env` (copy from `backend/.env.example`) and set:
-
-- `OPENAI_API_KEY` (required)
-- `OPENAI_MODEL` (optional)
-- `LESSONS_DATA_PATH` (optional; path is relative to `backend/` if not absolute)
-- `FRONTEND_URL` (optional; extra CORS origin)
-
-## Running locally
+## Quick start
 
 From the repo root:
 
-1. Create a virtual environment and install deps
+1. Create a virtual environment and install dependencies
 
-- `python -m venv .venv`
-- `source .venv/bin/activate`
-- `pip install -r backend/requirements.txt`
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r backend/requirements.txt
+```
 
-2. Run the API
+2. Set environment variables
 
-- `python backend/main.py`
+Create `backend/.env` and add at least:
 
-The server starts on `http://localhost:8000`.
+```bash
+OPENAI_API_KEY=sk-...
+```
+
+Optional settings:
+
+```bash
+OPENAI_MODEL=gpt-5-mini
+LESSONS_DATA_PATH=../path/to/lessons.json
+FRONTEND_URL=http://localhost:3000
+```
+
+3. Run the API
+
+```bash
+python backend/main.py
+```
+
+Server runs at `http://localhost:8000`.
+
+## How context scoping works
+
+The backend prefers **topic-scoped** sessions to avoid resending large lesson content on every chat request.
+
+- Create a session with `POST /chat/session` using a topic (and optional level).
+- Reuse the returned `session_id` with `POST /chat`.
+- If topic context cannot be found, the backend can fall back to lesson-scoped context.
+
+## Files and responsibilities
+
+### `main.py`
+
+FastAPI app and all HTTP routes. Loads the dataset once at startup, builds topic context cache, manages in-memory topic sessions, and orchestrates calls to the OpenAI client wrapper.
+
+Key functions and behaviors:
+
+- `chat()` (POST `/chat`): main chat handler. Builds topic or lesson context, injects the current MCQ into the user message, and sanitizes answer leaks.
+- `init_topic_session()` (POST `/chat/session`): initializes a topic-scoped session via the Responses API.
+- `get_context_preview()` (GET `/context/{question_id}`): returns the exact topic context used for a question.
+- Debug routes: `/debug/topic-cache`, `/debug/question-scope/{question_id}`, `/debug/lesson-scope/{lesson_id}` for inspecting cache and scoping.
+- Session helpers: `_prune_sessions()`, `_topic_key()` and in-memory `_TOPIC_SESSIONS` store.
+
+### `lessons.py`
+
+Loads and normalizes lesson data, and formats LLM-safe context strings.
+
+Key functions:
+
+- `load_lessons_data()`: loads the JSON dataset from `LESSONS_DATA_PATH` or fallback path.
+- `get_lesson_by_id()`, `get_lesson_by_question_id()`: lookups across lessons.
+- `normalize_mcq()`, `get_mcq_by_id()`: normalize MCQs into a consistent shape.
+- `format_lesson_context()`: builds compact lesson context for the LLM.
+- `format_mcq_for_display()`: formats a single MCQ for inclusion in chat context.
+- `build_topic_context_cache()` and `get_topic_context()`: precompute and retrieve topic-scoped context.
+- `get_filtered_context()`: legacy context builder used by the console test script.
+
+### `chatbot.py`
+
+OpenAI SDK wrapper and prompt policy.
+
+Key functions:
+
+- `get_openai_client()`, `get_model()`: configure API access.
+- `chat_with_context()` and `chat_with_context_with_usage()`: chat completions with lesson context.
+- `start_topic_session()` and `chat_with_topic_session()`: topic-scoped conversations using the Responses API.
+- `_extract_assistant_text()`: normalizes assistant output to plain text.
+- `estimate_tokens()`: rough token estimate (chars/4).
+
+### `console_mcq_test.py`
+
+Console test harness for MCQs without the frontend. It selects questions, prints options, and lets you ask the tutor questions via the same chat logic.
+
+Run:
+
+```bash
+python backend/console_mcq_test.py --n 5 --seed 1
+```
+
+### `requirements.txt`
+
+Pinned Python dependencies for the backend.
 
 ## API overview
 
-- `GET /`
-  - Health check + number of lessons loaded
+- `GET /` health check and lesson count
+- `GET /lessons` list lessons (no full question content)
+- `GET /lessons/{lesson_id}` lesson detail
+- `GET /questions/{question_id}` MCQ detail with lesson info
+- `POST /chat` chat with the tutor (topic sessions preferred)
+- `POST /chat/session` initialize a topic-scoped session
+- `GET /context/{question_id}` preview topic context for a question
+- `GET /debug/topic-cache` inspect precomputed topic cache
+- `GET /debug/question-scope/{question_id}` verify question to topic mapping
+- `GET /debug/lesson-scope/{lesson_id}` verify lesson to topic mapping
 
-- `GET /lessons`
-  - Lists lessons without returning full question text
+## Notes
 
-- `GET /lessons/{lesson_id}`
-  - Returns a single lesson object
-
-- `GET /questions/{question_id}`
-  - Returns a question plus its containing lesson metadata
-
-- `POST /chat`
-  - Body: `{ "message": "...", "question_id": 123 }` (or `lesson_id`)
-  - Response: `{ "response": "...", "lesson_title": "...", "token_estimate": 456, "session_id": "..." }`
-
-- `POST /chat/session`
-  - Initializes/pins a topic session before the user asks questions
-  - Body: `{ "topic": "Seeing the World Through Data", "level": 1 }`
-  - Response: `{ "session_id": "...", "token_estimate": 1234 }`
-
-- `GET /context/{question_id}`
-  - Debug endpoint: returns the exact context string that would be sent to the LLM
-
-## Notes / gotchas
-
-- Context scoping is currently done by selecting the lesson that contains the question and sending that whole lesson’s Q&A as context.
-- `token_estimate` is a rough heuristic (chars/4) meant for debugging, not billing accuracy.
+- `token_estimate` is a rough heuristic for debugging, not billing accuracy.
+- Topic sessions are in-memory and expire after a TTL; they reset if the server restarts.
