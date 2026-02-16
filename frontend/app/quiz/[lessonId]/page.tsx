@@ -1,3 +1,4 @@
+///////////////////////////////////////////// try to fix topbar (wokring version) /////////////////////////////////////////////////
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
@@ -73,8 +74,8 @@ export default function QuizPage() {
             topic: json.lesson.topic,
           });
         }
-      } catch (e) {
-        // Ignore errors
+      } catch {
+        // ignore
       }
     }
     loadLessonInfo();
@@ -84,9 +85,7 @@ export default function QuizPage() {
   useEffect(() => {
     async function loadState() {
       if (lessonId === null || !userId) return;
-      const r = await fetch(
-        `/api/quiz/state?lessonId=${lessonId}&userId=${userId}`,
-      );
+      const r = await fetch(`/api/quiz/state?lessonId=${lessonId}&userId=${userId}`);
       const json = await r.json();
       setIndex(json.nextIndex ?? 0);
       setIsComplete(json.completed ?? false);
@@ -99,30 +98,21 @@ export default function QuizPage() {
     async function loadQ() {
       if (lessonId === null) return;
 
-      // Don't reload if we're on the last question and quiz is complete
-      // This prevents clearing the question display when confetti plays
+      // Keep current question visible when complete on last question (confetti)
       if (isComplete && total > 0 && index === total - 1) {
-        // Keep the current question visible and preserve status
-        // Don't reset status, selected, or question state
         setIsVisible(true);
         return;
       }
 
-      // Don't load if we're past the last question and quiz is complete
-      if (isComplete && index >= total) {
-        return;
-      }
+      if (isComplete && index >= total) return;
 
-      // Only reset state if we're actually loading a new question
       setLoading(true);
       setStatus("idle");
       setSelected(null);
       setWrongChoiceId(null);
       setIsVisible(false);
 
-      const r = await fetch(
-        `/api/quiz/question?lessonId=${lessonId}&index=${index}`,
-      );
+      const r = await fetch(`/api/quiz/question?lessonId=${lessonId}&index=${index}`);
       const json = await r.json();
 
       if (!r.ok) {
@@ -135,7 +125,6 @@ export default function QuizPage() {
 
       setTotal(json.total ?? 0);
 
-      // Only load question if index is valid
       if (index < (json.total ?? 0)) {
         setQuestion(json.question);
         setChoices(json.choices ?? []);
@@ -143,7 +132,6 @@ export default function QuizPage() {
       }
 
       setLoading(false);
-      // Trigger fade-in animation after a brief delay
       setTimeout(() => setIsVisible(true), 50);
     }
     loadQ();
@@ -158,7 +146,7 @@ export default function QuizPage() {
   }
 
   async function submit() {
-    if (!userId || !question || selected === null) return;
+    if (!userId || !question || selected === null || submitting) return;
 
     setSubmitting(true);
 
@@ -167,47 +155,54 @@ export default function QuizPage() {
       Math.round((Date.now() - startTimeRef.current) / 1000),
     );
 
-    const r = await fetch("/api/quiz/answer", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        lessonId,
-        userId,
-        questionId: question.id,
-        choiceId: selected,
-        timeSpentSeconds,
-      }),
-    });
+    try {
+      const r = await fetch("/api/quiz/answer", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          lessonId,
+          userId,
+          questionId: question.id,
+          choiceId: selected,
+          timeSpentSeconds,
+        }),
+      });
 
-    const json = await r.json();
-    if (r.ok) {
+      const json = await r.json();
+
+      if (!r.ok) {
+        console.error("Submit failed:", json);
+        setSubmitting(false);
+        return;
+      }
+
+      // ✅ IMPORTANT: tell TopBar to refresh streak/gems immediately (no page refresh)
+      window.dispatchEvent(new Event("user-stats-updated"));
+
       if (json.isCorrect) {
         setStatus("correct");
         setWrongChoiceId(null);
 
-        // Check if this was the last question - if so, quiz is complete
+        // last question => complete
         if (index === total - 1) {
-          // Immediately set as complete (don't wait for API check)
           setIsComplete(true);
-          // Trigger confetti immediately while question is still visible
           if (!confettiTriggered) {
             setConfettiTriggered(true);
-            // Small delay to ensure UI updates first
-            setTimeout(() => {
-              triggerConfetti();
-            }, 100);
+            setTimeout(() => triggerConfetti(), 100);
           }
         }
       } else {
         setStatus("wrong");
         setWrongChoiceId(selected);
       }
+    } catch (e) {
+      console.error("Submit crashed:", e);
     }
+
     setSubmitting(false);
   }
 
   function triggerConfetti() {
-    // Enhanced confetti effect with mixed shapes (rectangles and circles)
     const canvas = document.createElement("canvas");
     canvas.style.position = "fixed";
     canvas.style.top = "0";
@@ -218,8 +213,14 @@ export default function QuizPage() {
     canvas.style.zIndex = "9999";
     document.body.appendChild(canvas);
 
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    const maybeCtx = canvas.getContext("2d");
+    if (!maybeCtx) {
+      document.body.removeChild(canvas);
+      return;
+    }
+
+    // ✅ use a non-null, stable reference so TS stops complaining
+    const ctx = maybeCtx;
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -234,6 +235,7 @@ export default function QuizPage() {
       "#10b981",
       "#06b6d4",
     ];
+
     const confetti: Array<{
       x: number;
       y: number;
@@ -266,14 +268,12 @@ export default function QuizPage() {
     }
 
     function animate() {
-      if (!ctx) return;
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       confetti.forEach((c) => {
         c.x += c.vx;
         c.y += c.vy;
-        c.vy += 0.15; // gravity
+        c.vy += 0.15;
         c.rotation += c.rotationSpeed;
 
         ctx.save();
@@ -327,21 +327,16 @@ export default function QuizPage() {
           </div>
         </div>
 
-        {/* Progress Bar for this lesson */}
         {!loading && total > 0 && (
           <div className="mb-8">
             <div className="flex items-center justify-between text-xs text-gray-600 mb-2">
               <span>Your Progress</span>
-              <span>
-                {Math.min(100, Math.round(((index + 1) / total) * 100))}%
-              </span>
+              <span>{Math.min(100, Math.round(((index + 1) / total) * 100))}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2.5">
               <div
                 className="bg-green-500 h-2.5 rounded-full transition-all duration-300"
-                style={{
-                  width: `${Math.min(100, ((index + 1) / total) * 100)}%`,
-                }}
+                style={{ width: `${Math.min(100, ((index + 1) / total) * 100)}%` }}
               ></div>
             </div>
           </div>
@@ -356,9 +351,8 @@ export default function QuizPage() {
             }`}
           >
             <div className="space-y-1 pt-3">
-              <h1 className="text-2xl font-bold text-gray-800">
-                {question.question}
-              </h1>
+              <h1 className="text-2xl font-bold text-gray-800">{question.question}</h1>
+
               <div className="flex items-center gap-3 flex-wrap mt-4">
                 {question.category && (
                   <div className="flex items-center gap-2">
@@ -368,11 +362,10 @@ export default function QuizPage() {
                     >
                       Category
                     </span>
-                    <span className="text-sm text-black font-medium">
-                      {question.category}
-                    </span>
+                    <span className="text-sm text-black font-medium">{question.category}</span>
                   </div>
                 )}
+
                 {question.difficulty != null && (
                   <div className="flex items-center gap-2">
                     <span
@@ -418,7 +411,6 @@ export default function QuizPage() {
                     key={c.id}
                     onClick={() => {
                       setSelected(c.id);
-                      // Clear wrong styling when a new choice is selected
                       if (wrongChoiceId !== null) {
                         setWrongChoiceId(null);
                         setStatus("idle");
@@ -429,13 +421,11 @@ export default function QuizPage() {
                       isWrong
                         ? "border-gray-400 bg-gray-300"
                         : isSelected
-                          ? "border-green-500 bg-green-50"
-                          : "border-gray-200 hover:bg-gray-50 hover:border-gray-300",
+                        ? "border-green-500 bg-green-50"
+                        : "border-gray-200 hover:bg-gray-50 hover:border-gray-300",
                       isVisible ? "fade-in-up" : "opacity-0",
                     ].join(" ")}
-                    style={{
-                      animationDelay: `${idx * 50}ms`,
-                    }}
+                    style={{ animationDelay: `${idx * 50}ms` }}
                   >
                     {c.choice_text}
                   </button>
@@ -503,13 +493,11 @@ export default function QuizPage() {
 
         {!loading && !question && (
           <p className="text-gray-600">
-            No questions found for this lesson yet. (Check `lesson_questions`
-            mapping.)
+            No questions found for this lesson yet. (Check `lesson_questions` mapping.)
           </p>
         )}
       </div>
 
-      {/* Tutor chat (bottom-right) */}
       <div className="fixed bottom-6 right-6 z-50">
         <TutorChatWidget
           topic={lessonInfo?.topic ?? null}
