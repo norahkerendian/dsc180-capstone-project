@@ -63,195 +63,62 @@
       },
       {
         "id": 8,
-        "question": "How is the sonsheights dataset structured to relate the sons' heights to their parents' heights?",
-        "answer": "In the sonsheights dataset, the common horizontal axis is the sons' heights, which is used to relate the sons' heights to both the fathers' and mothers' heights through separate scatter plots.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 9,
-        "question": "What does each point in the scatter plot represent in the dataset?",
-        "answer": "Each point in the scatter plot corresponds to a 'father, mother, son' trio, representing a row from the dataset.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 10,
-        "question": "What does the dataset consist of regarding the historical heights data?",
-        "answer": "The dataset consists of historical heights data of 179 men who were the firstborn in their families, including their own heights and the heights of their parents.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 11,
-        "question": "What do the scatter plots show regarding the association between sons' heights and their parents' heights?",
-        "answer": "The scatter plots show a positive association between sons' heights and their parents' heights, with fathers typically being taller than mothers.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 12,
-        "question": "What does the blue scatter plot represent compared to the gold scatter plot?",
-        "answer": "The blue scatter plot represents the relationship between fathers' and sons' heights, while the gold scatter plot represents mothers' and sons' heights.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 13,
-        "question": "What type of plot is used to display the number of children in different age groups over multiple years?",
-        "answer": "An overlaid line plot is used to display the number of children in different age groups over multiple years.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 14,
-        "question": "What does the lesson discuss about using line plots in relation to children population data?",
-        "answer": "The lesson discusses using line plots to compare population data of children across different years, demonstrating changes in age demographics.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 15,
-        "question": "What is reflected in the higher position of the blue scatter plot compared to the gold scatter plot?",
-        "answer": "Fathers' heights are generally taller than mothers', which is reflected in the higher position of the blue scatter plot compared to the gold scatter plot.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 16,
-        "question": "What does a line plot connect to show trends even with data available only for whole numbers like ages?",
-        "answer": "Line plots connect data points to show trends, even if data is only available for whole numbers like ages 0, 1, 2, etc.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 17,
         "question": "What might axes in line plots include for labeling, even if the actual data is at whole numbers only?",
         "answer": "In line plots, axes may include half-integers for labeling, but actual data might be at whole numbers only.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 18,
+        "id": 9,
         "question": "What can shifts in data reflect when comparing line plots over different years?",
         "answer": "When comparing line plots over different years, shifts in the data can reflect cohort aging and population changes.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 19,
+        "id": 10,
         "question": "What can the comparison of graphs from different years illustrate about population changes over time?",
         "answer": "The comparison of graphs from different years can illustrate how population changes over time, such as children aging and migration effects.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 20,
+        "id": 11,
         "question": "What can crossing graphs at certain points indicate about population numbers across different years?",
         "answer": "Graphs crossing at certain points can indicate differences in population numbers at specific ages across different years.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 21,
-        "question": "What does The Amily Foundation's website provide regarding U.S. Census data from 2019?",
-        "answer": "The Amily Foundation's website provides compilations of U.S. Census data from 2019, focusing on the distribution of race and ethnicity across different age groups, including those under 18.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 22,
-        "question": "What information does the data table present regarding race and ethnicity distributions?",
-        "answer": "The data table presents percentages representing the distribution of different race and ethnicity categories across four groups: the entire U.S. population, the entire California population, children in the U.S., and children in California.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 23,
-        "question": "What does each column in the data table represent in terms of the Ethnicity/Race variable?",
-        "answer": "Each column in the data table adds up to 100%, reflecting the distribution of the Ethnicity/Race variable for the specific population group represented by that column.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 24,
-        "question": "In the data table, which categories does the API include, and what does the Other category consist of?",
-        "answer": "In the data table, the API category includes Asians and Pacific Islanders such as Native Hawaiians, while the Other category consists of Native Americans, Alaskan Natives, and people identifying with multiple races.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 25,
-        "question": "How does the data table facilitate analysis of demographic trends?",
-        "answer": "The data allows for comparisons of racial and ethnic distributions between different geographic regions and age groups, facilitating analysis of demographic trends.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 26,
+        "id": 12,
         "question": "What method is used for visualizing data by drawing horizontal bar charts?",
         "answer": "The barh method is used for visualizing data by drawing horizontal bar charts.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 27,
+        "id": 13,
         "question": "How can bar charts be used to compare data distributions visually?",
         "answer": "Bar charts can be overlaid on the same axes to compare data distributions visually.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 28,
+        "id": 14,
         "question": "When is it feasible to compare data columns directly?",
         "answer": "Comparing data columns directly is feasible when the entries are on the same scale, such as percentages.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 29,
-        "question": "What differences are revealed when comparing the entire populations of the U.S.A. and California?",
-        "answer": "Comparing the entire populations of the U.S.A. and California reveals that California has higher percentages in API and Hispanic categories, and lower in Black and White categories.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 30,
-        "question": "How do the percents in the Other category compare between the U.S.A. and California populations?",
-        "answer": "The percents in the Other category are quite similar between the U.S.A. and California populations.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 31,
-        "question": "What was the Hispanic population percentage in California in 2019?",
-        "answer": "The Hispanic population in California was almost 40% in 2019.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 32,
-        "question": "What percentage of children in California were Hispanic in 2019?",
-        "answer": "More than 50% of children in California were Hispanic in 2019.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 33,
-        "question": "What factors influence the differences in population demographics in California?",
-        "answer": "The differences in population demographics are influenced by California's geographical location and historical patterns of immigration.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 34,
+        "id": 15,
         "question": "What can analyzing complex data sets involve?",
         "answer": "Analyzing complex data sets can involve creating varied visualizations like overlaid graphs.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 35,
+        "id": 16,
         "question": "Why are data manipulation skills important?",
         "answer": "Data manipulation skills are important for preparing data to use different analytical methods.",
         "difficulty": 2,
@@ -275,83 +142,55 @@
     "questions": [
       {
         "id": 1,
-        "question": "What does the nbasalaries table contain regarding the NBA players' salaries in the 2015-2016 season?",
-        "answer": "The nbasalaries table contains data about NBA players' salaries in the 2015-2016 season, displaying each player's name, position, team, and salary.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 2,
-        "question": "How are the positions encoded in the nbasalaries table?",
-        "answer": "The positions in the nbasalaries table are encoded as PG for Point Guard, SG for Shooting Guard, PF for Power Forward, SF for Small Forward, and C for Center.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 3,
-        "question": "How many rows does the nbasalaries table consist of and what does each row represent?",
-        "answer": "The nbasalaries table consists of 417 rows, with each row representing a different NBA player.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 4,
-        "question": "Can you give an example row from the nbasalaries table regarding a player's salary, position, and team during the 2015-2016 season?",
-        "answer": "An example row from the nbasalaries table shows that Paul Millsap, a Power Forward for the Atlanta Hawks, had a salary of almost $18.7 million in the 2015-2016 season.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 5,
         "question": "How do data tables display rows by default?",
         "answer": "By default, data tables display all rows in alphabetical order by team name.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 6,
+        "id": 2,
         "question": "What does the sort method do with specified column labels or indices?",
         "answer": "The sort method can order rows alphabetically based on a specified column label or index, such as player name.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 7,
+        "id": 3,
         "question": "How can you sort rows by salary using simplified column labels?",
         "answer": "To sort by salary, first simplify the column label to SALARY, then use the sort method to order rows by salary in increasing order.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 8,
+        "id": 4,
         "question": "What is the result of sorting data by SALARY?",
         "answer": "Sorting the data by SALARY provides a new table with the same columns but rows rearranged to show the lowest salary first.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 9,
+        "id": 5,
         "question": "What is the method signature for the sort method including positions, names, and default values for its arguments?",
         "answer": "The sort method signature is sort(columnorlabel, descending=False, distinct=False), showing positions, names, and default values for its arguments.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 10,
+        "id": 6,
         "question": "When calling the sort method, can you use either positional or named arguments and expect the same result?",
         "answer": "You can use either positional or named arguments when calling the sort method, and both will yield the same result.",
         "difficulty": 1,
         "category": "application"
       },
       {
-        "id": 11,
+        "id": 7,
         "question": "Why is it helpful to include argument names when using True or False values?",
         "answer": "Including argument names, especially for arguments with True or False values, clarifies the meaning of those values.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 12,
+        "id": 8,
         "question": "Do you need to specify the sort method arguments if you do not want to change their default behavior?",
         "answer": "The sort method arguments have default values, so you don't need to specify them unless you want to change the default behavior.",
         "difficulty": 2,
@@ -396,282 +235,226 @@
       },
       {
         "id": 4,
-        "question": "What does the table 'icecream' contain?",
-        "answer": "The table 'icecream' contains data on 30 cartons where the variable 'flavor' has values like chocolate, strawberry, and vanilla.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 5,
         "question": "What does visualizing categorical distributions involve?",
         "answer": "Visualizing categorical distributions involves understanding how data can be grouped into categories like teams, flavors, or survey responses.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 6,
+        "id": 5,
         "question": "What does a distribution table display along with the frequency of each value?",
         "answer": "A distribution table displays all the values of a variable along with the frequency of each value.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 7,
+        "id": 6,
         "question": "In a distribution, does each individual belong to more than one category or have more than one value?",
         "answer": "In a distribution, each individual belongs to exactly one category and has exactly one value.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 8,
+        "id": 7,
         "question": "What type of chart is used to visualize categorical distributions with bars proportional to frequencies?",
         "answer": "A bar chart is used to visualize categorical distributions, with bars representing each category proportionally to its frequency.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 9,
+        "id": 8,
         "question": "Why might horizontal bars be used in a bar chart?",
         "answer": "Bar charts can use horizontal bars (barh method), as it's easier to label the bars that way.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 10,
+        "id": 9,
         "question": "What arguments does the barh method for creating bar charts take?",
         "answer": "The barh method for creating bar charts takes two arguments: the column label of the categories and the column label of the frequencies.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 11,
+        "id": 10,
         "question": "What does one axis represent in a bar chart?",
         "answer": "In a bar chart, one axis represents categories while the other represents numerical quantities.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 12,
+        "id": 11,
         "question": "How do bar charts differ from scatter or line plots in terms of variables displayed?",
         "answer": "Unlike scatter or line plots that display two quantitative variables, bar charts display both a categorical variable and a numerical variable.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 13,
+        "id": 12,
         "question": "What determines the width of bars and the space between them in a bar chart?",
         "answer": "The width of each bar and the space between bars in a bar chart are determined by either the person creating the chart or the software used.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 14,
+        "id": 13,
         "question": "How does the barh function in Python handle categorical and frequency data when creating a bar chart?",
         "answer": "In Python, the barh function can automatically use the categorical column and treat the other column as frequencies when producing a bar chart.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 15,
+        "id": 14,
         "question": "What design features of bar charts differentiate them from fixed-axis plots?",
         "answer": "Bar charts have design features such as customizable bar width and spacing, unlike fixed-axis plots or graphs like scatter and line plots.",
         "difficulty": 3,
         "category": "definition"
       },
       {
-        "id": 16,
+        "id": 15,
         "question": "What characteristic of bar charts allows bars to be drawn in any order?",
         "answer": "Bar charts are flexible, and bars can be drawn in any order since categorical data like 'chocolate,' 'vanilla,' and 'strawberry' have no natural order.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 17,
+        "id": 16,
         "question": "How can rearranging bars by numerical order help in a bar chart?",
         "answer": "Rearranging bars in decreasing order of a numerical variable can make a bar chart easier to read, especially with a large number of categories.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 18,
+        "id": 17,
         "question": "What method can be used to make a bar chart more interpretable?",
         "answer": "To create an easily interpretable bar chart, you can rearrange categories by the numerical values they represent, then draw the bars.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 19,
+        "id": 18,
         "question": "What are the requirements for drawing bar graphs accurately?",
         "answer": "Bar graphs require consistent bar and space widths for accuracy but can otherwise be drawn with bars in any chosen order.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 20,
+        "id": 19,
         "question": "What must be computed before drawing a bar chart if they are not already in the data?",
         "answer": "Before drawing a bar chart, frequencies must be computed if they are not already included in the data.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 21,
+        "id": 20,
         "question": "What columns might be included in a dataset about movies?",
         "answer": "A dataset about movies includes columns such as the movie title, production studio, domestic box office gross, adjusted gross for 2016 prices, and the release year.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 22,
+        "id": 21,
         "question": "What may need to be calculated for certain analyses and visualizations in a dataset?",
         "answer": "The frequency of occurrences in a dataset may need to be calculated for certain analyses and visualizations like bar charts.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 23,
+        "id": 22,
         "question": "What does a bar chart require in terms of data?",
         "answer": "A bar chart requires frequency data, which involves counting occurrences of each category within the dataset.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 24,
+        "id": 23,
         "question": "How can datasets with box office grosses and production studios for movies be used?",
         "answer": "Datasets with different types of information, such as box office grosses and production studios for movies, can be used for various analyses and graphing.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 25,
+        "id": 24,
         "question": "What does the 'group' method in Table allow you to do in terms of counting the frequency of categories?",
         "answer": "The 'group' method in Table allows you to count the frequency of categories by creating a distribution table. It groups rows based on the category specified, such as studio names.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 26,
+        "id": 25,
         "question": "How can you determine which studio appears most frequently using the 'group' method?",
         "answer": "Using the 'group' method, you can determine which studio appears most frequently by counting how many movies are associated with each studio.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 27,
+        "id": 26,
         "question": "What does the 'group' method return by default?",
         "answer": "The 'group' method returns a table that lists categories in ascending order by default.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 28,
+        "id": 27,
         "question": "When is other information in the table unnecessary?",
         "answer": "The other information in the table is unnecessary when you're only interested in counting the frequency of categories like studios.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 29,
+        "id": 28,
         "question": "What does a table of distribution produced by the 'group' method show?",
         "answer": "A table of distribution produced by the 'group' method shows how individual items, such as movies, are distributed among categories like studios.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 30,
+        "id": 29,
         "question": "How are items arranged in ascending order for strings?",
         "answer": "In ascending order for strings, items are arranged alphabetically.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 31,
+        "id": 30,
         "question": "How can the 'count' column be renamed in the table?",
         "answer": "The column of counts is named 'count', but it can be renamed using the 'relabeled' method.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 32,
-        "question": "How many different studios are there, and what information does the table show?",
-        "answer": "There are 23 different studios, and the table shows the count of movies released by each studio.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 33,
-        "question": "What does the total count of 200 movies represent?",
-        "answer": "The total count of movies is 200, representing the total number of movies by different studios.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 34,
+        "id": 31,
         "question": "How can years be treated to plot the distribution of movie releases per year?",
         "answer": "Years can be treated as categorical variables to plot the distribution of movie releases per year.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 35,
+        "id": 32,
         "question": "Why should years as categories maintain chronological order when grouping for a bar chart?",
         "answer": "Years as categories should maintain chronological order when grouping for a bar chart to accurately display distribution.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 36,
+        "id": 33,
         "question": "What type of chart is suitable for displaying the distribution of a categorical variable?",
         "answer": "A bar chart is suitable for displaying the distribution of a categorical variable.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 37,
+        "id": 34,
         "question": "What is important to consider when using a bar chart for quantitative data?",
         "answer": "When using a bar chart for quantitative data, it is important to consider the numerical relationships between the values.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 38,
+        "id": 35,
         "question": "What is a potential issue with bar charts for quantitative data?",
         "answer": "A potential issue with bar charts for quantitative data is that they can fail to show gaps where no data exists.",
         "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 39,
-        "question": "What is misleading about the discussed bar chart regarding years with no movies released?",
-        "answer": "In the discussed bar chart, the years with no movies released (1922-1936, 1938) are not shown, leading to a misleading representation.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 40,
-        "question": "What does creating visualizations involve?",
-        "answer": "Creating visualizations involves taking various factors into account.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 41,
-        "question": "What is required for effective visualizations?",
-        "answer": "Effective visualizations require considering multiple relevant factors.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 42,
-        "question": "What ensures clarity and efficacy in designing visualizations?",
-        "answer": "Considering important elements when designing visualizations ensures clarity and efficacy.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 43,
-        "question": "On what does the effectiveness of data visualizations depend?",
-        "answer": "The effectiveness of data visualizations depends on the thoughtful consideration of key components.",
-        "difficulty": 3,
         "category": "concept_check"
       }
     ],
@@ -811,41 +594,6 @@
       },
       {
         "id": 18,
-        "question": "How can NBA player salaries be analyzed using grouping?",
-        "answer": "To analyze NBA player salaries, you can group the data by the TEAM column to calculate the total salaries paid by each team.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 19,
-        "question": "What should you use to group the rows by TEAM and sum the salaries for each group?",
-        "answer": "To group the rows by TEAM and sum the salaries for each group, you should use grouping and aggregation functions that work with numerical data.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 20,
-        "question": "What is necessary to find out how many NBA players there are in each position?",
-        "answer": "To find out how many NBA players there are in each position, classification by POSITION and counting the number of entries is necessary.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 21,
-        "question": "How do you calculate the average salary for players in each position?",
-        "answer": "To calculate the average salary for players in each position, group the data by POSITION and compute the mean of the salaries for these groups.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 22,
-        "question": "Which position in the NBA has the highest average salary?",
-        "answer": "The Center position in the NBA has the highest average salary, at over 6 million dollars.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 23,
         "question": "What do grouping functions in data analysis do with numerical and categorical columns?",
         "answer": "Grouping functions in data analysis perform arithmetic operations only on numerical columns and ignore categorical columns.",
         "difficulty": 2,
@@ -1316,656 +1064,6 @@
     "content_md": "Functions and Tables We are building up a useful inventory of techniques for identifying patterns and themes in a data set by using functions already available in Python. We will now explore a core feature of the Python programming language: function definition. We have used functions extensively already in this text, but never defined a function of our own. The purpose of defining a function is to give a name to a computational process that may be applied multiple times. There are many situations in computing that require repeated computation. For example, it is often the case that we want to perform the same manipulation on every value in a column of a table. <h2Defining a Function</h2 The definition of the double function below simply doubles a number. We start any function definition by writing def. Here is a breakdown of the other parts (the syntax) of this small function: ! When we\n\n run the cell above, no particular number is doubled, and the code inside the body of double is not yet evaluated. In this respect, our function is analogous to a recipe. Each time we follow the instructions in a recipe, we need to start with ingredients. Each time we want to use our function to double a number, we need to specify a number. We can call double in exactly the same way we have called other functions. Each time we do that, the code in the body is executed, with the value of the argument given the name x. The two expressions above are both call expressions. In the second one, the value of the expression 0.6/4 is computed and then passed as the argument named x to the double function. Each call expresson results in the body of double being executed, but with a different value of x. The body of double has only a single line: return 2x Executing this return statement completes e\n\nxecution of the double function's body and computes the value of the call expression. The argument to double can be any expression, as long as its value is a number. For example, it can be a name. The double function does not know or care how its argument is computed or stored; its only job is to execute its own body using the values of the arguments passed to it. The argument can also be any value that can be doubled. For example, a whole array of numbers can be passed as an argument to double, and the result will be another array. However, names that are defined inside a function, including arguments like double's x, have only a fleeting existence. They are defined only while the function is being called, and they are only accessible inside the body of the function. We can't refer to x outside the body of double. The technical terminology is that x has local scope. Therefore the name x\n\n isn't recognized outside the body of the function, even though we have called double in the cells above. Docstrings. Though double is relatively easy to understand, many functions perform complicated tasks and are difficult to use without explanation. (You may have discovered this yourself!) Therefore, a wellcomposed function has a name that evokes its behavior, as well as documentation. In Python, this is called a docstring \u2014 a description of its behavior and expectations about its arguments. The docstring can also show example calls to the function, where the call is preceded by . A docstring can be any string, as long as it is the first thing in a function's body. Docstrings are typically defined using triple quotation marks at the start and end, which allows a string to span multiple lines. The first line is conventionally a complete but short description of the function, while foll\n\nowing lines provide further guidance to future users of the function. Here is a definition of a function called percent that takes two arguments. The definition includes a docstring. Contrast the function percent defined above with the function percents defined below. The latter takes an array as its argument, and converts all the numbers in the array to percents out of the total of the values in the array. The percents are all rounded to two decimal places, this time replacing round by np.round because the argument is an array and not a number. The function percents returns an array of percents that add up to 100 apart from rounding. It is helpful to understand the steps Python takes to execute a function. To facilitate this, we have put a function definition and a call to that function in the same cell below. Here is what happens when we run that cell: ! <h2Multiple Arguments</h2 There\n\n can be multiple ways to generalize an expression or block of code, and so a function can take multiple arguments that each determine different aspects of the result. For example, the percents function we defined previously rounded to two decimal places every time. The following twoargument definition allows different calls to round to different amounts. The flexibility of this new definition comes at a small price: each time the function is called, the number of decimal places must be specified. Default argument values allow a function to be called with a variable number of arguments; any argument that isn't specified in the call expression is given its default value, which is stated in the first line of the def statement. For example, in this final definition of percents, the optional argument decimalplaces is given a default value of 2. <h2Note: Methods</h2 Functions are called by pla\n\ncing argument expressions in parentheses after the function name. Any function that is defined in isolation is called in this way. You have also seen examples of methods, which are like functions but are called using dot notation, such as sometable.sort(somelabel). The functions that you define will always be called using the function name first, passing in all of the arguments."
   },
   {
-    "id": 2793681157,
-    "slug": "064example_sex_ratiosipynb",
-    "title": "Example: Sex Ratios",
-    "topic": "Data Science",
-    "level": 2,
-    "metadata": {
-      "source": "Data 8 Textbook (local copy)",
-      "source_path": "06/4/Example_Sex_Ratios.ipynb",
-      "word_count": 1396,
-      "estimated_minutes": 7
-    },
-    "questions": [
-      {
-        "id": 1,
-        "question": "What does the AGE column in the uspop table represent?",
-        "answer": "The AGE column in the uspop table contains ages in completed years, with 999 representing the entire population regardless of age, and 100 representing '100 or more'.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 2,
-        "question": "What information do the 2014 and 2019 columns in the uspop table provide?",
-        "answer": "The 2014 and 2019 columns in the uspop table provide estimates of the US population for these two specific years.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 3,
-        "question": "What do the numeric codes in the SEX column of the uspop table represent?",
-        "answer": "In the SEX column of the uspop table, the numeric code 1 represents male, 2 represents female, and 0 represents the total population.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 4,
-        "question": "Since when has the method of asking for sex in the Census form by checking a box for Male or Female been used?",
-        "answer": "The method of asking for sex in the Census form, where respondents check a box for Male or Female, has been used since 1790.",
-        "difficulty": 2,
-        "category": "historical context"
-      },
-      {
-        "id": 5,
-        "question": "What does it mean for someone to be nonbinary?",
-        "answer": "Nonbinary people do not identify exclusively as male or female.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 6,
-        "question": "How does the 2020 Census handle the sex question for individuals who do not identify as 'Male' or 'Female'?",
-        "answer": "The 2020 Census uses a historical form of the sex question, which does not include instructions for those who do not identify as 'Male' or 'Female'.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 7,
-        "question": "According to the 2021 study by the Williams Institute, how many individuals in the U.S. identify as nonbinary?",
-        "answer": "The 2021 study by the Williams Institute at the UCLA School of Law estimated that at least 1.2 million individuals in the United States identify as nonbinary.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 8,
-        "question": "Why might responding to the sex question in the census be difficult for some people?",
-        "answer": "Responding to the sex question in the census is intended to be straightforward, but it does not accommodate identities outside the binary classification.",
-        "difficulty": 3,
-        "category": "concept_check"
-      },
-      {
-        "id": 9,
-        "question": "How are personal characteristics determined in the 2020 Census?",
-        "answer": "All questions regarding personal characteristics in the 2020 Census are based on self-identification.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 10,
-        "question": "What did the Census Bureau consider revising for the 2020 Census?",
-        "answer": "The Census Bureau considered revising questions related to sexual orientation and gender identity for the 2020 Census.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 11,
-        "question": "What can reduce the accuracy of Census data?",
-        "answer": "Nonresponse or inaccurate responses can reduce the accuracy of Census data.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 12,
-        "question": "Why is accurate Census data important?",
-        "answer": "Accurate Census data is important for informing policy decisions and allocating resources.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 13,
-        "question": "Why do Census forms change over time?",
-        "answer": "Census forms change over time to reflect the information needs of society.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 14,
-        "question": "What was a result of the 2020 Census changes?",
-        "answer": "The 2020 Census changes have led to a more accurate understanding of US demographics.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 15,
-        "question": "What do the terms 'male' and 'female' refer to on the Census?",
-        "answer": "The term 'male' refers to individuals marked as 'Male' (SEX code 1) on the Census, and 'female' refers to those marked as 'Female' (SEX code 2).",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 16,
-        "question": "What does the age code 999 indicate in the Census data for 2019?",
-        "answer": "In the Census data for 2019, 'age' coded as 999 refers to the overall population including all age groups.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 17,
-        "question": "What does the 'allages' table include?",
-        "answer": "The 'allages' table includes data for the total population, males, and females separately.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 18,
-        "question": "What was the approximate U.S. population in 2019?",
-        "answer": "In 2019, the total U.S. population was approximately 330 million people.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 19,
-        "question": "According to the Census data, were there more females or males in the United States in 2019?",
-        "answer": "In 2019, there were more females than males in the United States according to the Census data.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 20,
-        "question": "What was the gender distribution of the total population in 2019?",
-        "answer": "In 2019, 50.75% of the total population was female, and about 49.25% was male.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 21,
-        "question": "Why do population counts need to be converted to percents out of the total population?",
-        "answer": "To make population counts comparable with other quantities, they need to be converted to percents out of the total population.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 22,
-        "question": "For infants under the age of one in 2019, which gender was more prevalent?",
-        "answer": "For infants under the age of one in 2019, more were male than female.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 23,
-        "question": "How are infants defined in the context of AGE 0?",
-        "answer": "Infants are defined as babies who have not yet completed one year, represented in rows corresponding to AGE 0.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 24,
-        "question": "What was the gender distribution of infants in 2019?",
-        "answer": "In 2019, just over 51% of the infants were male.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 25,
-        "question": "What is the proportion of male newborns in the U.S., and is the reason for this understood?",
-        "answer": "In the U.S., the proportion of male newborns is slightly greater than half, although the reason for this is not fully understood.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 26,
-        "question": "Why does the overall population have more females than males despite there being more male infants?",
-        "answer": "Despite there being more male infants, the overall population has more females than males.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 27,
-        "question": "How does the sex ratio vary across different age groups in the population?",
-        "answer": "The sex ratio varies across different age groups in the population.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 28,
-        "question": "What must be done to analyze the variation in sex ratio by age?",
-        "answer": "To analyze the variation in sex ratio by age, data must be separated into females and males, excluding aggregated age data coded as 999.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 29,
-        "question": "Which methods can be used to compare the number of females and males at each age?",
-        "answer": "Array and Table methods can be used to compare the number of females and males at each age.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 30,
-        "question": "How is the Female:Male sex ratio calculated?",
-        "answer": "The Female:Male sex ratio is calculated by dividing the number of females by the number of males for a given group.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 31,
-        "question": "How does elementwise division help in calculating sex ratios?",
-        "answer": "Elementwise division is used to calculate sex ratios, allowing us to create an array of ratios for different years by dividing corresponding values in female and male arrays.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 32,
-        "question": "What does a Female:Male ratio less than 1 indicate?",
-        "answer": "A Female:Male ratio less than 1 indicates there are fewer females than males in the population.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 33,
-        "question": "What does the Female:Male ratio of approximately 0.96 for children aged nine or younger signify?",
-        "answer": "For children aged nine or younger, the Female:Male ratio was approximately 0.96, indicating fewer girls than boys.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 34,
-        "question": "What does a ratio of 0.96 represent in terms of the number of females and males?",
-        "answer": "A ratio of 0.96 means there are about 96 females for every 100 males in the specified age group.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 35,
-        "question": "What does a male to female ratio greater than 1 indicate for people aged more than 75?",
-        "answer": "For people aged more than 75, the male to female ratios are greater than 1, indicating more women than men in these age groups.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 36,
-        "question": "What does it mean when the sex ratios are close to 2 at ages 92 and 93?",
-        "answer": "At ages 92 and 93, the sex ratios are close to 2, meaning there are about twice as many women as men.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 37,
-        "question": "How many times more women are there than men at age 99?",
-        "answer": "At age 99, there are about 3 times as many women as men.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 38,
-        "question": "How do the sex ratios change from ages 0 through 60 compared to ages 65 to 70?",
-        "answer": "The sex ratios are almost equal for ages 0 through 60, with significant increases favoring females starting from ages 65 to 70.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 39,
-        "question": "What partly explains why females generally outnumber males in the U.S. among senior citizens?",
-        "answer": "The imbalance in favor of women among senior citizens partly explains why females generally outnumber males in the U.S.",
-        "difficulty": 3,
-        "category": "application"
-      }
-    ],
-    "content_md": "Example: Sex Ratios In this section we will continue using the uspop table from the previous section. But this time we will focus on population trends in relation to the SEX column.  The Code Used in the SEX Column The contents of the AGE, 2014, and 2019 columns are straightforward to understand. The AGE column contains ages in completed years. The special value 999 represents the entire population regardless of age, and 100 represents \"100 or more\". The 2014 and 2019 columns contain estimates of the US population in each of the two years. The SEX column, however, is more difficult to interpret. The Census form asks respondents to provide the sex of each household member by checking one of two boxes labeled Male and Female. The SEX column contains numeric codes: 1 for male, 2 for female, and 0 for the total. This question has been asked in essentially the same way since 1790. But since t\n\nhen there has been considerable  on whether the sex of human beings lends itself to simple binary categorization. For example, nonbinary people do not identify exclusively as male or female. A  by the Williams Institute at the UCLA School of Law in 2021 estimated that at least 1.2 million individuals in the United States identify as nonbinary. By continuing to use the historical form of the question, the Census fails to reflect the complexity of sex classification. The  provided in the 2020 Census and reproduced in the quotation below does not include instructions for those who do not identify as one of Male or Female.  Responding to the sex question is easy.  A question on sex has been included since the first census in 1790. All 2020 Census questions that involve personal characteristics are based on selfidentification. When you complete your census, select the box for the biological s\n\nex you identify with.  Regardless of the opinion expressed above, responding to this question isn\u2019t easy for everyone. Difficulties with answering the question can lead to nonresponse or inaccurate responses. This can reduce the accuracy of Census data for informing policy decisions and allocating resources. Before the 2020 Census, the Census Bureau considered revising this question or including broader questions about sexual orientation and gender identity. In the end the Bureau decided  the planned Census. However, Census Director John Thompson wrote, \u201cThe Census Bureau remains committed to reflecting the information needs of our changing society.\u201d Census forms do change. For example,  in the 2020 Census have led to a more accurate understanding of US demographics. We can hope that the 2030 Census will be more inclusive and accurate in all respects. In what follows, we will use the dat\n\na provided by the Census keeping in mind the issues described above. We will use the term \"male\" to mean an individual for whom \"Male\" (SEX code 1) was selected on the Census form. We will use \"female\" to mean an individual for whom \"Female\" (SEXcode 2) was selected.  Overall Proportions We will now begin looking at sex ratios in 2019. First, let's look at all the age groups together. Remember that this means looking at the rows where the \"age\" is coded 999. The table allages contains this information. There are three rows: one for the total population, one for males, and one for females. Row 0 of allages contains the total U.S. population in each of the two years. The United States had about 330 million people in 2019. Row 1 contains the counts for males and Row 2 for females. Compare these two rows to see that in 2019, there were more females than males in the United States. The popula\n\ntion counts in Row 1 and Row 2 add up to the total population in Row 0. For comparability with other quantities, we will need to convert these counts to percents out of the total population. Let's access the total for 2019 and name it. Then, we'll show a population table with a proportion column. Consistent with our earlier observation that there were more females than males, 50.75% of the population in 2019 was female and about 49.25% was male.  Proportions Among Infants When we look at infants, however, the opposite is true. Let's define infants to be babies who have not yet completed one year, represented in the rows corresponding to AGE 0. Here are their numbers in the population. You can see that male infants outnumbered female infants. As before, we can convert these counts to percents out of the total numbers of infants. The resulting table shows that in 2019, just over 51% of inf\n\nants in the U.S. were male. In fact, it has long been observed that the proportion of males among newborns is slightly more than 1/2. The reason for this is not thoroughly understood, and .  Sex Ratio at Each Age We have seen that while there are more male infants than female, there are more females than males in the population overall. That means the split between sexes must vary across age groups. To study this variation, we will separate out the data for the females and the males, and eliminate the row where all the ages are aggregated and AGE is coded as 999. The tables females and males contain the data for each the two sex codes. The plan now is to compare the number of females and the number of males at each age, for each of the two years. Array and Table methods give us straightforward ways to do this. Both these tables have one row for each age. For any given age, we can get the\n\n Female:Male sex ratio by dividing the number of females by the number of males. To do this in one step, we can use column to extract the array of female counts and the corresponding array of male counts, and then simply divide one array by the other. Elementwise division will create an array of sex ratios for all the years. You can see from the display that the ratios are all around 0.96 for children aged nine or younger. When the Female:Male ratio is less than 1, there are fewer females than males. Thus we are seeing that there were fewer girls than boys in each of the age groups 0, 1, 2, and so on through 9. More precisely, in each of these age groups there were about 96 girls for every 100 boys. Then how can the overall proportion of females in the population be higher than the males? Something quite different happens when we examine the other end of the age range. Here are the Femal\n\ne:Male ratios for people aged more than 75. Not only are all of these ratios greater than 1, signifying more women than men in all of these age groups, many of them are considerably greater than 1.  At ages 92 and 93 the ratios are close to 2, meaning that there were about twice as many women as men at those ages in 2019.  At ages 99 there were about 3 times as many women as men. If you are wondering how many people there were at these advanced ages, you can use Python to find out: The graph below shows sex ratios plotted against age. The blue curve shows the 2019 ratios by age. The ratios are almost 1 (signifying close to equal numbers of males and females) for ages 0 through 60. But they start shooting up dramatically (more females than males) starting in the 65 to 70 range. That females outnumber males in the U.S. is partly due to the marked imbalance in favor of women among senior ci\n\ntizens."
-  },
-  {
-    "id": 2933191412,
-    "slug": "063example_population_trendsipynb",
-    "title": "Example: Population Trends",
-    "topic": "Data Science",
-    "level": 2,
-    "metadata": {
-      "source": "Data 8 Textbook (local copy)",
-      "source_path": "06/3/Example_Population_Trends.ipynb",
-      "word_count": 764,
-      "estimated_minutes": 4
-    },
-    "questions": [
-      {
-        "id": 1,
-        "question": "What does the data file contain regarding the resident population in the United States?",
-        "answer": "The data file contains annual estimates of the resident population by single year of age and sex for the United States.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 2,
-        "question": "What do the numeric codes in the SEX column represent?",
-        "answer": "The SEX column uses numeric codes where 0 represents the total population, 1 indicates male, and 2 indicates female.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 3,
-        "question": "How is age represented in the AGE column, and what does the value 999 signify?",
-        "answer": "The AGE column contains ages in completed years, but the age value of 999 is used as a sum of the total population.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 4,
-        "question": "How does the Census Bureau categorize individuals aged 100 and older?",
-        "answer": "The age category of 100 includes all individuals aged 100 and older, according to the Census Bureau.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 5,
-        "question": "Why might displaying the entire table directly be unhelpful when dealing with large data tables?",
-        "answer": "Displaying the entire table directly is typically not useful when working with large data tables.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 6,
-        "question": "What is the frequency of the Census and when were the most recent two held?",
-        "answer": "The Census is decennial, meaning it takes place every 10 years, with the most recent Census held in 2020 and the previous one in 2010.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 7,
-        "question": "How does the Census Bureau update population estimates each year?",
-        "answer": "The Census Bureau estimates population changes each year by adding the estimated changes to the last decennial census to produce updated population estimates every year.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 8,
-        "question": "Why is data cleaning necessary when using publicly available tables from the Census?",
-        "answer": "Publicly available tables from the Census often contain more information than needed for specific analyses, making data cleaning necessary to focus on relevant data.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 9,
-        "question": "What steps are taken to analyze population changes from 2014 to 2019?",
-        "answer": "To analyze population changes from 2014 to 2019, we select relevant columns and simplify their labels for easier data manipulation.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 10,
-        "question": "What can be done with the SEX column with code 0 and why?",
-        "answer": "The SEX column with code 0 can be dropped as it contains the same value in all rows.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 11,
-        "question": "How do population numbers change as age increases and why?",
-        "answer": "Population numbers generally decrease as age increases due to mortality rates.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 12,
-        "question": "What does the AGE 100 row represent?",
-        "answer": "The AGE 100 row includes all individuals aged 100 and older, not only those exactly 100 years old.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 13,
-        "question": "How can the change in population be calculated in uspopbyage?",
-        "answer": "In uspopbyage, the change in population can be calculated both in absolute numbers and as percentages.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 14,
-        "question": "What feature of the uspopbyage table allows arithmetic operations between columns?",
-        "answer": "Each column in the uspopbyage table is an array of the same length, allowing arithmetic operations between them.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 15,
-        "question": "By how much did the overall population grow and what was the percentage increase from 2014?",
-        "answer": "The overall population grew by about 9.9 million people, which is just over a 3% increase from 2014.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 16,
-        "question": "What does it indicate if most entries in the Percent Change column are negative?",
-        "answer": "Most entries in the Percent Change column are negative, indicating a decline in population at the youngest ages.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 17,
-        "question": "How does the percent change for people in their late sixties and early seventies compare to the overall population growth rate?",
-        "answer": "The percent change for people in their late sixties and early seventies is well over 20%, significantly higher than the overall population growth rate.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 18,
-        "question": "What is the trend associated with the large increase in population for those in their late sixties and early seventies?",
-        "answer": "The large increase in population for those in their late sixties and early seventies is part of a trend known as the greying of America.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 19,
-        "question": "How is the data sorted to better understand the changes in population?",
-        "answer": "To better understand the changes in population, the data is sorted by the absolute change in population in descending order.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 20,
-        "question": "When did the attack on Pearl Harbor occur, leading to significant U.S. military involvement in World War II by 1942?",
-        "answer": "The attack on Pearl Harbor occurred in late 1941, leading to significant U.S. military involvement in World War II by 1942.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 21,
-        "question": "In what year did World War II end after several years of intense global conflict?",
-        "answer": "World War II ended in 1945 after several years of intense global conflict.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 22,
-        "question": "Which years were part of the post-WWII baby boom period in the United States?",
-        "answer": "The years 1947 to 1950 were part of the post-WWII baby boom period in the United States.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 23,
-        "question": "What trend in birth rates was observed in the United States during the baby boom following World War II?",
-        "answer": "Significant increases in birth rates were observed in the United States during the baby boom following World War II.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 24,
-        "question": "How old were individuals in 2019 who were born during the post-WWII baby boom?",
-        "answer": "Individuals who were between 69 and 72 years old in 2019 were born during the post-WWII baby boom.",
-        "difficulty": 1,
-        "category": "application"
-      }
-    ],
-    "content_md": "Example: Population Trends We are now ready to work with large tables of data. The file below contains \"Annual Estimates of the Resident Population by Single Year of Age and Sex for the United States.\" Notice that readtable can read data directly from a URL. Only the first 10 rows of the table are displayed. Later we will see how to display the entire table; however, this is typically not useful with large tables. A  appears online. The SEX column contains numeric codes: 0 stands for the total, 1 for male, and 2 for female. The assumptions underlying this binary categorization are questionable. We will discuss them in the next section. In this section we will focus on age and population size. The AGE column contains ages in completed years, but the special value 999 is a sum of the total population. The \"age\" 100 too has a special status. In that category, the Census Bureau includes all \n\npeople aged 100 or more. The other columns contain estimates of the US population in each category of sex and age in the years 2010 through 2019. The Census is decennial: it takes place every 10 years. The most recent Census was held in 2020 and the one before that in 2010. The Census Bureau also estimates population changes each year. As explained in the Bureau's description of its , it \"adds [the estimated changes] to the last decennial census to produce updated population estimates every year.\" Typically, a publicly available table will contain more information than necessary for a particular investigation or analysis. To get the large table into a more usable form, we have to do some data cleaning. Suppose we are only interested in the population changes from 2014 to 2019. Let's select the relevant columns. We can simplify the labels of the selected columns.  Ages 97100 As a warmup, \n\nlet's examine the total population, labeled by SEX code 0. Since all these rows will have the same value 0 in the SEX column, we will drop that column. Now let's look at the population in the highest ages. Not surprisingly, the numbers of people are smaller at higher ages. For example, there are fewer 99yearolds than 98yearolds. But the numbers for AGE 100 are quite a bit larger than those for age 99. That is because the row with AGE 100 doesn't just represent 100yearolds. It also includes those who are older than 100.  Percent Change Each column of the table uspopbyage is an array of the same length, and so columns can be combined using arithmetic. The array below contains the change in population between 2014 and 2019. There is one entry corresponding to each row of uspopbyage. We can augment uspopbyage with a column that contains these changes, both in absolute terms and as percents r\n\nelative to the value in 2014. Almost all the entries displayed in the Percent Change column are negative, demonstrating a drop in population at the youngest ages. However, the overall population grew by about 9.9 million people, a percent change of just over 3%. Let us compare this to the change at each age. For ease of interpretation, we will sort the table in decreasing order of the absolute change in population, contained in the column Change. Take a look at the top few rows. While the percent change is about 3% for the overall population, it jumps to well over 20% for the people in their late sixties and early seventies. This stunning change contributes to what is known as the greying of America. What could explain this large increase? We can explore this question by examining the years in which the relevant groups were born.  Those who were in the age group 69 to 72 in 2014 were bor\n\nn in the years 1942 to 1945. The attack on Pearl Harbor was in late 1941, and by 1942 U.S. forces were heavily engaged in a massive war that ended in 1945.  Those who were 69 to 72 years old in 2019 were born in the years 1947 to 1950, at the height of the postWWII baby boom in the United States. The postwar jump in births is a major reason for the large changes that we have observed."
-  },
-  {
-    "id": 2991001592,
-    "slug": "085bike_sharing_in_the_bay_areaipynb",
-    "title": "Bike Sharing in the Bay Area",
-    "topic": "Data Science",
-    "level": 2,
-    "metadata": {
-      "source": "Data 8 Textbook (local copy)",
-      "source_path": "08/5/Bike_Sharing_in_the_Bay_Area.ipynb",
-      "word_count": 833,
-      "estimated_minutes": 5
-    },
-    "questions": [
-      {
-        "id": 1,
-        "question": "What does the dataset describe regarding bicycle rentals from September 2014 to August 2015?",
-        "answer": "The dataset describes every bicycle rental from September 2014 to August 2015, including 354,152 rentals.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 2,
-        "question": "What columns are included in the dataset?",
-        "answer": "The dataset includes columns for the rental ID, duration in seconds, start and end dates, station names and codes, bike serial number, and subscriber type with zip code.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 3,
-        "question": "How are free trips defined in the dataset?",
-        "answer": "Free trips in the dataset are defined as those lasting less than 1800 seconds (half an hour).",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 4,
-        "question": "What does the histogram indicate about the duration of bike trips?",
-        "answer": "The histogram indicates most bike trips lasted around 10 minutes, with fewer trips approaching the 30-minute limit.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 5,
-        "question": "What is the maptable tool introduced for?",
-        "answer": "The maptable tool is introduced as a powerful visualization method for examining the dataset.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 6,
-        "question": "What is the purpose of the 'group' method in classifying rentals based on Start Station and End Station?",
-        "answer": "The 'group' method is used to identify the most highly used Start Station and can classify rentals based on Start Station and End Station.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 7,
-        "question": "Where did the largest number of bike trips start according to the data?",
-        "answer": "The largest number of bike trips started at the Caltrain Station on Townsend and 4th in San Francisco.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 8,
-        "question": "Which two locations had a significant number of bike trips between them?",
-        "answer": "A significant number of trips were taken between 2nd at Folsom and 2nd at Townsend.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 9,
-        "question": "What does the 'pivot' method display in terms of Start and End Stations?",
-        "answer": "The 'pivot' method displays data in a contingency table that shows all possible combinations of Start and End Stations.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 10,
-        "question": "What does the first argument in a pivot statement specify?",
-        "answer": "The first argument of a pivot statement specifies the column labels, and the second argument specifies the row labels for the pivot table.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 11,
-        "question": "How can we find the shortest ride time using pivot tables?",
-        "answer": "Using pivot tables, we can find the shortest ride time between Start and End Stations by setting Duration as the values argument and using the min function.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 12,
-        "question": "Why does Beale at Market have a high number of bike trips?",
-        "answer": "Beale at Market has a high number of bike trips because it is near a train station and a Bay Area Rapid Transit (BART) station.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 13,
-        "question": "Why are there no bike trips between the 2nd Avenue stations and Adobe on Almaden?",
-        "answer": "There are no bike trips between the 2nd Avenue stations and Adobe on Almaden due to the latter being in a different city.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 14,
-        "question": "What is Marker.maptable used for?",
-        "answer": "Marker.maptable is used to draw maps showing the location of data points using latitude and longitude, with an optional identifier for each point.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 15,
-        "question": "What do maps created with Marker.maptable resemble?",
-        "answer": "Maps created with Marker.maptable can resemble those from Google Maps or other online map systems, allowing users to interact with elements like zoom and click on markers for more information.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 16,
-        "question": "How are bike stations visualized on the map?",
-        "answer": "Bike stations are visualized on the map as colored circles to differentiate them, especially when representing different cities in the Bay Area.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 17,
-        "question": "How can you distinguish points by different attributes on a map?",
-        "answer": "To distinguish points by different attributes, such as city, you can use different colors on the map for each category.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 18,
-        "question": "How can map visualization be enhanced using data grouping techniques?",
-        "answer": "The map visualization can be enhanced by using data grouping techniques to identify categories, such as different cities, and assigning different map attributes accordingly.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 19,
-        "question": "What do the five different colors on the map represent?",
-        "answer": "Markers on the map have five different colors representing five different cities.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 20,
-        "question": "How are the starting stations identified using geographical data?",
-        "answer": "The starting stations are identified using geographical data by joining the starts with stations.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 21,
-        "question": "How is the area of a circle representing a station on the map calculated?",
-        "answer": "The area of a circle representing a station on the map is calculated as 0.3 times the count of rentals starting at that station.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 22,
-        "question": "What does a larger circle area on the map indicate about bike rentals?",
-        "answer": "A larger circle area on the map indicates a higher number of bike rentals starting from that station.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 23,
-        "question": "Where is the highest concentration of bike rentals in the Bay Area?",
-        "answer": "San Francisco's eastern section has the highest concentration of bike rentals in the Bay Area.",
-        "difficulty": 2,
-        "category": "concept_check"
-      }
-    ],
-    "content_md": "Bike Sharing in the Bay Area We end this chapter by using all the methods we have learned to examine a new and large dataset. We will also introduce maptable, a powerful visualization tool. The  service published a  describing every bicycle rental from September 2014 to August 2015 in their system. There were 354,152 rentals in all. The columns are:  An ID for the rental  Duration of the rental, in seconds  Start date  Name of the Start Station and code for Start Terminal  Name of the End Station and code for End Terminal  A serial number for the bike  Subscriber type and zip code We'll focus only on the free trips, which are trips that last less than 1800 seconds (half an hour). There is a charge for longer trips. The histogram below shows that most of the trips took around 10 minutes (600 seconds) or so. Very few took near 30 minutes (1800 seconds), possibly because people try to retur\n\nn the bikes before the cutoff time so as not to have to pay. We can get more detail by specifying a larger number of bins. But the overall shape doesn't change much.  Exploring the Data with group and pivot We can use group to identify the most highly used Start Station: The largest number of trips started at the Caltrain Station on Townsend and 4th in San Francisco. People take the train into the city, and then use a shared bike to get to their next destination. The group method can also be used to classify the rentals by both Start Station and End Station. Fiftyfour trips both started and ended at the station on 2nd at Folsom. A much large number (437) were between 2nd at Folsom and 2nd at Townsend. The pivot method does the same classification but displays its results in a contingency table that shows all possible combinations of Start and End Stations, even though some of them didn't\n\n correspond to any trips. Remember that the first argument of a pivot statement specifies the column labels of the pivot table; the second argument labels the rows. There is a train station as well as a Bay Area Rapid Transit (BART) station near Beale at Market, explaining the high number of trips that start and end there. We can also use pivot to find the shortest time of the rides between Start and End Stations. Here pivot has been given Duration as the optional values argument, and min as the function which to perform on the values in each cell. Someone had a very quick trip (271 seconds, or about 4.5 minutes) from Beale at Market to 2nd at Folsom, about five blocks away. There are no bike trips between the 2nd Avenue stations and Adobe on Almaden, because the latter is in a different city.  Drawing Maps The table stations contains geographical information about each bike station, inc\n\nluding latitude, longitude, and a \"landmark\" which is the name of the city where the station is located. We can draw a map of where the stations are located, using Marker.maptable. The function operates on a table, whose columns are (in order) latitude, longitude, and an optional identifier for each point. The map is created using , which is an open online mapping system that you can use just as you would use Google Maps or any other online map. Zoom in to San Francisco to see how the stations are distributed. Click on a marker to see which station it is. You can also represent points on a map by colored circles. Here is such a map of the San Francisco bike stations.  More Informative Maps: An Application of join The bike stations are located in five different cities in the Bay Area. To distinguish the points by using a different color for each city, let's start by using group to identif\n\ny all the cities and assign each one a color. Now we can join stations and colors by landmark, and then select the columns we need to draw a map. Now the markers have five different colors for the five different cities. To see where most of the bike rentals originate, let's identify the start stations: We can include the geographical data needed to map these stations, by first joining starts with stations: Now we extract just the data needed for drawing our map, adding a color and an area to each station. The area is 0.3 times the count of the number of rentals starting at each station, where the constant 0.3 was chosen so that the circles would appear at an appropriate scale on the map. That huge blob in San Francisco shows that the eastern section of the city is the unrivaled capital of bike rentals in the Bay Area."
-  },
-  {
     "id": 3053275831,
     "slug": "06tablesipynb",
     "title": "Tables",
@@ -2256,7 +1354,7 @@
       {
         "id": 15,
         "question": "What does the pivot method require for determining columns and rows?",
-        "answer": "The pivot method requires two column labels\u2014one to determine the columns and one to determine the rows.",
+        "answer": "The pivot method requires two column labels, one to determine the columns and one to determine the rows.",
         "difficulty": 1,
         "category": "definition"
       },
@@ -2318,114 +1416,23 @@
       },
       {
         "id": 24,
-        "question": "What data does the State of California's Open Data Portal provide from 2008 to 2014?",
-        "answer": "The State of California's Open Data Portal provides data on educational attainment and personal income among Californians from 2008 to 2014.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 25,
-        "question": "What is the focus of the U.S. Census Current Population Survey data for California in 2014?",
-        "answer": "The data are derived from the U.S. Census Current Population Survey focusing on the Population Count in California by age, gender, educational attainment, and income for the year 2014.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 26,
-        "question": "How many combinations of variables are in the dataset and what are they?",
-        "answer": "The dataset consists of 127 combinations of variables such as age, gender, educational attainment, and personal income.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 27,
-        "question": "What is the recommended approach to simplify analysis in the exercise?",
-        "answer": "To simplify analysis, it is recommended to start by examining one or two variables, specifically educational attainment and personal income in this exercise.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 28,
-        "question": "How can educational attainment be used in examining the data?",
-        "answer": "Educational attainment has been subdivided by different levels of income, allowing the table to be grouped by this variable to sum the Population Count in each category.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 29,
-        "question": "How many categories of educational attainment are there in the data?",
-        "answer": "There are only four categories of educational attainment in the data.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 30,
         "question": "What does the 'percents' function do?",
         "answer": "The 'percents' function converts an array of numbers into an array of percentages based on the total of the input array.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 31,
-        "question": "What percentage of adult Californians have at least a Bachelor's degree?",
-        "answer": "More than 30% of adult Californians have at least a Bachelor's degree.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 32,
-        "question": "What percentage of adult Californians do not have a high school diploma?",
-        "answer": "Almost 16% of adult Californians do not have a high school diploma.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 33,
+        "id": 25,
         "question": "What does a pivot table do with data when forming a contingency table?",
         "answer": "A pivot table can create a contingency table, which is a table of counts showing data crossclassified by categories, such as educational attainment and personal income.",
         "difficulty": 3,
         "category": "definition"
       },
       {
-        "id": 34,
+        "id": 26,
         "question": "How do pivot tables enable comparison by converting counts to percentages?",
         "answer": "Pivot tables allow data to be viewed as distributions that can be compared by converting counts to percentages.",
         "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 35,
-        "question": "What does the data show regarding the relationship between educational attainment and personal income?",
-        "answer": "The data shows a significant positive association between educational attainment and personal income.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 36,
-        "question": "How does income potential vary for people without a high school diploma compared to those with higher education?",
-        "answer": "Fewer than 10% of people without a high school diploma or comparable education reach higher income levels compared to those with higher education.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 37,
-        "question": "How does educational attainment affect personal income for adult Californians with a Bachelor's degree or higher?",
-        "answer": "Adult Californians with a Bachelor's degree or higher tend to have higher personal incomes than those with no high school diploma.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 38,
-        "question": "What does the bar chart in the lesson illustrate about income distributions and education level?",
-        "answer": "The bar chart in the lesson illustrates a major difference in income distributions based on education level.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 39,
-        "question": "How does educational attainment, as indicated by higher degrees, relate to income levels in adults?",
-        "answer": "Educational attainment, as indicated by higher degrees, correlates with increased income levels in adults.",
-        "difficulty": 2,
         "category": "application"
       }
     ],
@@ -2481,419 +1488,342 @@
       },
       {
         "id": 6,
-        "question": "What columns are included in the dataset of top grossing U.S.A. movies?",
-        "answer": "The dataset consists of top grossing U.S.A. movies, featuring columns like movie title, studio name, domestic box office gross, adjusted gross for 2016 prices, and release year.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 7,
-        "question": "How many movies are included in the dataset and what specific list is provided?",
-        "answer": "The dataset includes 200 movies, providing a list of the top ten movies based on the column that shows unadjusted gross receipts.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 8,
-        "question": "What information is provided by the first two columns of the dataset?",
-        "answer": "The first column of the dataset lists the titles of the movies, while the second column provides the names of the studios that produced these movies.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 9,
-        "question": "What does the domestic box office gross column represent?",
-        "answer": "One column contains the domestic box office gross in dollars, representing the revenue from ticket sales.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 10,
-        "question": "How does the dataset allow for meaningful comparisons over time?",
-        "answer": "The dataset also includes a column with gross figures adjusted to 2016 prices, allowing for meaningful comparisons over time.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 11,
         "question": "What is the benefit of reducing fine measurement precision by rounding in Python?",
         "answer": "The technique of reducing fine measurement precision by rounding is beneficial for easier data handling, such as rounding to two decimal places using np.round in Python.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 12,
+        "id": 7,
         "question": "How does binning facilitate data analysis?",
         "answer": "Binning transforms continuous quantitative data into discrete intervals or 'bins', facilitating data analysis by grouping values.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 13,
+        "id": 8,
         "question": "How can Adjusted Gross receipts be made easier to handle?",
         "answer": "Adjusted Gross receipts can be converted to millions of dollars to make large numbers easier to handle.",
         "difficulty": 1,
         "category": "application"
       },
       {
-        "id": 14,
+        "id": 9,
         "question": "How is the binning process similar to grouping in categorical data?",
         "answer": "The binning process is similar to grouping in categorical data but is applied to quantitative data using a 'bin' method.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 15,
+        "id": 10,
         "question": "Why is binning useful for handling Adjusted Gross values?",
         "answer": "Each movie is likely to have a unique Adjusted Gross value due to the precision of measurement, making binning a useful technique.",
         "difficulty": 3,
         "category": "definition"
       },
       {
-        "id": 16,
+        "id": 11,
         "question": "What is the result of the method for creating bins in terms of the table structure?",
         "answer": "The method for creating bins results in a two-column table where the first column lists the left endpoints of the bins, except the last bin.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 17,
+        "id": 12,
         "question": "What are bins in data analysis?",
         "answer": "Bins in data analysis are intervals that divide a continuous range of data into discrete sections.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 18,
+        "id": 13,
         "question": "What is a common method for selecting an initial bin width?",
         "answer": "It's common to choose an initial bin width based on what seems reasonable before adjusting based on the data results.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 19,
+        "id": 14,
         "question": "How do bins behave in Python regarding their endpoints?",
         "answer": "In Python, bins include their left endpoint but not the right endpoint, except for the last bin.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 20,
+        "id": 15,
         "question": "What does it mean for bins to be contiguous?",
         "answer": "Bins must be contiguous, meaning they cover the entire range without gaps between them.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 21,
+        "id": 16,
         "question": "What does the area principle of visualization state?",
         "answer": "The area principle of visualization states that when representing a magnitude with a two-dimensional figure, the area should accurately represent the magnitude.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 22,
+        "id": 17,
         "question": "What can happen when you increase both dimensions of a figure by a percentage?",
         "answer": "Simply increasing both dimensions of a figure by a percentage can lead to a larger than intended increase in the perceived size due to the multiplicative effect on area.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 23,
+        "id": 18,
         "question": "In visual representations, what has more influence on our perception of size?",
         "answer": "In visual representations, our perception of size is more influenced by area than by either height or width alone.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 24,
+        "id": 19,
         "question": "What happens to the overall area when dimensions of an object are increased by a certain percentage?",
         "answer": "When the dimensions of an object are increased by a certain percentage, the overall area increases more significantly, as it is a product of both dimensions.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 25,
+        "id": 20,
         "question": "What are the characteristics of the bins in histograms?",
         "answer": "Histograms have bins that are drawn to scale and are contiguous, with possibly some empty bins, due to the numerical values on the horizontal axis having fixed positions on the number line.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 26,
+        "id": 21,
         "question": "What is essential for drawing a histogram correctly regarding the area of each bar?",
         "answer": "The area of each bar in a histogram is proportional to the number of entries in the bin, which is essential for drawing a histogram correctly.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 27,
+        "id": 22,
         "question": "How is the area of a bar in a histogram related to the entries in that bin?",
         "answer": "The area of a bar in a histogram represents the percentage of entries in that bin.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 28,
+        "id": 23,
         "question": "How do you calculate the height of a bar in a histogram?",
         "answer": "The height of a bar in a histogram is calculated by dividing the area of the bar by the width of the bin, resulting in units of 'percent per unit on the horizontal axis.'",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 29,
+        "id": 24,
         "question": "What do the heights of the bars represent in histograms?",
         "answer": "In histograms, the heights of the bars represent something other than percents, due to the use of area to represent percentages.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 30,
+        "id": 25,
         "question": "What does the area of each bar equal in a histogram on the density scale?",
         "answer": "In a histogram on the density scale, the area of each bar equals the percent of data values in the bin, and the total area of all bars sums to 100%.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 31,
+        "id": 26,
         "question": "What does the height of each bar in a density scale histogram represent?",
         "answer": "The height of each bar in a density scale histogram represents the percent of elements in a bin relative to its width.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 32,
+        "id": 27,
         "question": "What is the advantage of using the density scale in histograms?",
         "answer": "Using the density scale in histograms allows proportions of data across bins to sum to 1, providing a clear visual representation of distribution.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 33,
+        "id": 28,
         "question": "How does a density scale histogram differ from a frequency histogram?",
         "answer": "A density scale histogram differs from a frequency histogram because it adjusts for bin width, ensuring that total bar area reflects data distribution.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 34,
+        "id": 29,
         "question": "Why is drawing histograms on the density scale useful for comparison?",
         "answer": "Drawing histograms on the density scale allows for comparison of histograms from different data sets or with different bin choices by making areas and densities comparable.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 35,
+        "id": 30,
         "question": "Why is it important to use the density scale for histograms with unequal bins?",
         "answer": "When using the density scale for histograms, it is important for interpretability, especially if the histogram has unequal bins.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 36,
+        "id": 31,
         "question": "How does using the density scale help when histogram bins are unequal?",
         "answer": "In a histogram, if bins are unequal, using the density scale ensures that the representation is interpretable and comparisons can be made accurately.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 37,
-        "question": "How can natural binning occur in the U.S. education system?",
-        "answer": "In the U.S. education system, natural binning can occur by grouping grades into elementary, middle, high school, and undergraduate years when plotting data on years of education.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 38,
+        "id": 32,
         "question": "Is it common for histogram bins to have varied widths?",
         "answer": "Bins in a histogram do not need to be of equal size, and it is common to have varied bin widths, with wider bins possibly on one end of the scale.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 39,
+        "id": 33,
         "question": "What does the height of each bar in a histogram represent?",
         "answer": "In a histogram, the height of each bar represents the percentage per unit for the corresponding bin.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 40,
+        "id": 34,
         "question": "How does the width of bins affect the density of bars in a histogram?",
         "answer": "The density of bars in a histogram is affected by the width of the bins, with wider bins leading to lower density if they contain the same number of elements.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 41,
+        "id": 35,
         "question": "What happens to a histogram's visual representation when plotting counts without normalization?",
         "answer": "When plotting counts for histogram bins without normalization, the visual representation changes and may not reflect density properly.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 42,
-        "question": "Why does the [300, 350) bin appear taller than the [500, 1800] bin in the given example?",
-        "answer": "In the given example, the [300, 350) bin is narrower but appears taller than the wider [500, 1800] bin due to having a higher density of values.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 43,
+        "id": 36,
         "question": "What different insights can plots using unequal bins reveal compared to equal bins?",
         "answer": "Plots using unequal bins can reveal different insights into data distributions compared to equal bins, depending on how the data is spread across the range.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 44,
-        "question": "Why does the figure misrepresent the data using a count-based method?",
-        "answer": "The figure misrepresents the data because it uses a count-based method where the height of each bar is plotted at the number of movies in the bin, without accounting for the difference in the widths of the bins.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 45,
-        "question": "Why is a histogram misleading when it comes to movies grossing at least 500 million dollars?",
-        "answer": "A histogram is misleading in this context as it exaggerates the movies grossing at least 500 million dollars by not correctly scaling the area of the bars to reflect percentages.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 46,
-        "question": "How can histogram bar tops hide detailed distribution information?",
-        "answer": "The flat tops of bars in histograms can hide detailed distribution information within bins, particularly if the movies are unevenly distributed.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 47,
-        "question": "What can be achieved by splitting the [400, 500) bin into narrower bins?",
-        "answer": "By splitting the [400, 500) bin into narrower bins, more detailed information about the distribution of movies within that bin can be revealed.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 48,
+        "id": 37,
         "question": "What is a flat top at the level 0.3 across the whole bin in a histogram used for?",
         "answer": "A flat top at the level 0.3 across the whole bin in a histogram is used as a rough approximation to understand the general shape of the data distribution.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 49,
+        "id": 38,
         "question": "How can the height of a bar in a histogram be understood?",
         "answer": "In a histogram, the height of a bar can be understood as the percentage of data within a specified range, divided by the width of that range.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 50,
+        "id": 39,
         "question": "What is the height of a bin in a histogram that is 100 million dollars wide and contains 30% of the data?",
         "answer": "For a bin in a histogram that is 100 million dollars wide containing 30% of the data, the height is 0.3% per million dollars.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 51,
+        "id": 40,
         "question": "Why might we consider a histogram bin as consisting of many narrow bins?",
         "answer": "Considering a histogram bin as consisting of many narrow bins allows us to think about data distribution within smaller intervals in the range.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 52,
+        "id": 41,
         "question": "What effect does using smaller bins in a histogram have on the data representation?",
         "answer": "Smaller bins in a histogram create a more detailed picture of the data.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 53,
+        "id": 42,
         "question": "Why is it important to understand the rough approximation created by histogram flat tops when lacking access to the underlying dataset?",
         "answer": "When you don't have access to the underlying dataset, it's important to understand the rough approximation created by histogram flat tops.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 54,
+        "id": 43,
         "question": "How do you determine the height of each bar in a histogram?",
         "answer": "To find the height of each histogram bar, you need to compute the counts in the bins.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 55,
+        "id": 44,
         "question": "How can you provide more information in a histogram using a percent in each bin?",
         "answer": "You can add a column to the histogram data containing the percent in each bin to provide more information.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 56,
+        "id": 45,
         "question": "How are the ends of bins specified in a histogram?",
         "answer": "In a histogram, the left ends of all bins are specified in an array, with the last element being the right end of the last bin.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 57,
+        "id": 46,
         "question": "What can the np.diff function be used for in relation to histograms?",
         "answer": "The np.diff function can be used to find the widths of all the bins in a histogram.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 58,
+        "id": 47,
         "question": "What are the characteristics of bars in a histogram in terms of contiguity and placement?",
         "answer": "In a histogram, the bars are contiguous and the bins are drawn to scale on the number line.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 59,
+        "id": 48,
         "question": "What do bar charts display and what do they often represent?",
         "answer": "Bar charts display one numerical quantity per category and often represent distributions of categorical variables.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 60,
+        "id": 49,
         "question": "How do histograms differ from bar charts in terms of representation and order?",
         "answer": "Unlike bar charts, the bars in a histogram represent the distribution of quantitative variables and their order on the number line.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 61,
+        "id": 50,
         "question": "What is a characteristic of bars in bar charts regarding width and spacing, and how can they be reordered?",
         "answer": "In bar charts, all bars have the same width and equal spacing between them; they can be reordered since the distribution is categorical.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 62,
+        "id": 51,
         "question": "What does the length or height of bars in a bar chart represent?",
         "answer": "In a bar chart, the lengths or heights of bars are proportional to the count of each category.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 63,
+        "id": 52,
         "question": "What does the height of each bar in a histogram represent?",
         "answer": "In a histogram, the height of each bar represents the density of data within that bin.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 64,
+        "id": 53,
         "question": "What does the area of each bar in a histogram correspond to?",
         "answer": "The area of each bar in a histogram corresponds to the count of data points within that bin.",
         "difficulty": 1,
         "category": "application"
       },
       {
-        "id": 65,
+        "id": 54,
         "question": "How do histograms display data distribution using bars?",
         "answer": "Histograms display data distribution by using bars where areas are proportional to the frequencies of the data points.",
         "difficulty": 3,
@@ -2966,69 +1896,41 @@
       },
       {
         "id": 8,
-        "question": "What is Wallis' Formula used for?",
-        "answer": "Wallis' Formula is a historical method used for approximating the value of pi before the advent of computers.",
-        "difficulty": 3,
-        "category": "concept_check"
-      },
-      {
-        "id": 9,
-        "question": "What is the expression for \u03c0 as an infinite product constructed from?",
-        "answer": "The expression for \u03c0 as an infinite product is constructed from fractions of even and odd numbers.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 10,
         "question": "What does the ability to perform multiplication in any order allow?",
         "answer": "Multiplication can be performed in any order, allowing the rearrangement of calculations for computational efficiency.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 11,
-        "question": "How should you create an array to approximate \u03c0 using this method?",
-        "answer": "To approximate \u03c0 using this method, create an array of even numbers up to 1,000,000.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 12,
-        "question": "What should be done to create lists for odd numbers to approximate \u03c0?",
-        "answer": "Two separate lists, one from 1 to 999,999 and another from 3 to 1,000,001, should be used for odd numbers.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 13,
+        "id": 9,
         "question": "What function is used to multiply all elements in an array?",
         "answer": "The function np.prod is used to multiply all elements in an array, enabling the calculation of the product of numbers.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 14,
+        "id": 10,
         "question": "What is Wallis' product and how accurately can it approximate the value of \u03c0?",
         "answer": "Wallis' product is a method used to approximate the value of \u03c0, achieving accuracy up to five decimal places with a sufficient number of terms.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 15,
+        "id": 11,
         "question": "Does the order of multiplication matter when using Wallis' product to approximate \u03c0 with a finite number of terms?",
         "answer": "While multiplying fractions to approximate \u03c0 with Wallis' product, the order of multiplication does not affect the result as long as the number of terms is finite.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 16,
+        "id": 12,
         "question": "What does Wallis' formula represent and how does it relate to \u03c0?",
         "answer": "Wallis' formula represents an infinite series of fractions that when multiplied together can approximate \u03c0.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 17,
+        "id": 13,
         "question": "Why is Wallis' product considered significant in mathematics for approximating \u03c0?",
         "answer": "Wallis' product is considered a significant mathematical formula for approximating \u03c0 due to its simplicity and effectiveness.",
         "difficulty": 1,
@@ -3206,160 +2108,27 @@
       },
       {
         "id": 23,
-        "question": "What variables are included in the historical data set?",
-        "answer": "The historical data set includes variables such as family ID, parents' heights, number of children, birth rank, sex, and child's height.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 24,
-        "question": "What is the predictor variable in this lesson?",
-        "answer": "The predictor variable in this lesson is the simple average of the parents' heights.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 25,
-        "question": "What does the dataset consist of?",
-        "answer": "The dataset consists of parent average heights and child heights.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 26,
-        "question": "What does a scatter plot of parent average heights and child heights show?",
-        "answer": "A scatter plot of parent average heights and child heights shows a positive association.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 27,
-        "question": "What is a reasonable approach to predict a child's height?",
-        "answer": "To predict a child's height, a reasonable approach is to use the average parent heights that are similar to the new case, such as around 68 inches.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 28,
-        "question": "How is 'close' defined in this lesson?",
-        "answer": "In this lesson, 'close' is defined as being within half an inch of a specified value.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 29,
-        "question": "What is the goal of using the average height of parents within a range?",
-        "answer": "The goal is to predict a child's height based on the average height of parents within a range.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 30,
-        "question": "What is a reasonable definition of 'around 68 inches'?",
-        "answer": "A reasonable definition of 'around 68 inches' is considered as within the range of 67.5 to 68.5 inches.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 31,
-        "question": "How is the prediction for a child's height represented?",
-        "answer": "The prediction for a child's height is represented by the gold dot, which is the average height of children whose parents' heights fall within the specified range.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 32,
-        "question": "What is the predicted height of a child whose parents have an average height of 68 inches?",
-        "answer": "The predicted height of a child whose parents have an average height of 68 inches is 67.62 inches.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 33,
-        "question": "What does the predictchild function estimate?",
-        "answer": "The predictchild function can estimate a child's height based on the parent's average height.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 34,
-        "question": "How can new height predictions be generated using the predictchild function?",
-        "answer": "By changing the value of the parent average height in the predictchild function, new height predictions can be generated.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 35,
         "question": "How is the accuracy of predictions derived from the function assessed?",
         "answer": "Predictions derived from the function are verified against existing data to assess their accuracy.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 36,
-        "question": "Which rows are of interest for prediction when using parent average heights?",
-        "answer": "The rows of interest for prediction correspond to parent average heights between 67.5 and 68.5 inches.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 37,
-        "question": "What is the function 'predictchild' applied to in order to generate predictions for a child's height?",
-        "answer": "The function 'predictchild' is applied to Parent Average heights to generate predictions for a child's height.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 38,
+        "id": 24,
         "question": "What does a graph of averages represent?",
         "answer": "A graph of averages represents predicted data points using a series of overlaid scatter plots.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 39,
-        "question": "What do the gold dots in the graph of averages represent?",
-        "answer": "The graph of averages contains gold dots, each representing the center of a vertical strip for predicting a child's height.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 40,
+        "id": 25,
         "question": "What is the regression line and what does it summarize?",
         "answer": "The regression line is a straight line that visually summarizes the relationship between parent average heights and predicted child heights.",
         "difficulty": 3,
         "category": "definition"
       },
       {
-        "id": 41,
-        "question": "What is the predicted child height for a parent average height of 65 inches using the function predictchild?",
-        "answer": "For a parent average height of 65 inches, the function predictchild gives a predicted child height of approximately 65.84 inches.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 42,
-        "question": "What calculation is similar to the method that led to the development of regression analysis?",
-        "answer": "The calculation demonstrated is similar to the method that led to the development of regression analysis.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 43,
-        "question": "What do historical analyses, like John Snow's work on cholera, highlight about data science concepts?",
-        "answer": "Historical analyses, like John Snow's work on cholera, highlight that fundamental data science concepts have deep historical roots.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 44,
-        "question": "What modern prediction methods is the method used in the example a precursor to?",
-        "answer": "The method used in the example is a precursor to modern nearest neighbor prediction methods, which are widely used today.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 45,
+        "id": 26,
         "question": "What does machine learning involve in terms of prediction methods and datasets?",
         "answer": "Machine learning involves automating prediction methods to analyze and make predictions from large and quickly changing datasets.",
         "difficulty": 3,
@@ -3460,146 +2229,132 @@
       },
       {
         "id": 12,
-        "question": "What was Stephen Curry's salary in the dataset?",
-        "answer": "Stephen Curry's salary was just under $11.4 million dollars in the dataset.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 13,
-        "question": "How did LeBron James' salary compare to Stephen Curry's in the dataset?",
-        "answer": "LeBron James' salary was more than twice that of Stephen Curry's in the dataset mentioned.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 14,
         "question": "What is the purpose of the .show() method in displaying table rows?",
         "answer": "The .show() method is used to display all rows of a table, ensuring that not just the first 10 are shown.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 15,
+        "id": 13,
         "question": "How can you use the where method to filter rows without calling are.equalto?",
         "answer": "The where method can be used with just a column name and a value to filter rows where the column's value matches the specified value, making the are.equalto call optional.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 16,
+        "id": 14,
         "question": "How can multiple conditions be applied when filtering rows using the where method?",
         "answer": "To filter rows based on multiple conditions, the where method can be used repeatedly for each condition.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 17,
+        "id": 15,
         "question": "What is the general approach to creating a new table by selecting specific rows?",
         "answer": "The general way to create a new table by selecting specific rows is to use the where method to filter based on desired conditions.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 18,
+        "id": 16,
         "question": "What is the 'where' method in a table used for?",
         "answer": "The 'where' method in a table is used to filter rows based on conditions, including various predicates like are.equalto, are.above, are.below, etc.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 19,
+        "id": 17,
         "question": "What does the 'are.between(x, y)' predicate include and exclude?",
         "answer": "The 'are.between(x, y)' predicate includes the left end of the range but excludes the right end, meaning it considers values >= x and < y.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 20,
+        "id": 18,
         "question": "What are predicates like are.equalto, are.above, and are.below used for?",
         "answer": "Predicates such as are.equalto, are.above, and are.below are used to specify different conditions for filtering data in a table.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 21,
+        "id": 19,
         "question": "Why would you use conditions in tables?",
         "answer": "Using conditions in tables allows you to select specific rows that meet criteria, such as finding values above or below a certain number.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 22,
+        "id": 20,
         "question": "What happens when a condition isn't satisfied by any row in a table?",
         "answer": "A condition that isn't satisfied by any row results in an empty table with column labels but no data rows.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 23,
+        "id": 21,
         "question": "What does the condition are.strictlybetween(x, y) check?",
         "answer": "The condition are.strictlybetween(x, y) checks if a value is greater than x and less than y.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 24,
+        "id": 22,
         "question": "What does the condition are.betweenorequalto(x, y) check?",
         "answer": "The condition are.betweenorequalto(x, y) checks if a value is greater than or equal to x and less than or equal to y.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 25,
+        "id": 23,
         "question": "What is the purpose of the are.containing(S) condition?",
         "answer": "The are.containing(S) condition is used to check if a string contains the substring S.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 26,
+        "id": 24,
         "question": "How can you negate any condition?",
         "answer": "To negate any condition, use .not before the condition to specify the opposite of what is checked.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 27,
+        "id": 25,
         "question": "What does the are.notequalto(Z) condition specify?",
         "answer": "The are.notequalto(Z) condition is used to specify that a value is not equal to Z.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 28,
+        "id": 26,
         "question": "How can using conditions like are.containing help with queries?",
         "answer": "Using conditions like are.containing can help simplify queries by reducing the amount of typing needed.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 29,
+        "id": 27,
         "question": "What combination provides flexibility to access specific rows based on features of interest?",
         "answer": "Using the where function in combination with are provides flexibility to access specific rows based on features of interest.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 30,
+        "id": 28,
         "question": "What allows for multiple approaches to achieve the same outcome when working with tables?",
         "answer": "When working with tables, there are many ways to create and manipulate them, offering multiple approaches to achieve the same outcome.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 31,
+        "id": 29,
         "question": "How can experimenting with different methods to create tables benefit you?",
         "answer": "Experimenting with different methods to create tables can help you learn and discover new ways to access and manipulate data.",
         "difficulty": 1,
         "category": "application"
       },
       {
-        "id": 32,
+        "id": 30,
         "question": "What can enhance data analysis by focusing on relevant data points?",
         "answer": "Accessing specific rows in a table based on particular features can enhance data analysis by focusing on relevant data points.",
         "difficulty": 2,
@@ -3637,297 +2392,66 @@
       },
       {
         "id": 3,
-        "question": "What information does the actors table contain?",
-        "answer": "The actors table contains information about Hollywood actors, with columns detailing each actor's name and their total gross domestic box office receipts in millions.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 4,
-        "question": "What are IMDB and Box Office Mojo, and what do they provide?",
-        "answer": "IMDB and Box Office Mojo are online sources that provide data and summaries useful for analyzing and understanding trends in movies and entertainment.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 5,
-        "question": "What does the total gross represent in terms of an actor's movies and roles?",
-        "answer": "The total gross is the sum of all domestic box office receipts, in millions of dollars, for all of the actor's movies, excluding cameo roles or speaking roles with limited screen time.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 6,
-        "question": "What does the number of movies indicate regarding an actor's career contributions?",
-        "answer": "The number of movies represents the count of films an actor has participated in that contributed to their total gross, excluding minor roles.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 7,
-        "question": "How is the average per movie determined?",
-        "answer": "Average per movie is calculated by dividing the total gross by the number of movies.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 8,
-        "question": "What does the '1 Movie' category show about an actor's film appearances?",
-        "answer": "The '1 Movie' category indicates the highest grossing single movie the actor has been in.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 9,
-        "question": "How is the table organized, and who is shown as the highest grossing actor?",
-        "answer": "The table is sorted by total gross, showing Harrison Ford as the highest grossing actor at the time of its creation, based on domestic box office receipts.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 10,
-        "question": "What does the term 'variable' indicate regarding the feature 'number of movies'?",
-        "answer": "The term 'variable' is used to indicate that a feature, such as 'number of movies,' can have different values for different individuals.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 11,
         "question": "What are quantitative or numerical variables and can you give examples?",
         "answer": "Quantitative or numerical variables are those that have numerical values and can be measured, like 'number of movies' or 'average gross receipts per movie.'",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 12,
+        "id": 4,
         "question": "What does a scatter plot show using a graphical display?",
         "answer": "A scatter plot shows the relationship between two numerical variables using a graphical display.",
         "difficulty": 1,
         "category": "concept_check"
       },
       {
-        "id": 13,
+        "id": 5,
         "question": "In a scatter plot, how is each point represented and what do the first and second arguments indicate?",
         "answer": "In a scatter plot, each point represents a row of the table; the first argument is the label of the column plotted on the horizontal axis, and the second argument is for the vertical axis.",
         "difficulty": 2,
         "category": "application"
       },
       {
-        "id": 14,
-        "question": "What does the lesson explain about the relationship between movie count and total gross for actors?",
-        "answer": "The lesson explains that a plot of movie count against total gross for actors generally shows a positive association, meaning more movies tend to result in a higher total gross.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 15,
+        "id": 6,
         "question": "What does a positive association between variables mean?",
         "answer": "A positive association between variables means that high values of one variable are generally linked with high values of the other, and low values with low values.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 16,
-        "question": "What are some exceptions to the general trend between the number of movies and total gross?",
-        "answer": "Even though there is a general positive trend between the number of movies and total gross, there are exceptions where some actors with many movies have a middling total gross.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 17,
+        "id": 7,
         "question": "How can variability in data affect the general trend indicated by positive association?",
         "answer": "Variability in data can cause deviations from the general trend indicated by positive association; some actors may earn high receipts with fewer movies.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 18,
-        "question": "What will be covered later in the course regarding quantifying association?",
-        "answer": "Quantifying association will be covered later in the course; currently, the focus is on understanding the association qualitatively.",
-        "difficulty": 1,
-        "category": "application"
-      },
-      {
-        "id": 19,
-        "question": "What is the relationship between the number of movies an actor has been in and the average gross receipt per movie?",
-        "answer": "There is a negative association between the number of movies an actor has been in and the average gross receipt per movie.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 20,
-        "question": "What is an outlier in a dataset?",
-        "answer": "An outlier in a dataset is a data point that is significantly different from the other data points, such as an actor with a low number of movies and a high average gross receipt per movie.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 21,
-        "question": "What trend does the plot show regarding the average gross receipt per movie and the number of movies?",
-        "answer": "The plot shows that, except for an outlier, the trend of average gross receipt per movie decreases as the number of movies increases.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 22,
-        "question": "What remains evident even without the outlier in the data about the association?",
-        "answer": "Even without the outlier, the negative association between the number of movies and average gross receipt per movie remains evident.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 23,
+        "id": 8,
         "question": "Why might examining data without the outlier be helpful?",
         "answer": "Examining the data without the outlier can help focus on the main trend, which shows a negative association.",
         "difficulty": 3,
         "category": "application"
       },
       {
-        "id": 24,
-        "question": "What does Robert DeNiro's highest number of movies and lowest average receipt per movie indicate about the relationship between the number of movies and average box office receipts?",
-        "answer": "Robert DeNiro has the highest number of movies but the lowest average receipt per movie, indicating a potential negative association between the number of movies and average box office receipts.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 25,
-        "question": "What is the association between the number of movies an actor is in and the average receipts per movie?",
-        "answer": "There is a negative association between the number of movies an actor is in and the average receipts per movie; as the number of movies increases, average receipts tend to decrease.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 26,
-        "question": "How can the variety in styles and genres of movies affect an actor's average receipt per movie?",
-        "answer": "The variability in styles, genres, and box office potential of movies an actor participates in can contribute to a lower average receipt per movie.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 27,
-        "question": "How might participation in both high-grossing and smaller films affect an actor's average receipt per movie?",
-        "answer": "An actor's participation in both high-grossing and smaller films can explain why they might have a high number of movies but a low average receipt per movie.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 28,
-        "question": "Why is Anthony Daniels' average receipt per movie high despite acting in a low number of films?",
-        "answer": "Anthony Daniels' filmography, consisting solely of Star Wars movies, explains his high average receipt per movie despite a low number of films.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 29,
-        "question": "What variables can influence the average receipt of a movie?",
-        "answer": "The average receipt of a movie can be influenced by variables such as genre and production budget.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 30,
+        "id": 9,
         "question": "What additional considerations are required when analyzing the association between two variables?",
         "answer": "Analyzing the association between two variables often requires consideration of other related variables.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 31,
+        "id": 10,
         "question": "What type of visualization is commonly used for studying chronological trends?",
         "answer": "Line plots, also referred to as line graphs, are commonly used visualizations for studying chronological trends.",
         "difficulty": 1,
         "category": "definition"
       },
       {
-        "id": 32,
-        "question": "What kind of data is contained in the 'moviesbyyear' table from 1980 to 2015?",
-        "answer": "The 'moviesbyyear' table contains data on movies produced by U.S. studios from 1980 to 2015, including the year, total gross revenue, the number of movies released, and the highest-grossing movie each year.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 33,
-        "question": "What does the 'Year' column represent in the 'moviesbyyear' table?",
-        "answer": "The 'Year' column in the 'moviesbyyear' table represents the year in which data about movie productions is recorded, spanning from 1980 to 2015.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 34,
-        "question": "What is indicated by the 'Total Gross' column in the 'moviesbyyear' table?",
-        "answer": "The 'Total Gross' column in the 'moviesbyyear' table signifies the total domestic box office gross, measured in millions of dollars, for all movies released in a given year.",
-        "difficulty": 2,
-        "category": "definition"
-      },
-      {
-        "id": 35,
+        "id": 11,
         "question": "How can the 'plot' method be used with tables to create a line plot?",
         "answer": "The 'plot' method can be used with tables to create a line plot by specifying which columns to use for the horizontal and vertical axes, similar to how a scatter plot is made.",
         "difficulty": 2,
         "category": "concept_check"
-      },
-      {
-        "id": 36,
-        "question": "What trends are indicated by a line plot depicting the number of movies released each year from 1980?",
-        "answer": "A line plot depicting the number of movies released each year from 1980 shows a sharp rise in the early 1980s followed by a gentler upward trend, indicating a resurgence in studio-driven movie production.",
-        "difficulty": 3,
-        "category": "application"
-      },
-      {
-        "id": 37,
-        "question": "What was the impact of the global financial crisis of 2008 on the number of movies released in 2009?",
-        "answer": "The number of movies released in 2009 was significantly lower than in 2008 due to the global financial crisis of 2008.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 38,
-        "question": "What was notable about the total domestic gross receipts in 2009 compared to 2008?",
-        "answer": "Despite fewer movies being released in 2009, the total domestic gross receipts were higher than in 2008.",
-        "difficulty": 2,
-        "category": "concept_check"
-      },
-      {
-        "id": 39,
-        "question": "How can economic recessions impact movie attendance?",
-        "answer": "Economic recessions can lead to increased movie attendance as people seek affordable escapism and social interaction.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 40,
-        "question": "What does the term 'century21' refer to?",
-        "answer": "The term 'century21' refers to the dataset containing movie data from the years 2000 to 2015.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 41,
-        "question": "What was the highest-grossing movie of 2009?",
-        "answer": "Avatar was the highest-grossing movie of 2009.",
-        "difficulty": 1,
-        "category": "definition"
-      },
-      {
-        "id": 42,
-        "question": "How did the release of Avatar in 3D affect its box office receipts?",
-        "answer": "The release of Avatar in 3D contributed to its high box office receipts.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 43,
-        "question": "What can movies offer to audiences?",
-        "answer": "Movies can offer entertainment and relief to audiences.",
-        "difficulty": 1,
-        "category": "concept_check"
-      },
-      {
-        "id": 44,
-        "question": "What is considered one of the highest-grossing movies of all time by some calculations?",
-        "answer": "Avatar is considered one of the highest-grossing movies of all time by some calculations.",
-        "difficulty": 2,
-        "category": "definition"
       }
     ],
     "content_md": "Visualization Tables are a powerful way of organizing and visualizing data. However, large tables of numbers can be difficult to interpret, no matter how organized they are. Sometimes it is much easier to interpret graphs than numbers. In this chapter we will develop some of the fundamental graphical methods of data analysis. Our source of data is the , an online database that contains information about movies, television shows, video games, and so on. The site  provides many summaries of IMDB data, some of which we have adapted. We have also used data summaries from , a site with a tagline that says it is \"where data and the movie business meet.\" <h2Scatter Plots and Line Graphs</h2 The table actors contains data on Hollywood actors, both male and female. The columns are: | Column | Contents | ||| |Actor | Name of actor | |Total Gross | Total gross domestic box office receipt, in millio\n\nns of dollars, of all of the actor's movies | | Number of Movies | The number of movies the actor has been in | | Average per Movie | Total gross divided by number of movies | | 1 Movie | The highest grossing movie the actor has been in | | Gross | Gross domestic box office receipt, in millions of dollars, of the actor's 1 Movie | In the calculation of the gross receipt, the data tabulators did not include movies where an actor had a cameo role or a speaking role that did not involve much screen time. The table has 50 rows, corresponding to the 50 top grossing actors. The table is already sorted by Total Gross, so it is easy to see that Harrison Ford is the highest grossing actor. At the time when the table was created, his movies had brought in more money at the domestic box office than the movies of any other actor in the table. Terminology. A variable is a formal name for what we have\n\n been calling a \"feature\" or \"attribute\", such as 'number of movies.' The term variable emphasizes the point that a feature can have different values for different individuals. For example, the numbers of movies that actors have been in vary across all the actors. Variables that have numerical values and can be measured numerically, such as 'number of movies' or 'average gross receipts per movie' are called quantitative or numerical variables. <h2Scatter Plots</h2 A scatter plot displays the relation between two numerical variables. You saw an example of a scatter plot in an early section where we looked at the number of periods and number of characters in two classic novels. The Table method scatter draws a scatter plot consisting of one point for each row of the table. Its first argument is the label of the column to be plotted on the horizontal axis, and its second argument is the lab\n\nel of the column on the vertical. The plot contains 50 points, one point for each actor in the table. You can see that it slopes upwards, in general. The more movies an actor has been in, the more the total gross of all of those movies \u2013 in general. Formally, we say that the plot shows an association between the variables, and that the association is positive: high values of one variable tend to be associated with high values of the other, and low values of one with low values of the other, in general. Of course there is some variability. Some actors have high numbers of movies but middling total gross receipts. Others have middling numbers of movies but high receipts. That the association is positive is simply a statement about the broad general trend. Later in the course we will study how to quantify association. For the moment, we will just think about it qualitatively. Now that we ha\n\nve explored how the number of movies is related to the total gross receipt, let's turn our attention to how it is related to the average gross receipt per movie. This is a markedly different picture and shows a negative association. In general, the more movies an actor has been in, the less the average receipt per movie. Also, one of the points is quite high and off to the left of the plot. It corresponds to one actor who has a low number of movies and high average per movie. This point is an outlier. It lies outside the general range of the data. Indeed, it is quite far from all the other points in the plot. We will examine the negative association further by looking at points at the right and left ends of the plot. For the right end, let's zoom in on the main body of the plot by just looking at the portion that doesn't have the outlier. The negative association is still clearly visible\n\n. Let's identify the actors corresponding to the points that lie on the right hand side of the plot where the number of movies is large: The great actor Robert DeNiro has the highest number of movies and the lowest average receipt per movie. Other fine actors are at points that are not very far away, but DeNiro's is at the extreme end. To understand the negative association, note that the more movies an actor is in, the more variable those movies might be, in terms of style, genre, and box office draw. For example, an actor might be in some highgrossing action movies or comedies (such as Meet the Fockers), and also in a large number of smaller films that may be excellent but don't draw large crowds. Thus the actor's value of average receipts per movie might be relatively low. To approach this argument from a different direction, let us now take a look at the outlier. As an actor, Anthony\n\n Daniels might not have the stature of Robert DeNiro. But his 7 movies had an astonishingly high average receipt of nearly $452$ million dollars per movie. What were these movies? You might know about the droid C3PO in Star Wars: ! That's  inside the metallic suit. He plays C3PO. Mr. Daniels' entire filmography (apart from cameos) consists of movies in the highgrossing Star Wars franchise. That explains both his high average receipt and his low number of movies. Variables such as genre and production budget have an effect on the association between the number of movies and the average receipt per movie. This example is a reminder that studying the association between two variables often involves understanding other related variables as well. <h2Line Plots</h2 Line plots, sometimes known as line graphs, are among the most common visualizations. They are often used to study chronological t\n\nrends and patterns. The table moviesbyyear contains data on movies produced by U.S. studios in each of the years 1980 through 2015. The columns are: | Column | Content | ||| | Year | Year | | Total Gross | Total domestic box office gross, in millions of dollars, of all movies released | | Number of Movies | Number of movies released | | 1 Movie | Highest grossing movie | The Table method plot produces a line plot. Its two arguments are the same as those for scatter: first the column on the horizontal axis, then the column on the vertical. Here is a line plot of the number of movies released each year over the years 1980 through 2015. The graph rises sharply and then has a gentle upwards trend though the numbers vary noticeably from year to year. The sharp rise in the early 1980's is due in part to studios returning to the forefront of movie production after some years of filmmaker driven\n\n movies in the 1970's. Our focus will be on more recent years. In keeping with the theme of movies, the table of rows corresponding to the years 2000 through 2015 have been assigned to the name century21. The global financial crisis of 2008 has a visible effect \u2013 in 2009 there is a sharp drop in the number of movies released. The dollar figures, however, didn't suffer much. The total domestic gross receipt was higher in 2009 than in 2008, even though there was a financial crisis and a much smaller number of movies were released. One reason for this apparent contradiction is that people tend to go to the movies when there is a recession.  said the New York Times in February 2009. The article quotes Martin Kaplan of the University of Southern California saying, \"People want to forget their troubles, and they want to be with other people.\" When holidays and expensive treats are unaffordable\n\n, movies provide welcome entertainment and relief. In 2009, another reason for high box office receipts was the movie Avatar and its 3D release. Not only was Avatar the \\1 movie of 2009, it is also by some calculations one of the highest grossing movies of all time, as we will see later."
@@ -4250,34 +2774,27 @@
       },
       {
         "id": 16,
-        "question": "What does the array byfourto20 represent in the calculation of Leibniz's series?",
-        "answer": "The calculation uses the array byfourto20 for the initial positive term denominators up to 17, but a longer array is needed for an accurate approximation of \u03c0.",
-        "difficulty": 2,
-        "category": "application"
-      },
-      {
-        "id": 17,
         "question": "What does Leibniz's formula for approximating \u03c0 involve?",
         "answer": "Leibniz's formula for approximating \u03c0 involves adding and subtracting fractions.",
         "difficulty": 2,
         "category": "definition"
       },
       {
-        "id": 18,
+        "id": 17,
         "question": "How is the approximation to \u03c0 achieved using Leibniz's formula?",
         "answer": "The approximation to \u03c0 using Leibniz's formula is achieved by summing a large finite number of terms.",
         "difficulty": 2,
         "category": "concept_check"
       },
       {
-        "id": 19,
+        "id": 18,
         "question": "Does the order of adding and subtracting fractions affect the result when using Leibniz's formula?",
         "answer": "The order of adding and subtracting fractions can affect the result, but when using a large finite number of terms to approximate \u03c0, any convenient order works.",
         "difficulty": 3,
         "category": "concept_check"
       },
       {
-        "id": 20,
+        "id": 19,
         "question": "What does the sum of the series in Leibniz's formula approach?",
         "answer": "The sum of the series in Leibniz's formula approaches \u03c0, specifically 3.14159...",
         "difficulty": 1,
