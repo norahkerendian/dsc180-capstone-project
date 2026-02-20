@@ -1,3 +1,4 @@
+from __future__ import annotations
 """backend.chatbot
 
 Thin wrapper around the OpenAI Python SDK.

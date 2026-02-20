@@ -1,3 +1,4 @@
+from __future__ import annotations
 """backend.lessons
 
 Lesson content loader and filtering utilities.
