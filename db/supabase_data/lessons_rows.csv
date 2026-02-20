@@ -1,0 +1,733 @@
+id,topic,description,difficulty,created_at,slug,level,title,content_md,unmodified_content_md,metadata,sub_order,topic_order
+157990508,From Correlation to Causation,,,,024randomizationmd,1,Randomization,"Randomization  An excellent way to avoid confounding is to assign individuals to the treatment and control groups at random, and then administer the treatment to those who were assigned to the treatment group. Randomization keeps the two groups similar apart from the treatment. If you are able to randomize individuals into the treatment and control groups, you are running a randomized controlled experiment, also known as a randomized controlled trial (RCT). Sometimes, people’s responses in an experiment are influenced by their knowing which group they are in. So you might want to run a blind experiment in which individuals do not know whether they are in the treatment group or the control group. To make this work, you will have to give the control group a placebo, which is something that looks exactly like the treatment but in fact has no effect. Randomized controlled experiments have lo
+
+ng been a gold standard in the medical field, for example in establishing whether a new drug works. They are also becoming more commonly used in other fields such as economics. Example: Welfare subsidies in Mexico. In Mexican villages in the 1990’s, children in poor families were often not enrolled in school. One of the reasons was that the older children could go to work and thus help support the family. Santiago Levy, a minister in Mexican Ministry of Finance, set out to investigate whether welfare programs could be used to increase school enrollment and improve health conditions. He conducted an RCT on a set of villages, selecting some of them at random to receive a new welfare program called PROGRESA. The program gave money to poor families if their children went to school regularly and the family used preventive health care. More money was given if the children were in secondary sch
+
+ool than in primary school, to compensate for the children’s lost wages, and more money was given for girls attending school than for boys. The remaining villages did not get this treatment, and formed the control group. Because of the randomization, there were no confounding factors and it was possible to establish that PROGRESA increased school enrollment. For boys, the enrollment increased from 73% in the control group to 77% in the PROGRESA group. For girls, the increase was even greater, from 67% in the control group to almost 75% in the PROGRESA group. Due to the success of this experiment, the Mexican government supported the program under the new name OPORTUNIDADES, as an investment in a healthy and well educated population. Benefits of Randomization In the terminology that we have developed, John Snow conducted an observational study, not a randomized experiment. But he called h
+
+is study a “grand experiment” because, as he wrote, “No fewer than three hundred thousand people … were divided into two groups without their choice, and in most cases, without their knowledge …” Studies such as Snow’s are sometimes called “natural experiments.” However, true randomization does not simply mean that the treatment and control groups are selected “without their choice.” Randomization has to be carried out very carefully, following the laws of probability. The method of randomization can be as simple as tossing a coin. It may also be quite a bit more complex. But every method of randomization consists of a sequence of carefully defined steps that allow chances to be specified mathematically. This has two important consequences. 1. It allows us to account—mathematically—for the possibility that randomization produces treatment and control groups that are quite different from 
+
+each other. 2. It allows us to make precise mathematical statements about differences between the treatment and control groups. This in turn helps us make justifiable conclusions about whether the treatment has any effect. What if you can't randomize? In some situations it might not be possible to carry out a randomized controlled experiment, even when the aim is to investigate causality. For example, suppose you want to study the effects of alcohol consumption during pregnancy, and you randomly assign some pregnant women to your “alcohol” group. You should not expect cooperation from them if you present them with a drink. In such situations you will almost invariably be conducting an observational study, not an experiment. Be alert for confounding factors. In this course, you will learn how to conduct and analyze your own randomized experiments. That will involve more detail than has be
+
+en presented in this chapter. For now, just focus on the main idea: to try to establish causality, run a randomized controlled experiment if possible. If you are conducting an observational study, you might be able to establish association but it will be harder to establish causation. Be extremely careful about confounding factors before making conclusions about causality based on an observational study.","Randomization
+=============
+
+An excellent way to avoid confounding is to assign individuals to the treatment
+and control groups *at random*, and then administer the treatment to those who
+were assigned to the treatment group. Randomization keeps the two groups similar
+apart from the treatment.
+
+If you are able to randomize individuals into the treatment and control groups,
+you are running a *randomized controlled experiment*, also known as a
+*randomized controlled trial* (RCT). Sometimes, people’s responses in an
+experiment are influenced by their knowing which group they are in. So you might
+want to run a *blind* experiment in which individuals do not know whether they
+are in the treatment group or the control group. To make this work, you will
+have to give the control group a *placebo*, which is something that looks
+exactly like the treatment but in fact has no effect.
+
+Randomized controlled experiments have long been a gold standard in the medical
+field, for example in establishing whether a new drug works. They are also
+becoming more commonly used in other fields such as economics.
+
+**Example: Welfare subsidies in Mexico.** In Mexican villages in the 1990’s,
+children in poor families were often not enrolled in school. One of the reasons
+was that the older children could go to work and thus help support the family.
+Santiago Levy, a minister in Mexican Ministry of Finance, set out to
+investigate whether welfare programs could be used to increase school enrollment
+and improve health conditions. He conducted an RCT on a set of villages,
+selecting some of them at random to receive a new welfare program called
+PROGRESA. The program gave money to poor families if their children went to
+school regularly and the family used preventive health care. More money was
+given if the children were in secondary school than in primary school, to
+compensate for the children’s lost wages, and more money was given for girls
+attending school than for boys. The remaining villages did not get this
+treatment, and formed the control group. Because of the randomization, there
+were no confounding factors and it was possible to establish that PROGRESA
+increased school enrollment. For boys, the enrollment increased from 73% in the
+control group to 77% in the PROGRESA group. For girls, the increase was even
+greater, from 67% in the control group to almost 75% in the PROGRESA group. Due
+to the success of this experiment, the Mexican government supported the program
+under the new name OPORTUNIDADES, as an investment in a healthy and well
+educated population.
+
+**Benefits of Randomization**
+
+In the terminology that we have developed, John Snow conducted an
+observational study, not a randomized experiment. But he called his study a
+“grand experiment” because, as he wrote, “No fewer than three hundred thousand
+people … were divided into two groups without their choice, and in most cases,
+without their knowledge …”
+
+Studies such as Snow’s are sometimes called “natural experiments.” However, true
+randomization does not simply mean that the treatment and control groups are
+selected “without their choice.” Randomization has to be carried out very carefully,
+following the laws of probability.
+
+The method of randomization can be as simple as tossing a coin. It may also be
+quite a bit more complex. But every method of randomization consists of a
+sequence of carefully defined steps that allow chances to be specified
+mathematically. This has two important consequences.
+
+1. It allows us to account—mathematically—for the possibility that randomization
+   produces treatment and control groups that are quite different from each
+   other.
+
+2. It allows us to make precise mathematical statements about differences
+   between the treatment and control groups. This in turn helps us make
+   justifiable conclusions about whether the treatment has any effect.
+
+**What if you can't randomize?**
+
+In some situations it might not be possible to carry out a randomized controlled
+experiment, even when the aim is to investigate causality. For example, suppose
+you want to study the effects of alcohol consumption during pregnancy, and you
+randomly assign some pregnant women to your “alcohol” group. You should not
+expect cooperation from them if you present them with a drink. In such
+situations you will almost invariably be conducting an observational study, not
+an experiment. Be alert for confounding factors.
+
+In this course, you will learn how to conduct and analyze your own randomized
+experiments. That will involve more detail than has been presented in this
+chapter. For now, just focus on the main idea: to try to establish causality,
+run a randomized controlled experiment if possible. If you are conducting an
+observational study, you might be able to establish association but it will be harder to establish causation. Be extremely careful about confounding factors before making
+conclusions about causality based on an observational study.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":793,""source_path"":""02/4/randomization.md"",""estimated_minutes"":4}",3,2
+663140214,How Data Behaves in Code,,,,0421string_methodsipynb,1,String Methods,"String Methods From an existing string, related strings can be constructed using string methods, which are functions that operate on strings. These methods are called by placing a dot after the string, then calling the function. For example, the following method generates an uppercased version of a string. Perhaps the most important method is replace, which replaces all instances of a substring within the string. The replace method takes two arguments, the text to be replaced and its replacement. String methods can also be invoked using variable names, as long as those names are bound to strings. So, for instance, the following twostep process generates the word ""degrade"" starting from ""train"" by first creating ""ingrain"" and then applying a second replacement. Note that the line t  s.replace('t', 'ing') doesn't change the string s, which is still ""train"". The method call s.replace('t', '
+
+ing') just has a value, which is the string ""ingrain"". This is the first time we've seen methods, but methods are not unique to strings. As we will see shortly, other types of objects can have them.","# String Methods
+
+From an existing string, related strings can be constructed using string methods, which are functions that operate on strings. These methods are called by placing a dot after the string, then calling the function.
+
+For example, the following method generates an uppercased version of a string.
+
+Perhaps the most important method is `replace`, which replaces all instances of a substring within the string. The `replace` method takes two arguments, the text to be replaced and its replacement.
+
+String methods can also be invoked using variable names, as long as those names are bound to strings. So, for instance, the following two-step process generates the word ""degrade"" starting from ""train"" by first creating ""ingrain"" and then applying a second replacement.
+
+Note that the line `t = s.replace('t', 'ing')` doesn't change the string `s`, which is still ""train"".  The method call `s.replace('t', 'ing')` just has a value, which is the string ""ingrain"".
+
+This is the first time we've seen methods, but methods are not unique to strings.  As we will see shortly, other types of objects can have them.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":185,""source_path"":""04/2/1/String_Methods.ipynb"",""estimated_minutes"":1}",4,4
+781822617,Seeing the World Through Data,,,,01what-is-data-sciencemd,1,What Is Data Science,"What is Data Science?  Data Science is about drawing useful conclusions from large and diverse data sets through exploration, prediction, and inference. Exploration involves identifying patterns in information. Prediction involves using information we know to make informed guesses about values we wish we knew. Inference involves quantifying our degree of certainty: will the patterns that we found in our data also appear in new observations? How accurate are our predictions? Our primary tools for exploration are visualizations and descriptive statistics, for prediction are machine learning and optimization, and for inference are statistical tests and models. Statistics is a central component of data science because statistics studies how to make robust conclusions based on incomplete information. Computing is a central component because programming allows us to apply analysis techniques t
+
+o the large and diverse data sets that arise in realworld applications: not just numbers, but text, images, videos, and sensor readings. Data science is all of these things, but it is more than the sum of its parts because of the applications. Through understanding a particular domain, data scientists learn to ask appropriate questions about their data and correctly interpret the answers provided by our inferential and computational tools.","What is Data Science?
+====================
+
+Data Science is about drawing useful conclusions from large and diverse data
+sets through exploration, prediction, and inference.  Exploration involves
+identifying patterns in information.  Prediction involves using information
+we know to make informed guesses about values we wish we knew.  Inference
+involves quantifying our degree of certainty: will the patterns that we found in our data also appear in new observations? How accurate are our predictions? Our primary
+tools for exploration are visualizations and descriptive statistics, for
+prediction are machine learning and optimization, and for inference are
+statistical tests and models.
+
+Statistics is a central component of data science because statistics
+studies how to make robust conclusions based on incomplete information. Computing
+is a central component because programming allows us to apply analysis
+techniques to the large and diverse data sets that arise in real-world
+applications: not just numbers, but text, images, videos, and sensor readings.
+Data science is all of these things, but it is more than the sum of its parts
+because of the applications. Through understanding a particular domain, data
+scientists learn to ask appropriate questions about their data and correctly
+interpret the answers provided by our inferential and computational tools.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":199,""source_path"":""01/what-is-data-science.md"",""estimated_minutes"":1}",1,1
+1176507067,Teaching the Computer to Work with Data,,,,032namesipynb,1,Names,"Names Names are given to values in Python using an assignment statement. In an assignment, a name is followed by , which is followed by any expression. The value of the expression to the right of  is assigned to the name. Once a name has a value assigned to it, the value will be substituted for that name in future expressions. A previously assigned name can be used in the expression to the right of . However, only the current value of an expression is assigned to a name. If that value changes later, names that were defined in terms of that value will not change automatically. Names must start with a letter, but can contain both letters and numbers. A name cannot contain a space; instead, it is common to use an underscore character  to replace each space. Names are only as useful as you make them; it's up to the programmer to choose names that are easy to interpret. Typically, more meanin
+
+gful names can be invented than a and b. For example, to describe the sales tax on a $5 purchase in Berkeley, CA, the following names clarify the meaning of the various quantities involved.","# Names
+
+Names are given to values in Python using an *assignment* statement. In an assignment, a name is followed by `=`, which is followed by any expression. The value of the expression to the right of `=` is *assigned* to the name. Once a name has a value assigned to it, the value will be substituted for that name in future expressions.
+
+A previously assigned name can be used in the expression to the right of `=`. 
+
+However, only the current value of an expression is assigned to a name. If that value changes later, names that were defined in terms of that value will not change automatically.
+
+Names must start with a letter, but can contain both letters and numbers. A name cannot contain a space; instead, it is common to use an underscore character `_` to replace each space. Names are only as useful as you make them; it's up to the programmer to choose names that are easy to interpret. Typically, more meaningful names can be invented than `a` and `b`. For example, to describe the sales tax on a $5 purchase in Berkeley, CA, the following names clarify the meaning of the various quantities involved.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":197,""source_path"":""03/2/Names.ipynb"",""estimated_minutes"":1}",3,3
+1251066844,From Correlation to Causation,,,,023establishing-causalitymd,1,Establishing Causality,"Establishing Causality  In the language developed in the sections of the textbook, you can think of the people in the S&V houses as the treatment group, and those in the Lambeth houses as the control group. A crucial element in John Snow’s analysis was that the people in the two groups were comparable to each other, apart from the treatment. In order to establish whether it was the water supply that was causing cholera, Snow had to compare two groups that were similar to each other in all but one aspect—their water supply. Only then would he be able to ascribe the differences in their outcomes to the water supply. If the two groups had been different in some other way as well, it would have been difficult to point the finger at the water supply as the source of the disease. For example, if the treatment group consisted of factory workers and the control group did not, then differences between the outc
+
+omes in the two groups could have been due to the water supply, or to factory work, or both. The final picture would have been much more fuzzy. Snow’s brilliance lay in identifying two groups that would make his comparison clear. He had set out to establish a causal relation between contaminated water and cholera infection, and to a great extent he succeeded, even though the miasmatists ignored and even ridiculed him. Of course, Snow did not understand the detailed mechanism by which humans contract cholera. That discovery was made in 1883, when the German scientist Robert Koch isolated the Vibrio cholerae, the bacterium that enters the human small intestine and causes cholera. In fact the Vibrio cholerae had been identified in 1854 by Filippo Pacini in Italy, just about when Snow was analyzing his data in London. Because of the dominance of the miasmatists in Italy, Pacini’s discovery l
+
+anguished unknown. But by the end of the 1800’s, the miasma brigade was in retreat. Subsequent history has vindicated Pacini and John Snow. Snow’s methods led to the development of the field of epidemiology, which is the study of the spread of diseases. Confounding Let us now return to more modern times, armed with an important lesson that we have learned along the way: In an observational study, if the treatment and control groups differ in ways other than the treatment, it is difficult to make conclusions about causality. An underlying difference between the two groups (other than the treatment) is called a confounding factor, because it might confound you (that is, mess you up) when you try to reach a conclusion. Example: Coffee and lung cancer. Studies in the 1960’s showed that coffee drinkers had higher rates of lung cancer than those who did not drink coffee. Because of this, some 
+
+people identified coffee as a cause of lung cancer. But coffee does not cause lung cancer. The analysis contained a confounding factor—smoking. In those days, coffee drinkers were also likely to have been smokers, and smoking does cause lung cancer. Coffee drinking was associated with lung cancer, but it did not cause the disease. Confounding factors are common in observational studies. Good studies take great care to reduce confounding and to account for its effects.","Establishing Causality
+======================
+
+In the language developed in the sections of the textbook, you can think of the people in the S&V houses as the treatment group, and those in the Lambeth houses as the control group. A crucial element in John Snow’s analysis was that the people in the
+two groups were comparable to each other, apart from the treatment.
+
+In order to establish whether it was the water supply that was causing cholera,
+Snow had to compare two groups that were similar to each other in all but one
+aspect—their water supply. Only then would he be able to ascribe the differences
+in their outcomes to the water supply. If the two groups had been different in
+some other way as well, it would have been difficult to point the finger at the
+water supply as the source of the disease.  For example, if the treatment group
+consisted of factory workers and the control group did not, then differences
+between the outcomes in the two groups could have been due to the water supply,
+or to factory work, or both. The final picture would have been much more fuzzy.
+
+Snow’s brilliance lay in identifying two groups that would make his comparison
+clear. He had set out to establish a causal relation between contaminated water
+and cholera infection, and to a great extent he succeeded, even though the
+miasmatists ignored and even ridiculed him. Of course, Snow did not understand
+the detailed mechanism by which humans contract cholera. That discovery was made
+in 1883, when the German scientist Robert Koch isolated the *Vibrio cholerae*,
+the bacterium that enters the human small intestine and causes cholera.
+
+In fact the *Vibrio cholerae* had been identified in 1854 by Filippo Pacini in
+Italy, just about when Snow was analyzing his data in London. Because of the
+dominance of the miasmatists in Italy, Pacini’s discovery languished unknown.
+But by the end of the 1800’s, the miasma brigade was in retreat. Subsequent
+history has vindicated Pacini and John Snow. Snow’s methods led to the
+development of the field of *epidemiology*, which is the study of the spread of
+diseases.
+
+**Confounding**
+
+Let us now return to more modern times, armed with an important lesson that we
+have learned along the way:
+
+**In an observational study, if the treatment and control groups differ in ways
+other than the treatment, it is difficult to make conclusions about causality.**
+
+An underlying difference between the two groups (other than the treatment) is
+called a *confounding factor*, because it might confound you (that is, mess you
+up) when you try to reach a conclusion.
+
+**Example: Coffee and lung cancer.** Studies in the 1960’s showed that coffee
+drinkers had higher rates of lung cancer than those who did not drink coffee.
+Because of this, some people identified coffee as a cause of lung cancer. But
+coffee does not cause lung cancer. The analysis contained a confounding factor—smoking. In those days, coffee drinkers were also likely to have been smokers,
+and smoking does cause lung cancer. Coffee drinking was associated with lung
+cancer, but it did not cause the disease.
+
+Confounding factors are common in observational studies. Good studies take great
+care to reduce confounding and to account for its effects.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":544,""source_path"":""02/3/establishing-causality.md"",""estimated_minutes"":3}",2,2
+1295251401,Seeing the World Through Data,,,,0111computational-toolsmd,1,Computational Tools,"Computational Tools  This text uses the Python 3 programming language, along with a standard set of numerical and data visualization tools that are used widely in commercial applications, scientific experiments, and opensource projects. Python has recruited enthusiasts from many professions that use data to draw conclusions. By learning the Python language, you will join a millionpersonstrong community of software developers and data scientists. A Python program can be executed by any computer, regardless of its manufacturer or operating system, provided 
+
+that support for the language is installed. If you wish to install the version of Python and its accompanying libraries that will match this text, we recommend the [Anaconda][download] distribution that packages together the Python 3 language interpreter, IPython libraries, and the Jupyter notebook environment. [download]: http://continuum.io/downloads This text includes a complete introduction to all of these computational tools. You will learn to write programs, generate images from data, and work with realworld data sets that are published online.","Computational Tools
+===================
+
+This text uses the Python 3 programming language, along with a standard set of
+numerical and data visualization tools that are used widely in commercial
+applications, scientific experiments, and open-source projects.
+Python has recruited enthusiasts from many professions that use data to draw
+conclusions. By learning the Python language, you will join a
+million-person-strong community of software developers and data scientists. 
+A Python program can be executed by any computer, regardless of its
+manufacturer or operating system, provided that support for the language is
+installed. If you wish to install the version of Python and its accompanying
+libraries that will match this text, we recommend the [Anaconda][download]
+distribution that packages together the Python 3 language interpreter, IPython
+libraries, and the Jupyter notebook environment.
+
+   [download]: http://continuum.io/downloads
+
+This text includes a complete introduction to all of these computational tools.
+You will learn to write programs, generate images from data, and work with
+real-world data sets that are published online.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":231,""source_path"":""01/1/1/computational-tools.md"",""estimated_minutes"":2}",3,1
+1320813483,How Data Behaves in Code,,,,04data_typesipynb,1,Data Types,"Data Types Every value has a type, and the builtin type function returns the type of the result of any expression. One type we have encountered already is a builtin function. Python indicates that the type is a builtinfunctionormethod; the distinction between a function and a method is not important at this stage. This chapter will explore many useful types of data.","# Data Types
+
+Every value has a type, and the built-in `type` function returns the type of the result of any expression.
+
+One type we have encountered already is a built-in function. Python indicates that the type is a `builtin_function_or_method`; the distinction between a *function* and a *method* is not important at this stage.
+
+This chapter will explore many useful types of data.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":64,""source_path"":""04/Data_Types.ipynb"",""estimated_minutes"":1}",1,4
+1739879824,Teaching the Computer to Work with Data,,,,031expressionsipynb,1,Expressions,"Expressions Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the  programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs. Programs are made up of expressions, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a  symbol between two numerical expressions. Expressions, such as 3  4, are evaluated by the computer. The value (the result of evaluation) of the last expression in each cell, 12 in this case, is displayed below the cell. The grammar rules of a programming language are rigid. In Python, the  symbol cannot appear twice in a row. The computer will not try to interpret an expr
+
+ession that differs from its prescribed expression structures. Instead, it will show a SyntaxError error. The Syntax of a language is its set of grammar rules, and a SyntaxError indicates that an expression structure doesn't match any of the rules of the language. Small changes to an expression can change its meaning entirely. Below, the space between the 's has been removed. Because  appears between two numerical expressions, the expression is a wellformed exponentiation expression (the first number raised to the power of the second: 3 times 3 times 3 times 3). The symbols  and  are called operators, and the values they combine are called operands. Common Operators. Data science often involves combining numerical values, and the set of operators in a programming language are designed so that expressions can be used to express any sort of arithmetic. In Python, the following operators ar
+
+e essential. | Expression Type | Operator | Example | Value | ||||| | Addition | + | 2 + 3 | 5 | | Subtraction |  | 2  3 | 1 | | Multiplication |  | 2  3 | 6 | | Division | / | 7 / 3 | 2.66667 | | Remainder | % | 7 % 3 | 1 | | Exponentiation |  | 2  0.5 | 1.41421 | Python expressions obey the same familiar rules of precedence as in algebra: multiplication and division occur before addition and subtraction. Parentheses can be used to group together smaller expressions within a larger expression. This chapter introduces many types of expressions. Learning to program involves trying out everything you learn in combination, investigating the behavior of the computer. What happens if you divide by zero? What happens if you divide twice in a row? You don't always need to ask an expert (or the Internet); many of these details can be discovered by trying them out yourself.","# Expressions
+
+Programming languages are much simpler than human languages. Nonetheless, there are some rules of grammar to learn in any language, and that is where we will begin. In this text, we will use the [Python](https://www.python.org/) programming language. Learning the grammar rules is essential, and the same rules used in the most basic programs are also central to more sophisticated programs.
+
+Programs are made up of *expressions*, which describe to the computer how to combine pieces of data. For example, a multiplication expression consists of a `*` symbol between two numerical expressions. Expressions, such as `3 * 4`, are *evaluated* by the computer. The value (the result of *evaluation*) of the last expression in each cell, `12` in this case, is displayed below the cell.
+
+The grammar rules of a programming language are rigid. In Python, the `*` symbol cannot appear twice in a row. The computer will not try to interpret an expression that differs from its prescribed expression structures. Instead, it will show a `SyntaxError` error. The *Syntax* of a language is its set of grammar rules, and a `SyntaxError` indicates that an expression structure doesn't match any of the rules of the language.
+
+Small changes to an expression can change its meaning entirely. Below, the space between the `*`'s has been removed. Because `**` appears between two numerical expressions, the expression is a well-formed *exponentiation* expression (the first number raised to the power of the second: 3 times 3 times 3 times 3). The symbols `*` and `**` are called *operators*, and the values they combine are called *operands*.
+
+**Common Operators.** Data science often involves combining numerical values, and the set of operators in a programming language are designed so that expressions can be used to express any sort of arithmetic. In Python, the following operators are essential.
+
+| Expression Type | Operator | Example    | Value     |
+
+|-----------------|----------|------------|-----------|
+
+| Addition        | `+`      | `2 + 3`    | `5`       |
+
+| Subtraction     | `-`      | `2 - 3`    | `-1`      |
+
+| Multiplication  | `*`      | `2 * 3`    | `6`       |
+
+| Division        | `/`      | `7 / 3`    | `2.66667` 
+
+| Remainder       | `%`      | `7 % 3`    | `1`       |
+
+| Exponentiation  | `**`     | `2 ** 0.5` | `1.41421` |
+
+Python expressions obey the same familiar rules of *precedence* as in algebra: multiplication and division occur before addition and subtraction. Parentheses can be used to group together smaller expressions within a larger expression.
+
+This chapter introduces many types of expressions. Learning to program involves trying out everything you learn in combination, investigating the behavior of the computer. What happens if you divide by zero? What happens if you divide twice in a row? You don't always need to ask an expert (or the Internet); many of these details can be discovered by trying them out yourself.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":430,""source_path"":""03/1/Expressions.ipynb"",""estimated_minutes"":3}",2,3
+1930966851,Seeing the World Through Data,,,,013plotting_the_classicsipynb,1,Plotting the Classics,"Plotting the Classics In this example, we will explore statistics for two classic novels: The Adventures of Huckleberry Finn by Mark Twain, and Little Women by Louisa May Alcott. The text of any book can be read by a computer at great speed. Books published before 1923 are currently in the public domain, meaning that everyone has the right to copy or use the text in any way.  is a website that publishes public domain books online. Using Python, we can load the text of these books directly from the web. This example is meant to illustrate some of the broad themes of this text. Don't worry if the details of the program don't yet make sense. Later sections of the text will describe most of the features of the Python programming language used below. First, we read the text of both books into lists of chapters, called huckfinnchapters
+
+ and littlewomenchapters. In Python, a name cannot contain any spaces, and so we will often use an underscore  to stand in for a space. The  in the lines below give a name on the left to the result of some computation described on the right. A uniform resource locator or URL is an address on the Internet for some content; in this case, the text of a book. The  symbol starts a comment, which is ignored by the computer but helpful for people reading the code. While a computer cannot understand the text of a book, it can provide us with some insight into the structure of the text. The name huckfinnchapters is currently bound to a list of all the chapters in the book. We can place them into a table to see how each chapter begins. Each chapter begins with a chapter number in Roman numerals, followed by the first sentence of the chapter. Project Gutenberg has printed the first word of each cha
+
+pter in upper case.","# Plotting the Classics
+
+In this example, we will explore statistics for two classic novels: *The Adventures of Huckleberry Finn* by Mark Twain, and *Little Women* by Louisa May Alcott. The text of any book can be read by a computer at great speed. Books published before 1923 are currently in the *public domain*, meaning that everyone has the right to copy or use the text in any way. [Project Gutenberg](http://www.gutenberg.org/) is a website that publishes public domain books online. Using Python, we can load the text of these books directly from the web.
+
+This example is meant to illustrate some of the broad themes of this text. Don't worry if the details of the program don't yet make sense. Later sections of the text will describe most of the features of the Python programming language used below.
+
+First, we read the text of both books into lists of chapters, called `huck_finn_chapters` and `little_women_chapters`. In Python, a name cannot contain any spaces, and so we will often use an underscore `_` to stand in for a space. The `=` in the lines below give a name on the left to the result of some computation described on the right. A *uniform resource locator* or *URL* is an address on the Internet for some content; in this case, the text of a book. The `#` symbol starts a comment, which is ignored by the computer but helpful for people reading the code.
+
+While a computer cannot understand the text of a book, it can provide us with some insight into the structure of the text. The name `huck_finn_chapters` is currently bound to a list of all the chapters in the book. We can place them into a table to see how each chapter begins.
+
+Each chapter begins with a chapter number in Roman numerals, followed by the first sentence of the chapter. Project Gutenberg has printed the first word of each chapter in upper case.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":335,""source_path"":""01/3/Plotting_the_Classics.ipynb"",""estimated_minutes"":2}",6,1
+2027312779,From Correlation to Causation,,,,02causality-and-experimentsmd,1,Causality And Experiments,"Causality and Experiments  ""These problems are, and will probably ever remain, among the inscrutable secrets of nature. They belong to a class of questions radically inaccessible to the human intelligence."" —The Times of London, September 1849, on how cholera is contracted and spread Does the death penalty have a deterrent effect? Is chocolate good for you? What causes breast cancer? All of these questions attempt to assign a cause to an effect. A careful examination of data can help shed light on questions like these. In this section you will learn some of the fundamental concepts involved in establishing causality. Observation is a key to good science. An observational study is one in which scientists make conclusions based on data that they have observed but had no hand in generating. In data science, many such studies involve observations on a group of individuals, a factor of intere
+
+st called a treatment, and an outcome measured on each individual. It is easiest to think of the individuals as people. In a study of whether chocolate is good for the health, the individuals would indeed be people, the treatment would be eating chocolate, and the outcome might be a measure of heart disease. But individuals in observational studies need not be people. In a study of whether the death penalty has a deterrent effect, the individuals could be the 50 states of the union. A state law allowing the death penalty would be the treatment, and an outcome could be the state’s murder rate. The fundamental question is whether the treatment has an effect on the outcome. Any relation between the treatment and the outcome is called an association. If the treatment causes the outcome to occur, then the association is causal. Causality is at the heart of all three questions posed at the sta
+
+rt of this section. For example, one of the questions was whether chocolate directly causes improvements in health, not just whether there is a relation between chocolate and health. The establishment of causality often takes place in two stages. First, an association is observed. Next, a more careful analysis leads to a decision about causality.","Causality and Experiments
+=========================
+
+*""These problems are, and will probably ever remain, among the inscrutable
+secrets of nature. They belong to a class of questions radically inaccessible to
+the human intelligence.""* —The Times of London, September 1849, on how cholera
+is contracted and spread
+
+Does the death penalty have a deterrent effect? Is chocolate good for you? What
+causes breast cancer?
+
+All of these questions attempt to assign a cause to an effect. A careful
+examination of data can help shed light on questions like these. In this section
+you will learn some of the fundamental concepts involved in establishing
+causality.
+
+Observation is a key to good science. An *observational study* is one in which
+scientists make conclusions based on data that they have observed but had no
+hand in generating. In data science, many such studies involve observations on a
+group of individuals, a factor of interest called a *treatment*, and an
+*outcome* measured on each individual.
+
+It is easiest to think of the individuals as people. In a study of whether
+chocolate is good for the health, the individuals would indeed be people, the
+treatment would be eating chocolate, and the outcome might be a measure of heart disease. But individuals in observational studies need not be people. In a
+study of whether the death penalty has a deterrent effect, the individuals could
+be the 50 states of the union. A state law allowing the death penalty would be
+the treatment, and an outcome could be the state’s murder rate.
+
+The fundamental question is whether the treatment has an effect on the outcome.
+Any relation between the treatment and the outcome is called an *association*.
+If the treatment causes the outcome to occur, then the association is *causal*.
+*Causality* is at the heart of all three questions posed at the start of this
+section. For example, one of the questions was whether chocolate directly causes
+improvements in health, not just whether there is a relation between
+chocolate and health.
+
+The establishment of causality often takes place in two stages. First, an
+association is observed. Next, a more careful analysis leads to a decision about
+causality.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":357,""source_path"":""02/causality-and-experiments.md"",""estimated_minutes"":2}",1,2
+2089344509,How Data Behaves in Code,,,,043comparisonipynb,1,Comparisons,"Comparisons Boolean values most often arise from comparison operators. Python includes a variety of operators that compare values. For example, 3 is larger than 1 + 1. The value True indicates that the comparison is valid; Python has confirmed this simple fact about the relationship between 3 and 1+1. The full set of common comparison operators are listed below. | Comparison | Operator | True example | False Example | ||||| | Less than | < | 2 < 3 | 2 < 2 | | Greater than |  | 32 | 33 | | Less than or equal | < | 2 < 2 | 3 < 2 | | Greater or equal |  | 3  3 | 2  3 | | Equal |  | 3  3 | 3  2 | | Not equal | ! | 3 ! 2 | 2 ! 2 | An expression can contain multiple comparisons, and they all must hold in order for the whole expression to be True. For example, we can express that 1+1 is between 1 and 3 using the following expression. The average of two numbers is always between the smaller numb
+
+er and the larger number. We express this relationship for the numbers x and y below. You can try different values of x and y to confirm this relationship. Strings can also be compared, and their order is alphabetical. A shorter string is less than a longer string that begins with the shorter string.","# Comparisons
+
+Boolean values most often arise from comparison operators. Python includes a variety of operators that compare values. For example, `3` is larger than `1 + 1`.
+
+The value `True` indicates that the comparison is valid; Python has confirmed this simple fact about the relationship between `3` and `1+1`. The full set of common comparison operators are listed below.
+
+| Comparison         | Operator | True example | False Example |
+
+|--------------------|----------|--------------|---------------|
+
+| Less than          | <        | 2 < 3        | 2 < 2         |
+
+| Greater than       | >        | 3>2          | 3>3           |
+
+| Less than or equal | <=       | 2 <= 2       | 3 <= 2        |
+
+| Greater or equal   | >=       | 3 >= 3       | 2 >= 3        |
+
+| Equal              | ==       | 3 == 3       | 3 == 2        |
+
+| Not equal          | !=       | 3 != 2       | 2 != 2        |
+
+An expression can contain multiple comparisons, and they all must hold in order for the whole expression to be `True`. For example, we can express that `1+1` is between `1` and `3` using the following expression.
+
+The average of two numbers is always between the smaller number and the larger number. We express this relationship for the numbers `x` and `y` below. You can try different values of `x` and `y` to confirm this relationship.
+
+Strings can also be compared, and their order is alphabetical. A shorter string is less than a longer string that begins with the shorter string.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":204,""source_path"":""04/3/Comparison.ipynb"",""estimated_minutes"":2}",5,4
+2427013110,Teaching the Computer to Work with Data,,,,034introduction_to_tablesipynb,1,Introduction to Tables,"Introduction to Tables We can now apply Python to analyze data. We will work with data stored in Table structures. Tables are a fundamental way of representing data sets. A table can be viewed in two ways:  a sequence of named columns that each describe a single attribute of all entries in a data set, or  a sequence of rows that each contain all information about a single individual in a data set. We will study tables in great detail in the next several chapters. For now, we will just introduce a few methods without going into technical details. The table cones has been imported for us; later we will see how, but here we will just work with it. First, let's take a look at it. The table has six rows. Each row corresponds to one ice cream cone. The ice cream cones are the individuals. Each cone has three attributes: flavor, color, and price. Each column contains the data on one of these at
+
+tributes, and so all the entries of any single column are of the same kind. Each column has a label. We will refer to columns by their labels. A table method is just like a function, but it must operate on a table. So the call looks like nameoftable.method(arguments) For example, if you want to see just the first two rows of a table, you can use the table method show. You can replace 2 by any number of rows. If you ask for more than six, you will only get six, because cones only has six rows.  Choosing Sets of Columns The method select creates a new table consisting of only the specified columns. This leaves the original table unchanged. You can select more than one column, by separating the column labels by commas. You can also drop columns you don't want. The table above can be created by dropping the Color column. You can name this new table and look at it again by just typing its nam
+
+e. Like select, the drop method creates a smaller table and leaves the original table unchanged. In order to explore your data, you can create any number of smaller tables by using choosing or dropping columns. It will do no harm to your original data table.  Sorting Rows The sort method creates a new table by arranging the rows of the original table in ascending order of the values in the specified column. Here the cones table has been sorted in ascending order of the price of the cones. To sort in descending order, you can use an optional argument to sort. As the name implies, optional arguments don't have to be used, but they can be used if you want to change the default behavior of a method. By default, sort sorts in increasing order of the values in the specified column. To sort in decreasing order, use the optional argument descendingTrue. Like select and drop, the sort method leav
+
+es the original table unchanged.  Selecting Rows that Satisfy a Condition The where method creates a new table consisting only of the rows that satisfy a given condition. In this section we will work with a very simple condition, which is that the value in a specified column must be equal to a value that we also specify. Thus the where method has two arguments. The arguments, separated by a comma, are the label of the column and the value we are looking for in that column. The where method can also be used when the condition that the rows must satisfy is more complicated. In those situations the call will be a little more complicated as well. It is important to provide the value exactly. For example, if we specify Chocolate instead of chocolate, then where correctly finds no rows wher
+
+e the flavor is Chocolate. Like all the other table methods in this section, where leaves the original table unchanged.  Example: Salaries in the NBA ""The NBA is the highest paying professional sports league in the world,""  in March 2016. The table nba contains the  in 20152016. Each row represents one player. The columns are: | Column Label | Description | ||| | PLAYER | Player's name | | POSITION | Player's position on team | | TEAM | Team name | |SALARY | Player's salary in 20152016, in millions of dollars| The code for the positions is PG (Point Guard), SG (Shooting Guard), PF (Power Forward), SF (Small Forward), and C (Center). But what follows doesn't involve details about how basketball is played. The first row shows that Paul Millsap, Power Forward for the Atlanta Hawks, had a salary of almost $\$18.7$ million in 20152016. Fans of Stephen Curry can find his row by using where. We
+
+ can also create a new table called warriors consisting of just the data for the Golden State Warriors. By default, the first 10 lines of a table are displayed. You can use show to display more or fewer. To display the entire table, use show with no argument in the parentheses. The nba table is sorted in alphabetical order of the team names. To see how the players were paid in 20152016, it is useful to sort the data by salary. Remember that by default, the sorting is in increasing order. These figures are somewhat difficult to compare as some of these players changed teams during the season and received salaries from more than one team; only the salary from the last team appears in the table. The CNN report is about the other end of the salary scale – the players who were among the highest paid in the world. To identify these players we can sort in descending order of salary and look at 
+
+the top few rows. The late Kobe Bryant was the highest earning NBA player in 20152016.","# Introduction to Tables
+
+We can now apply Python to analyze data. We will work with data stored in Table structures.
+
+Tables are a fundamental way of representing data sets. A table can be viewed in two ways:
+* a sequence of named columns that each describe a single attribute of all entries in a data set, or
+* a sequence of rows that each contain all information about a single individual in a data set.
+
+We will study tables in great detail in the next several chapters. For now, we will just introduce a few methods without going into technical details. 
+
+The table `cones` has been imported for us; later we will see how, but here we will just work with it. First, let's take a look at it.
+
+The table has six rows. Each row corresponds to one ice cream cone. The ice cream cones are the *individuals*.
+
+Each cone has three attributes: flavor, color, and price. Each column contains the data on one of these attributes, and so all the entries of any single column are of the same kind. Each column has a label. We will refer to columns by their labels.
+
+A table method is just like a function, but it must operate on a table. So the call looks like
+
+`name_of_table.method(arguments)`
+
+For example, if you want to see just the first two rows of a table, you can use the table method `show`.
+
+You can replace 2 by any number of rows. If you ask for more than six, you will only get six, because `cones` only has six rows.
+
+## Choosing Sets of Columns
+The method `select` creates a new table consisting of only the specified columns.
+
+This leaves the original table unchanged.
+
+You can select more than one column, by separating the column labels by commas.
+
+You can also *drop* columns you don't want. The table above can be created by dropping the `Color` column.
+
+You can name this new table and look at it again by just typing its name.
+
+Like `select`, the `drop` method creates a smaller table and leaves the original table unchanged. In order to explore your data, you can create any number of smaller tables by using choosing or dropping columns. It will do no harm to your original data table.
+
+## Sorting Rows
+
+The `sort` method creates a new table by arranging the rows of the original table in ascending order of the values in the specified column. Here the `cones` table has been sorted in ascending order of the price of the cones.
+
+To sort in descending order, you can use an *optional* argument to `sort`. As the name implies, optional arguments don't have to be used, but they can be used if you want to change the default behavior of a method. 
+
+By default, `sort` sorts in increasing order of the values in the specified column. To sort in decreasing order, use the optional argument `descending=True`.
+
+Like `select` and `drop`, the `sort` method leaves the original table unchanged.
+
+## Selecting Rows that Satisfy a Condition
+The `where` method creates a new table consisting only of the rows that satisfy a given condition. In this section we will work with a very simple condition, which is that the value in a specified column must be equal to a value that we also specify. Thus the `where` method has two arguments.
+
+The arguments, separated by a comma, are the label of the column and the value we are looking for in that column. The `where` method can also be used when the condition that the rows must satisfy is more complicated. In those situations the call will be a little more complicated as well.
+
+It is important to provide the value exactly. For example, if we specify `Chocolate` instead of `chocolate`, then `where` correctly finds no rows where the flavor is `Chocolate`.
+
+Like all the other table methods in this section, `where` leaves the original table unchanged.
+
+## Example: Salaries in the NBA
+
+""The NBA is the highest paying professional sports league in the world,"" [reported CNN](http://edition.cnn.com/2015/12/04/sport/gallery/highest-paid-nba-players/) in March 2016. The table `nba` contains the [salaries of all National Basketball Association players](https://www.statcrunch.com/app/index.php?dataid=1843341) in 2015-2016.
+
+Each row represents one player. The columns are:
+
+| **Column Label**   | Description                                         |
+
+|--------------------|-----------------------------------------------------|
+
+| `PLAYER`           | Player's name                                       |
+
+| `POSITION`         | Player's position on team                           |
+
+| `TEAM`             | Team name                                           |
+
+|`SALARY`    | Player's salary in 2015-2016, in millions of dollars|
+ 
+The code for the positions is PG (Point Guard), SG (Shooting Guard), PF (Power Forward), SF (Small Forward), and C (Center). But what follows doesn't involve details about how basketball is played.
+
+The first row shows that Paul Millsap, Power Forward for the Atlanta Hawks, had a salary of almost $\$18.7$ million in 2015-2016.
+
+Fans of Stephen Curry can find his row by using `where`.
+
+We can also create a new table called `warriors` consisting of just the data for the Golden State Warriors.
+
+By default, the first 10 lines of a table are displayed. You can use `show` to display more or fewer. To display the entire table, use `show` with no argument in the parentheses.
+
+The `nba` table is sorted in alphabetical order of the team names. To see how the players were paid in 2015-2016, it is useful to sort the data by salary. Remember that by default, the sorting is in increasing order.
+
+These figures are somewhat difficult to compare as some of these players changed teams during the season and received salaries from more than one team; only the salary from the last team appears in the table.  
+
+The CNN report is about the other end of the salary scale – the players who were among the highest paid in the world. To identify these players we can sort in descending order of salary and look at the top few rows.
+
+The late Kobe Bryant was the highest earning NBA player in 2015-2016.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":1025,""source_path"":""03/4/Introduction_to_Tables.ipynb"",""estimated_minutes"":6}",6,3
+2697797242,How Data Behaves in Code,,,,042stringsipynb,1,Strings,"Strings Much of the world's data is text, and a piece of text represented in a computer is called a string. A string can represent a word, a sentence, or even the contents of every book in a library. Since text can include numbers (like this: 5) or truth values (True), a string can also describe those things. The meaning of an expression depends both upon its structure and the types of values that are being combined. So, for instance, adding two strings together produces another string. This expression is still an addition expression, but it is combining a different type of value. Addition is completely literal; it combines these two strings together without regard for their contents. It doesn't add a space because these are different words; that's up to the programmer (you) to specify. Single and double quotes can both be used to create strings: 'hi' and ""hi"" are identical expressions. 
+
+Double quotes are often preferred because they allow you to include apostrophes inside of strings. Why not? Try it out. The str function returns a string representation of any value. Using this function, strings can be constructed that have embedded values.","# Strings
+
+Much of the world's data is text, and a piece of text represented in a computer is called a *string*. A string can represent a word, a sentence, or even the contents of every book in a library. Since text can include numbers (like this: 5) or truth values (True), a string can also describe those things.
+
+The meaning of an expression depends both upon its structure and the types of values that are being combined. So, for instance, adding two strings together produces another string. This expression is still an addition expression, but it is combining a different type of value.
+
+Addition is completely literal; it combines these two strings together without regard for their contents. It doesn't add a space because these are different words; that's up to the programmer (you) to specify.
+
+Single and double quotes can both be used to create strings: `'hi'` and `""hi""` are identical expressions. Double quotes are often preferred because they allow you to include apostrophes inside of strings.
+
+Why not? Try it out.
+
+The `str` function returns a string representation of any value. Using this function, strings can be constructed that have embedded values.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":197,""source_path"":""04/2/Strings.ipynb"",""estimated_minutes"":1}",3,4
+2727718540,Seeing the World Through Data,,,,011intromd,1,Introduction,"Introduction  Data are descriptions of the world around us, collected through observation and stored on computers. Computers enable us to infer properties of the world from these descriptions. Data science is the discipline of drawing conclusions from data using computation. There are three core aspects of effective data analysis: exploration, prediction, and inference. This text develops a consistent approach to all three, introducing statistical ideas and fundamental ideas in computer science concurrently. We focus on a minimal set of core techniques that can be applied to a vast range of realworld applications. A foundation in data science requires not only understanding statistical and computational techniques, but also recognizing how they apply to real scenarios. For whatever aspect of the world we wish to study—whether it's the Earth's weather, the world's markets, political polls
+
+, or the human mind—data we collect typically offer an incomplete description of the subject at hand. A central challenge of data science is to make reliable conclusions using this partial information. In this endeavor, we will combine two essential tools: computation and randomization. For example, we may want to understand climate change trends using temperature observations. Computers will allow us to use all available information to draw conclusions. Rather than focusing only on the average temperature of a region, we will consider the whole range of temperatures together to construct a more nuanced analysis. Randomness will allow us to consider the many different ways in which incomplete information might be completed. Rather than assuming that temperatures vary in a particular way, we will learn to use randomness as a way to imagine many possible scenarios that are all consistent w
+
+ith the data we observe. Applying this approach requires learning to program a computer, and so this text interleaves a complete introduction to programming that assumes no prior knowledge. Readers with programming experience will find that we cover several topics in computation that do not appear in a typical introductory computer science curriculum. Data science also requires careful reasoning about numerical quantities, but this text does not assume any background in mathematics or statistics beyond basic algebra. You will find very few equations in this text. Instead, techniques are described to readers in the same language in which they are described to the computers that execute them—a programming language.","Introduction
+=======================
+
+Data are descriptions of the world around us, collected through observation and
+stored on computers. Computers enable us to infer properties of the world from
+these descriptions. Data science is the discipline of drawing conclusions from
+data using computation. There are three core aspects of effective data
+analysis: exploration, prediction, and inference. This text develops a
+consistent approach to all three, introducing statistical ideas and fundamental
+ideas in computer science concurrently. We focus on a minimal set of core
+techniques that can be applied to a vast range of real-world
+applications. A foundation in data science requires not only understanding
+statistical and computational techniques, but also recognizing how they apply
+to real scenarios.
+
+For whatever aspect of the world we wish to study—whether it's the Earth's
+weather, the world's markets, political polls, or the human mind—data we
+collect typically offer an incomplete description of the subject at hand. A
+central challenge of data science is to make reliable conclusions using this
+partial information.
+
+In this endeavor, we will combine two essential tools: computation and
+randomization. For example, we may want to understand climate change trends
+using temperature observations. Computers will allow us to use all available
+information to draw conclusions. Rather than focusing only on the average
+temperature of a region, we will consider the whole range of temperatures
+together to construct a more nuanced analysis. Randomness will allow us to
+consider the many different ways in which incomplete information might be
+completed. Rather than assuming that temperatures vary in a particular way, we
+will learn to use randomness as a way to imagine many possible scenarios that
+are all consistent with the data we observe.
+
+Applying this approach requires learning to program a computer, and so this
+text interleaves a complete introduction to programming that assumes no prior
+knowledge. Readers with programming experience will find that we cover several
+topics in computation that do not appear in a typical introductory computer
+science curriculum. Data science also requires careful reasoning about numerical
+quantities, but this text does not assume any background in mathematics or
+statistics beyond basic algebra. You will find very few equations in this text.
+Instead, techniques are described to readers in the same language in which they
+are described to the computers that execute them—a programming language.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":388,""source_path"":""01/1/intro.md"",""estimated_minutes"":2}",2,1
+2768641799,Seeing the World Through Data,,,,0132another_kind_of_characteripynb,1,Another Kind Of Character,"Another Kind of Character  In some situations, the relationships between quantities allow us to make predictions. This text will explore how to make accurate predictions based on incomplete information and develop methods for combining multiple sources of uncertain information to make decisions. As an example of visualizing information derived from multiple sources, let us first use the computer to get some information that would be tedious to acquire by hand. In the context of novels, the word ""character"" has a second meaning: a printed symbol such as a letter or number or punctuation symbol. Here, we ask the computer to count the number of characters and the number of periods in each chapter of both Huckleberry Finn and Little Women. Here we describe the data for Huckleberry Finn. Each row of the table corresponds to one chapter of the novel and displays the number of characters as well
+
+ as the number of periods in the chapter. Not surprisingly, chapters with fewer characters also tend to have fewer periods, in general: the shorter the chapter, the fewer sentences there tend to be, and vice versa. The relation is not entirely predictable, however, as sentences are of varying lengths and can involve other punctuation such as question marks. Here we describe the corresponding data for Little Women. You can see that the chapters of Little Women are in general longer than those of Huckleberry Finn. Let us see if these two simple variables – the length and number of periods in each chapter – can tell us anything more about the two books. One way to do this is to plot both sets of data on the same axes. In the plot, there is a dot for each chapter in each book. Blue dots correspond to Huckleberry Finn and gold dots to Little Women. The horizontal axis represents the number of p
+
+eriods and the vertical axis represents the number of characters. The plot shows us that many but not all of the chapters of Little Women are longer than those of Huckleberry Finn, as we had observed by just looking at the numbers. But it also shows us something more. Notice how the blue points are roughly clustered around a straight line, as are the yellow points. Moreover, it looks as though both colors of points might be clustered around the same straight line. Now look at all the chapters that contain about 100 periods. The plot shows that those chapters contain about 10,000 characters to about 15,000 characters, roughly. That's about 100 to 150 characters per period. Indeed, it appears from looking at the plot that on average both books tend to have somewhere between 100 and 150 characters between periods, as a very rough estimate. Perhaps these two great 19th century novels were si
+
+gnaling something so very familiar to us now: the 140character limit of Twitter. Note: Please reference the textbook for visuals","# Another Kind of Character
+
+In some situations, the relationships between quantities allow us to make predictions. This text will explore how to make accurate predictions based on incomplete information and develop methods for combining multiple sources of uncertain information to make decisions.
+
+As an example of visualizing information derived from multiple sources, let us first use the computer to get some information that would be tedious to acquire by hand. In the context of novels, the word ""character"" has a second meaning: a printed symbol such as a letter or number or punctuation symbol. Here, we ask the computer to count the number of characters and the number of periods in each chapter of both *Huckleberry Finn* and *Little Women*.
+
+Here we describe the data for *Huckleberry Finn*. Each row of the table corresponds to one chapter of the novel and displays the number of characters as well as the number of periods in the chapter. Not surprisingly, chapters with fewer characters also tend to have fewer periods, in general: the shorter the chapter, the fewer sentences there tend to be, and vice versa. The relation is not entirely predictable, however, as sentences are of varying lengths and can involve other punctuation such as question marks. 
+
+Here we describe the corresponding data for *Little Women*.
+
+You can see that the chapters of *Little Women* are in general longer than those of *Huckleberry Finn*. Let us see if these two simple variables – the length and number of periods in each chapter – can tell us anything more about the two books. One way to do this is to plot both sets of data on the same axes. 
+
+In the plot, there is a dot for each chapter in each book. Blue dots correspond to *Huckleberry Finn* and gold dots to *Little Women*. The horizontal axis represents the number of periods and the vertical axis represents the number of characters.
+
+The plot shows us that many but not all of the chapters of *Little Women* are longer than those of *Huckleberry Finn*, as we had observed by just looking at the numbers. But it also shows us something more. Notice how the blue points are roughly clustered around a straight line, as are the yellow points. Moreover, it looks as though both colors of points might be clustered around the *same* straight line.
+
+Now look at all the chapters that contain about 100 periods. The plot shows that those chapters contain about 10,000 characters to about 15,000 characters, roughly. That's about 100 to 150 characters per period.
+
+Indeed, it appears from looking at the plot that on average both books tend to have somewhere between 100 and 150 characters between periods, as a very rough estimate. Perhaps these two great 19th century novels were signaling something so very familiar to us now: the 140-character limit of Twitter.
+
+ Note: Please reference the textbook for visuals","{""source"":""Data 8 Textbook (local copy)"",""word_count"":478,""source_path"":""01/3/2/Another_Kind_Of_Character.ipynb"",""estimated_minutes"":3}",7,1
+2888989471,Seeing the World Through Data,,,,012why-data-sciencemd,1,Why Data Science,"Why Data Science?  Most important decisions are made with only partial information and uncertain outcomes. However, the degree of uncertainty for many decisions can be reduced sharply by access to large data sets and the computational tools required to analyze them effectively. Datadriven decision making has already transformed a tremendous breadth of industries, including finance, advertising, manufacturing, and real estate. At the same time, a wide range of academic disciplines are evolving rapidly to incorporate largescale data analysis into their theory and practice. Studying data science enables individuals to bring these techniques to bear on their work, their scientific endeavors, and their personal decisions. Critical thinking has long been a hallmark of a rigorous education, but critiques are often most effective when supported by data. A critical analysis of any aspect of the w
+
+orld, may it be business or social science, involves inductive reasoning; conclusions can rarely be proven outright, but only supported by the available evidence. Data science provides the means to make precise, reliable, and quantitative arguments about any set of observations. With unprecedented access to information and computing, critical thinking about any aspect of the world that can be measured would be incomplete without effective inferential techniques. The world has too many unanswered questions and difficult challenges to leave this critical reasoning to only a few specialists. All educated members of society can build the capacity to reason about data. The tools, techniques, and data sets are all readily available; this text aims to make them accessible to everyone.","Why Data Science?
+=================
+
+Most important decisions are made with only partial information and uncertain
+outcomes. However, the degree of uncertainty for many decisions can be reduced
+sharply by access to large data sets and the computational tools
+required to analyze them effectively. Data-driven decision making has already
+transformed a tremendous breadth of industries, including finance, advertising,
+manufacturing, and real estate. At the same time, a wide range of academic
+disciplines are evolving rapidly to incorporate large-scale data analysis into
+their theory and practice.
+
+Studying data science enables individuals to bring these techniques to bear on
+their work, their scientific endeavors, and their personal decisions. Critical
+thinking has long been a hallmark of a rigorous education, but critiques are
+often most effective when supported by data. A critical analysis of any aspect
+of the world, may it be business or social science, involves inductive
+reasoning; conclusions can rarely be proven outright, but only supported by
+the available evidence. Data science provides the means to make precise,
+reliable, and quantitative arguments about any set of observations. With
+unprecedented access to information and computing, critical thinking about
+any aspect of the world that can be measured would be incomplete without
+effective inferential techniques.
+
+The world has too many unanswered questions and difficult challenges to leave
+this critical reasoning to only a few specialists. All educated members of 
+society can build the capacity to reason about data. The tools, techniques, 
+and data sets are all readily available; this text aims to make them 
+accessible to everyone.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":254,""source_path"":""01/2/why-data-science.md"",""estimated_minutes"":2}",5,1
+3082398315,How Data Behaves in Code,,,,041numbersipynb,1,Numbers,"Numbers Computers are designed to perform numerical calculations, but there are some important details about working with numbers that every programmer working with quantitative data should know. Python (like most other programming languages) distinguishes between two different types of numbers:  Integers are called int values in the Python language. They can only represent whole numbers (negative, zero, or positive) that don't have a fractional component  Real numbers are called float values (or floating point values) in the Python language. They can represent whole or fractional numbers but have some limitations. The type of a number is evident from the way it is displayed: int values have no decimal point and float values always have a decimal point. When a float value is combined with an int value using some arithmetic operator, then the result is always a float value. In most cases,
+
+ two integers combine to form another integer, but any number (int or float) divided by another will be a float value. Very large or very small float values are displayed using scientific notation. The type function can be used to find the type of any number. The type of an expression is the type of its final value. So, the type function will never indicate that the type of an expression is a name, because names are always evaluated to their assigned values.  More About Float Values Float values are very flexible, but they do have limits. 1. A float can represent extremely large and extremely small numbers. There are limits, but you will rarely encounter them. 2. A float only represents 15 or 16 significant digits for any number; the remaining precision is lost. This limited precision is enough for the vast majority of applications. 3. After combining float values with arithmetic, the la
+
+st few digits may be incorrect. Small rounding errors are often confusing when first encountered. The first limit can be observed in two ways. If the result of a computation is a very large number, then it is represented as infinite. If the result is a very small number, then it is represented as zero. The second limit can be observed by an expression that involves numbers with more than 15 significant digits. These extra digits are discarded before any arithmetic is carried out. The third limit can be observed when taking the difference between two expressions that should be equivalent. For example, the expression 2  0.5 computes the square root of 2, but squaring this value does not exactly recover 2. The final result above is 0.0000000000000004440892098500626, a number that is very close to zero. The correct answer to this arithmetic expression is 0, but a small error in the final sig
+
+nificant digit appears very different in scientific notation. This behavior appears in almost all programming languages because it is the result of the standard way that arithmetic is carried out on computers. Although float values are not always exact, they are certainly reliable and work the same way across all different kinds of computers and programming languages.","# Numbers
+
+Computers are designed to perform numerical calculations, but there are some important details about working with numbers that every programmer working with quantitative data should know. Python (like most other programming languages) distinguishes between two different types of numbers:
+
+* Integers are called `int` values in the Python language. They can only represent whole numbers (negative, zero, or positive) that don't have a fractional component
+* Real numbers are called `float` values (or *floating point values*) in the Python language. They can represent whole or fractional numbers but have some limitations.
+
+The type of a number is evident from the way it is displayed: `int` values have no decimal point and `float` values always have a decimal point. 
+
+When a `float` value is combined with an `int` value using some arithmetic operator, then the result is always a `float` value. In most cases, two integers combine to form another integer, but any number (`int` or `float`) divided by another will be a `float` value. Very large or very small `float` values are displayed using scientific notation.
+
+The `type` function can be used to find the type of any number.
+
+The `type` of an expression is the type of its final value. So, the `type` function will never indicate that the type of an expression is a name, because names are always evaluated to their assigned values.
+
+## More About Float Values
+
+Float values are very flexible, but they do have limits. 
+
+1. A `float` can represent extremely large and extremely small numbers. There are limits, but you will rarely encounter them.
+2. A `float` only represents 15 or 16 significant digits for any number; the remaining precision is lost. This limited precision is enough for the vast majority of applications.
+3. After combining `float` values with arithmetic, the last few digits may be incorrect. Small rounding errors are often confusing when first encountered.
+
+The first limit can be observed in two ways. If the result of a computation is a very large number, then it is represented as infinite. If the result is a very small number, then it is represented as zero.
+
+The second limit can be observed by an expression that involves numbers with more than 15 significant digits. These extra digits are discarded before any arithmetic is carried out.
+
+The third limit can be observed when taking the difference between two expressions that should be equivalent. For example, the expression `2 ** 0.5` computes the square root of 2, but squaring this value does not exactly recover 2.
+
+The final result above is `0.0000000000000004440892098500626`, a number that is very close to zero. The correct answer to this arithmetic expression is 0, but a small error in the final significant digit appears very different in scientific notation. This behavior appears in almost all programming languages because it is the result of the standard way that arithmetic is carried out on computers. 
+
+Although `float` values are not always exact, they are certainly reliable and work the same way across all different kinds of computers and programming languages.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":508,""source_path"":""04/1/Numbers.ipynb"",""estimated_minutes"":3}",2,4
+3685813449,Seeing the World Through Data,,,,0112statistical-techniquesmd,1,Statistical Techniques,"Statistical Techniques  The discipline of statistics has long addressed the same fundamental challenge as data science: how to draw robust conclusions about the world using incomplete information. One of the most important contributions of statistics is a consistent and precise vocabulary for describing the relationship between observations and conclusions. This text continues in the same tradition, focusing on a set of core inferential problems from statistics: testing hypotheses, estimating confidence, and predicting unknown quantities. Data science extends the field of statistics by taking full advantage of computing, data visualization, machine learning, optimization, and access to information. The combination of fast computers and the Internet gives anyone the ability to access and analyze vast datasets: millions of news articles, full encyclopedias, databases for any domain, and ma
+
+ssive repositories of music, photos, and video. Applications to real data sets motivate the statistical techniques that we describe throughout the text. Real data often do not follow regular patterns or match standard equations. The interesting variation in real data can be lost by focusing too much attention on simplistic summaries such as average values. Computers enable a family of methods based on resampling that apply to a wide range of different inference problems, take into account all available information, and require few assumptions or conditions. Although these techniques have often been reserved for advanced courses in statistics, their flexibility and simplicity are a natural fit for data science applications.","Statistical Techniques
+======================
+
+The discipline of statistics has long addressed the same fundamental challenge
+as data science: how to draw robust conclusions about the world using incomplete
+information. One of the most important contributions of statistics is a
+consistent and precise vocabulary for describing the relationship between
+observations and conclusions. This text continues in the same tradition,
+focusing on a set of core inferential problems from statistics: testing
+hypotheses, estimating confidence, and predicting unknown quantities.
+
+Data science extends the field of statistics by taking full advantage of
+computing, data visualization, machine learning, optimization, and access 
+to information. The combination of fast computers and the Internet gives 
+anyone the ability to access and analyze
+vast datasets: millions of news articles, full encyclopedias, databases for
+any domain, and massive repositories of music, photos, and video.
+
+Applications to real data sets motivate the statistical techniques that we
+describe throughout the text. Real data often do not follow regular patterns or
+match standard equations. The interesting variation in real data can be lost by
+focusing too much attention on simplistic summaries such as average values.
+Computers enable a family of methods based on resampling that apply to a wide
+range of different inference problems, take into account all available
+information, and require few assumptions or conditions. Although these
+techniques have often been reserved for advanced courses in statistics, their
+flexibility and simplicity are a natural fit for data science applications.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":235,""source_path"":""01/1/2/statistical-techniques.md"",""estimated_minutes"":2}",4,1
+3891774532,Teaching the Computer to Work with Data,,,,03programming-in-pythonmd,1,Programming In Python,"Programming in Python  Programming can dramatically improve our ability to collect and analyze information about the world, which in turn can lead to discoveries through the kind of careful reasoning demonstrated in the previous section. In data science, the purpose of writing a program is to instruct a computer to carry out the steps of an analysis. Computers cannot study the world on their own. People must describe precisely what steps the computer should take in order to collect and analyze data, and those steps are expressed through programs.","Programming in Python
+=====================
+
+Programming can dramatically improve our ability to collect and analyze information
+about the world, which in turn can lead to discoveries through the kind of careful
+reasoning demonstrated in the previous section. In data science, the purpose of
+writing a program is to instruct a computer to carry out the steps of an analysis.
+Computers cannot study the world on their own. People must describe precisely what
+steps the computer should take in order to collect and analyze data, and those steps
+are expressed through programs.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":89,""source_path"":""03/programming-in-python.md"",""estimated_minutes"":1}",1,3
+4008464310,Teaching the Computer to Work with Data,,,,0321growthipynb,1,Example: Growth Rates,"Example: Growth Rates The relationship between two measurements of the same quantity taken at different times is often expressed as a growth rate. For example, the United States federal government  2,766,000 people in 2002 and 2,814,000 people in 2012. To compute a growth rate, we must first decide which value to treat as the initial amount. For values over time, the earlier value is a natural choice. Then, we divide the difference between the changed and initial amount by the initial amount. It is also typical to subtract one from the ratio of the two measurements, which yields the same value. This value is the growth rate over 10 years. A useful property of growth rates is that they don't change even if the values are expressed in different units. So, for example, we can express the same relationship between thousands of people in 2002 and 2012. In 10 years, the number of employees of 
+
+the US Federal Government has increased by only 1.74%. In that time, the total expenditures of the US Federal Government increased from \$2.37 trillion to \$3.38 trillion in 2012. A 42.6% increase in the federal budget is much larger than the 1.74% increase in federal employees. In fact, the number of federal employees has grown much more slowly than the population of the United States, which increased 9.21% in the same time period from 287.6 million people in 2002 to 314.1 million in 2012. A growth rate can be negative, representing a decrease in some value. For example, the number of manufacturing jobs in the US decreased from 15.3 million in 2002 to 11.9 million in 2012, a 22.2% growth rate. An annual growth rate is a growth rate of some quantity over a single year. An annual growth rate of 0.035, accumulated each year for 10 years, gives a much larger tenyear growth rate of 0.41 (or 
+
+41%). This same computation can be expressed using names and exponents. Likewise, a tenyear growth rate can be used to compute an equivalent annual growth rate. Below, t is the number of years that have passed between measurements. The following computes the annual growth rate of federal expenditures over the last 10 years. The total growth over 10 years is equivalent to a 3.6% increase each year. In summary, a growth rate g is used to describe the relative size of an initial amount and a changed amount after some amount of time t. To compute $changed$, apply the growth rate g repeatedly, t times using exponentiation. initial  (1 + g)  t To compute g, raise the total growth to the power of 1/t and subtract one. (changed/initial)  (1/t)  1","# Example: Growth Rates
+
+The relationship between two measurements of the same quantity taken at different times is often expressed as a *growth rate*. For example, the United States federal government [employed](http://www.bls.gov/opub/mlr/2013/article/industry-employment-and-output-projections-to-2022.htm) 2,766,000 people in 2002 and 2,814,000 people in 2012. To compute a growth rate, we must first decide which value to treat as the `initial` amount. For values over time, the earlier value is a natural choice. Then, we divide the difference between the `changed` and `initial` amount by the `initial` amount.
+
+It is also typical to subtract one from the ratio of the two measurements, which yields the same value.
+
+This value is the growth rate over 10 years. A useful property of growth rates is that they don't change even if the values are expressed in different units. So, for example, we can express the same relationship between thousands of people in 2002 and 2012.
+
+In 10 years, the number of employees of the US Federal Government has increased by only 1.74%. In that time, the total expenditures of the US Federal Government increased from \$2.37 trillion to \$3.38 trillion in 2012.
+
+A 42.6% increase in the federal budget is much larger than the 1.74% increase in federal employees. In fact, the number of federal employees has grown much more slowly than the population of the United States, which increased 9.21% in the same time period from 287.6 million people in 2002 to 314.1 million in 2012.
+
+A growth rate can be negative, representing a decrease in some value. For example, the number of manufacturing jobs in the US decreased from 15.3 million in 2002 to 11.9 million in 2012, a -22.2% growth rate.
+
+An annual growth rate is a growth rate of some quantity over a single year. An annual growth rate of 0.035, accumulated each year for 10 years, gives a much larger ten-year growth rate of 0.41 (or 41%).
+
+This same computation can be expressed using names and exponents.
+
+Likewise, a ten-year growth rate can be used to compute an equivalent annual growth rate. Below, `t` is the number of years that have passed between measurements. The following computes the annual growth rate of federal expenditures over the last 10 years.
+
+The total growth over 10 years is equivalent to a 3.6% increase each year.
+
+In summary, a growth rate `g` is used to describe the relative size of an `initial` amount and a `changed` amount after some amount of time `t`. To compute $changed$, apply the growth rate `g` repeatedly, `t` times using exponentiation.
+
+`initial * (1 + g) ** t`
+
+To compute `g`, raise the total growth to the power of `1/t` and subtract one.
+
+`(changed/initial) ** (1/t) - 1`
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":483,""source_path"":""03/2/1/Growth.ipynb"",""estimated_minutes"":3}",4,3
+4042898330,Teaching the Computer to Work with Data,,,,033callsipynb,1,Call Expressions,"Call Expressions Call expressions invoke functions, which are named operations. The name of the function appears first, followed by expressions in parentheses. In this last example, the max function is called on three arguments: 2, 5, and 4. The value of each expression within parentheses is passed to the function, and the function returns the final value of the full call expression. The max function can take any number of arguments and returns the maximum. A few functions are available by default, such as abs and round, but most functions that are built into the Python language are stored in a collection of functions called a module. An import statement is used to provide access to a module, such as math or operator. An equivalent expression could be expressed using the + and  operators instead. Operators and call expressions can be used together in an expression. The percent difference
+
+ between two values is used to compare values for which neither one is obviously initial or changed. For example, in 2014 Florida farms produced 2.72 billion eggs while Iowa farms produced 16.25 billion eggs (http://quickstats.nass.usda.gov/). The percent difference is 100 times the absolute value of the difference between the values, divided by their average. In this case, the difference is larger than the average, and so the percent difference is greater than 100. Learning how different functions behave is an important part of learning a programming language. A Jupyter notebook can assist in remembering the names and effects of different functions. When editing a code cell, press the tab key after typing the beginning of a name to bring up a list of ways to complete that name. For example, press tab after math. to see all of the functions available in the math module. Typing will narro
+
+w down the list of options. To learn more about a function, place a ? after its name. For example, typing math.log? will bring up a description of the log function in the math module. log(x is quite long and includes many functions that are never needed in data science applications. The list of  is similarly long. This text will introduce the most important functions in context, rather than expecting the reader to memorize or understand these lists.","# Call Expressions
+
+*Call expressions* invoke functions, which are named operations. The name of the function appears first, followed by expressions in parentheses. 
+
+In this last example, the `max` function is *called* on three *arguments*: 2, 5, and 4. The value of each expression within parentheses is passed to the function, and the function *returns* the final value of the full call expression. The `max` function can take any number of arguments and returns the maximum.
+
+A few functions are available by default, such as `abs` and `round`, but most functions that are built into the Python language are stored in a collection of functions called a *module*. An *import statement* is used to provide access to a module, such as `math` or `operator`.
+
+An equivalent expression could be expressed using the `+` and `**` operators instead.
+
+Operators and call expressions can be used together in an expression. The *percent difference* between two values is used to compare values for which neither one is obviously `initial` or `changed`. For example, in 2014 Florida farms produced 2.72 billion eggs while Iowa farms produced 16.25 billion eggs (http://quickstats.nass.usda.gov/). The percent difference is 100 times the absolute value of the difference between the values, divided by their average. In this case, the difference is larger than the average, and so the percent difference is greater than 100.
+
+Learning how different functions behave is an important part of learning a programming language. A Jupyter notebook can assist in remembering the names and effects of different functions. When editing a code cell, press the *tab* key after typing the beginning of a name to bring up a list of ways to complete that name. For example, press *tab* after `math.` to see all of the functions available in the `math` module. Typing will narrow down the list of options. To learn more about a function, place a `?` after its name. For example, typing `math.log?` will bring up a description of the `log` function in the `math` module.
+
+    log(x[, base])
+
+    Return the logarithm of x to the given base.
+    If the base not specified, returns the natural logarithm (base e) of x.
+
+The square brackets in the example call indicate that an argument is optional. That is, `log` can be called with either one or two arguments.
+
+The list of [Python's built-in functions](https://docs.python.org/3/library/functions.html) is quite long and includes many functions that are never needed in data science applications. The list of [mathematical functions in the `math` module](https://docs.python.org/3/library/math.html) is similarly long. This text will introduce the most important functions in context, rather than expecting the reader to memorize or understand these lists.
+","{""source"":""Data 8 Textbook (local copy)"",""word_count"":458,""source_path"":""03/3/Calls.ipynb"",""estimated_minutes"":3}",5,3
