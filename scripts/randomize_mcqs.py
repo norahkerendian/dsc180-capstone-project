@@ -120,7 +120,7 @@ def verify_randomization(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_filename = "../NEW_AIGeneratedData_json/merged_lessons_with_mcqs_16Jan 16, 2026_153124.json"
+    input_filename = "../NEW_AIGeneratedData_json/merged_lessons_with_mcqs_22Feb 22, 2026_131617.json"
     
     stats = randomize_mcq_answers(input_filename)
     
