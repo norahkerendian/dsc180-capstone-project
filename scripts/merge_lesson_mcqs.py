@@ -114,11 +114,11 @@ def print_report(stats):
 
 def main():
     """Main execution function."""
-    lessons_file = "../NEW_AIGeneratedData_json/final_generated_level2_02Feb 16, 2026_175901.json"
-    mcqs_file = "../NEW_AIGeneratedData_json/MCQ_generated_level2_02Feb 22, 2026_155104.json"
-    
+    lessons_file = "../NEW_AIGeneratedData_json/final_generated_level3_02Feb 16, 2026_181723.json"
+    mcqs_file = "../NEW_AIGeneratedData_json/MCQ_generated_level3_02Feb 22, 2026_165759.json"
+    level = 3
     timestamp = datetime.now().strftime("%d%b %d, %Y_%H%M%S")
-    output_file = f"../NEW_AIGeneratedData_json/merged_lessons_with_mcqs_{timestamp}.json"
+    output_file = f"../NEW_AIGeneratedData_json/merged_lessons_with_mcqs_level{level}_{timestamp}.json"
     
     print("Starting merge process...")
     print(f"Reading lessons from: {lessons_file}")
