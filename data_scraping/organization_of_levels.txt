@@ -1,0 +1,124 @@
+# order of titles with ids in accordance w/ textbook
+# level 1
+{
+    781822617: 'What Is Data Science',
+    2727718540: 'Intro',
+    1295251401: 'Computational Tools',
+    3685813449: 'Statistical Techniques',
+    2888989471: 'Why Data Science',
+    1930966851: 'Plotting the Classics',
+    2768641799: 'Another Kind Of Character',
+
+    2027312779: 'Causality And Experiments',
+    1251066844: 'Establishing-Causality',
+    157990508: 'Randomization',
+
+    3891774532: 'Programming In Python',
+    1739879824: 'Expressions',
+    1176507067: 'Names',
+    4008464310: 'Example: Growth Rates',
+    4042898330: 'Call Expressions',
+    2427013110: 'Introduction to Tables',
+
+    1320813483: 'Data Types',
+    3082398315: 'Numbers',
+    2697797242: 'Strings',
+    663140214: 'String Methods',
+    2089344509: 'Comparisons',
+}
+
+# level 2
+{
+    865601147: 'Sequences',
+    4182291720: 'Arrays',
+    4206554089: 'Ranges',
+    3620647107: 'More on Arrays',
+
+    3053275831: 'Tables',
+    328304638: 'Sorting Rows',
+    3878803103: 'Selecting Rows',
+
+    4146444081: 'Visualization',
+    332165191: 'Visualizing Categorical Distributions',
+    3378221435: 'Visualizing Numerical Distributions',
+    113008979: 'Overlaid Graphs',
+    
+    2691935601: 'Functions and Tables',
+    3756949322: 'Applying a Function to a Column',
+    647528902: 'Classifying by One Variable',
+    3324962146: 'Cross-Classifying by More than One Variable',
+    881925579: 'Joining Tables by Columns'
+}
+
+# level 3
+{
+    3713137783: 'Randomness',
+    3451416724: 'Conditional Statements',
+    2021403746: 'Iteration',
+    2682190672: 'Simulation',
+    1841185290: 'The Monty Hall Problem',
+    2629497965: 'Finding Probabilities',
+
+    1616285521: 'Sampling and Empirical Distributions',
+    3360677753: 'Empirical Distributions',
+    3291018288: 'Sampling from a Population',
+    1773767604: 'Empirical Distribution of a Statistic',
+    1026136100: 'Random Sampling in Python',
+
+    725172537: 'Testing Hypotheses',
+    3246096436: 'Assessing a Model',
+    2505286021: 'Multiple Categories',
+    2052442250: 'Decisions and Uncertainty',
+    3329944947: 'Error Probabilities',
+    
+    3938903555: 'Comparing Two Samples',
+    3001763033: 'A/B Testing',
+    247871498: 'Causality',
+    346480280: 'Deflategate'
+
+}
+
+# level 4
+{
+    2556156586: 'Estimation',
+    866027949: 'Percentiles',
+    2081582244: 'The Bootstrap',
+    3956621816: 'Confidence Intervals',
+    2411067505: 'Using Confidence Intervals',
+
+    1165644891: 'Why the Mean Matters',
+    2733067410: 'Properties of the Mean',
+    1618326264: 'Variability',
+    4189705585: 'The SD and the Normal Curve',
+    727936073: 'The Central Limit Theorem',
+    4126874567: 'The Variability of the Sample Mean',
+    3843594297: 'Choosing a Sample Size',
+
+    2424632387: 'Prediction',
+    3528763989: 'Correlation',
+    4102359205: 'The Regression Line',
+    581102781: 'The Method of Least Squares',
+    663772420: 'Least Squares Regression',
+    3817650816: 'Visual Diagnostics',
+    2564443503: 'Numerical Diagnostics',
+
+    3579752644: 'Inference for Regression',
+    550865978: 'A Regression Model',
+    2571122541: 'Inference for the True Slope',
+    2422011061: 'Prediction Intervals'
+}
+
+# level 5
+{
+    3562500572: 'Classification',
+    3993201186: 'Nearest Neighbors',
+    553397701: 'Training and Testing',
+    1231487839: 'Rows of Tables',
+    1104957995: 'Implementing the Classifier',
+    4268785128: 'The Accuracy of the Classifier',
+    2057317731: 'Multiple Regression',
+
+    3917166621: 'Updating Predictions',
+    802804819: 'A "More Likely Than Not" Binary Classifier',
+    2182317983: 'Making Decisions'
+}
